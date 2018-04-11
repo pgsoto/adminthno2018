@@ -18,7 +18,6 @@
             <excludedPath path="/js/boostrap" />
             <excludedPath path="/js/jquery" />
             <excludedPath path="/application/cache" />
-            <excludedPath path="/application/config" />
             <excludedPath path="/application/controllers" />
             <excludedPath path="/application/core" />
             <excludedPath path="/application/errors" />
@@ -38,7 +37,6 @@
             <excludedPath local="true" path="$PROJECT_DIR$/js/boostrap" />
             <excludedPath local="true" path="$PROJECT_DIR$/js/jquery" />
             <excludedPath local="true" path="$PROJECT_DIR$/application/cache" />
-            <excludedPath local="true" path="$PROJECT_DIR$/application/config" />
             <excludedPath local="true" path="$PROJECT_DIR$/application/controllers" />
             <excludedPath local="true" path="$PROJECT_DIR$/application/core" />
             <excludedPath local="true" path="$PROJECT_DIR$/application/errors" />
