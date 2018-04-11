@@ -1,0 +1,249 @@
+/***** PYME BASE - NAF *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video,dl,dt,dd {
+	text-align:left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+
+a { color:#0069a6; outline:none; text-decoration: none; }
+a:visited{color:#660099;}
+a:hover{text-decoration: underline;}
+
+body{background-color: #333;}
+
+/***** TEMPLATE *****/
+#wrapper{ background-color:#FFFFFF;}
+center{
+    width: 96%;
+    margin:0 auto;
+}
+
+
+/***** Header *****/
+#header{
+	background-color:#fff;
+    margin-bottom: 10px;
+	padding-top:10px;
+}
+#header center{
+	position:relative;
+}
+#logo{
+	width: 169px;
+	display:inline-block;
+	vertical-align:top;
+	height: 73px;
+}
+#logo h1{
+	width: 169px;
+	height: 73px;
+	background: url(/imagenes/template/logo.png) left top no-repeat;
+	margin: 0;
+	font-size: 0.5em;
+	text-indent: -9999px;
+}
+#logo img{
+	width:100%;
+	height:auto;
+	vertical-align:top;
+}
+#header .btn{
+	width:100% !important;
+}
+#header .col-md-2{
+	margin-top:15px;	
+}
+#header select{
+	background:#fff;
+	border:1px solid #e5e5e5;
+}
+footer{
+	background-color: #dcdcdc;
+    padding: 35px 0;
+}
+footer center{
+	text-align:center;
+}
+
+#aeurus{ padding:8px 10px; text-align:right; background:#333333}
+#aeurus img{ vertical-align:top;}
+#navigation{ font-size:14px; padding:10px 5px; margin-bottom:40px; background:#e5e5e5; color:#989898;}
+#navigation span{ color:#4a4a4a;}
+
+
+/***** FIN TEMPLATE *****/
+
+
+/***** CONTENIDO ****/
+
+.clear{
+	clear:both;
+}
+/****TEXTOS****/
+
+h1{
+	margin-bottom:30px;
+}
+
+#menu-principal{
+	list-style-type:none;
+	margin-bottom:45px;
+}
+#menu-principal li{
+	display:block;
+	position:relative;
+}
+#menu-principal a{
+	display: block;
+    background: #2d78b2;
+    color: #fff;
+    padding: 12px 0;
+    text-align: left;
+    margin-bottom: 2px;
+	padding-left: 10px;
+}
+#menu-principal a:hover{
+	text-decoration:none;
+	background:#20557e;
+	-webkit-transition: all 180ms ease-in-out;
+	-moz-transition: all 180ms ease-in-out;
+	-ms-transition: all 180ms ease-in-out;
+	-o-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
+}
+#menu-principal li ul{
+	position:absolute;
+	display:none;
+	background: #20557e;
+	top:0;
+	left:100%;
+	z-index:50;
+	width:100%;
+	padding:10px;
+}
+#menu-principal li:hover ul{
+	display:block;
+}
+#menu-principal li ul li a{
+	margin-bottom:0;
+	background:none;
+}
+#menu-principal li:hover a{
+	background: #20557e;
+}
+#menu-principal li ul li a:hover{
+	background:#2d78b2;
+}
+.titulo-btn{
+	border-bottom:1px solid #ccc;
+	margin-bottom:50px;
+	
+}
+.titulo-btn .btn, .subtitulo-btn .btn{
+	float:right;
+	color:#000;
+}
+.titulo-btn h1{
+	display:inline-block;
+	margin-bottom:10px;
+}
+.marg-fix {
+	margin-bottom:100px;
+}
+.btn-can {
+    color: #000;
+    background-color: #d7d7d7;
+    border-color: #cccccc;
+}
+.subtitulo-btn{
+	margin-bottom:20px;
+}
+.subtitulo-btn h2{
+	display:inline-block;
+}
+.box-botones{
+	margin-top:20px;
+}
+.upload{
+	margin-top:12px;
+}
+.upload img{
+	width:100%; height:auto;
+}
+.googlemap {
+  position: relative;
+  padding-bottom: 180px;
+  padding-top: 25px;
+  margin-top:20px;
+  height: 0;
+}
+.googlemap iframe, .googlemap object, .googlemap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.multi-imagen {
+	background: #e5e5e5;
+	padding:10px;
+}
+.multi-imagen .box{
+	display:inline-block;
+	vertical-align:top;
+	width:24%;
+	padding:10px;	
+}
+.multi-imagen .box img{
+	width:100%;
+	height:auto;
+	vertical-align:top;
+}
+.multi-imagen .mas{
+	display:block;
+	text-align:center;
+	margin:20px 10px;
+}
+.login-box{
+	padding:20px 40px;
+	border:1px solid #ccc;
+	width:500px;
+	margin:30px auto;
+}
+.login-logo{
+	width:169px;
+	margin:60px auto 30px;
+}
+.btn-login{ width:100%;}
+
+.acceso-box img{
+	display:block;
+	margin:0 auto;
+	margin-bottom:15px;	
+}
+.acceso-box { text-align:center; display:block; font-size:24px; cursor:pointer;}
+.acceso-box:hover{
+	text-decoration:none;
+}
+.mydrop{
+	background: #e5e5e5;
+	padding:20px 30px;
+	margin-bottom:30px;
+}
+
+.mydrop .dropdown-menu{
+	margin:0;
+    width: 100%;
+    height: 100%;
+	top:0;
+	border-radius:none;
+}
+.icon-login .glyphicon{
+    font-size: 18px;
+    top: 12px;
+    left: 9px;
+}
