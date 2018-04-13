@@ -18,10 +18,10 @@ class Layout {
         $this->layout_view = "layout/default.php";
         
         #si no esta en las siguientes urls valida los permisos a la seccion
-        $url_sin_validar = array('/','/login/','/logout/','/recuperar-contrasena/','/perfil/','/perfil/guardar/');
+        /*$url_sin_validar = array('/','/login/','/logout/','/recuperar-contrasena/','/perfil/','/perfil/guardar/');
         if(!in_array($_SERVER['REQUEST_URI'],$url_sin_validar)){
-            $this->valida_seccion();
-        }
+            #$this->valida_seccion();
+        }*/
 		
 		#css
 		$this->css('/css/bootstrap.css');
@@ -55,8 +55,8 @@ class Layout {
     function view($view, $data = null, $return = false) {
         
         #listado de hoteles para el menu
-        $this->obj->ws->order("ho_orden ASC");
-        $data['menu_hoteles'] = $this->obj->ws->listar(14,"ho_estado = 1");
+        #$this->obj->ws->order("ho_orden ASC");
+        #$data['menu_hoteles'] = $this->obj->ws->listar(14,"ho_estado = 1");
         
 		#render template
         $data['content_for_layout'] = $this->obj->load->view($view, $data, true);
@@ -166,7 +166,7 @@ class Layout {
 		}
 		return $html;
 	}
-    
+    /*
     function valida_seccion(){
         
         #si no esta logeado
@@ -189,7 +189,7 @@ class Layout {
         #revisa si tiene permisos para la url actual
         $permisos = false;
         foreach($secciones as $aux){
-            if($aux->seccion == 1) #permisos a todo el sitio
+            if($aux->seccion == 1) #permisos
                 $permisos = true;
             elseif(strpos($url_actual.'/',$aux->secciones_usuario->url) !== false)
                 $permisos = true;
@@ -199,6 +199,6 @@ class Layout {
         if(!$permisos){
             redirect($secciones[0]->secciones_usuario->url);
         }
-    }
+    }*/
 	
 }

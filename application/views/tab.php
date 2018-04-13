@@ -1,6 +1,6 @@
 <?php
-$usuario = $this->session->userdata('usuario_admin');
-$secciones_menu = $this->ws->listar(63, "adms_administrador = {$usuario->codigo}");
+#$usuario = $this->session->userdata('usuario_admin');
+/*$secciones_menu = $this->ws->listar(63, "adms_administrador = {$usuario->codigo}");
 $permisos = array(
     'todo' => false,
     'noticias' => false,
@@ -19,13 +19,12 @@ foreach ($secciones_menu as $aux) {
         $permisos['calendario-hotel-nevado'] = true;
     if ($aux->seccion == 5)
         $permisos['calendario-hotel-alto'] = true;
-}
+}*/
 ?>
 <!-- MENU 1 -->
 <div class="col-sm-2">
     <ul id="menu-principal">
         <!-- portada -->
-        <?php if ($permisos['todo']) { ?>
             <li>
                 <a style="cursor:pointer;">Portada</a>
                 <ul>
@@ -36,10 +35,8 @@ foreach ($secciones_menu as $aux) {
                     <li><a href="/portada/banners-transparencia/">Banners transparencia</a></li>
                 </ul>
             </li>
-        <?php } ?>
 
         <!-- noticias -->
-        <?php if ($permisos['todo'] || $permisos['noticias']) { ?>
             <li>
                 <a style="cursor:pointer;">Noticias</a>
                 <ul>
@@ -48,10 +45,8 @@ foreach ($secciones_menu as $aux) {
                     <li><a href="/noticias/categorias/">Categorias</a></li>
                 </ul>
             </li>
-        <?php } ?>
 
         <!-- servicios y tramites -->
-        <?php if ($permisos['todo']) { ?>
             <li><a style="background: #FFF; color: #969696; font-style: italic;">Servicios y trámites</a></li>
             <li>
                 <a style="cursor:pointer;">Centro de atención al vecino</a>
@@ -72,10 +67,8 @@ foreach ($secciones_menu as $aux) {
                 </ul>
             </li>
             <li><a style="background: #FFF;"></a></li>
-        <?php } ?>
 
         <!-- configuraciones -->
-        <?php if ($permisos['todo']) { ?>
             <li>
                 <a style="cursor:pointer;">Configuraciones</a>
                 <ul>
@@ -83,6 +76,5 @@ foreach ($secciones_menu as $aux) {
                     <li><a href="/configuracion/administradores/">Administradores</a></li>
                 </ul>
             </li>
-        <?php } ?>
     </ul>
 </div>

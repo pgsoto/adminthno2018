@@ -2,291 +2,245 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="084cd69e-672c-46bd-a32f-5a06d061b894" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/pgsoto.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/tab_.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/WWW/admthno2018.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/configuracion/controllers/administradores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/configuracion/controllers/datos_generales.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/configuracion/views/administradores/crear.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/configuracion/views/administradores/editar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/configuracion/views/administradores/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/configuracion/views/datos-generales/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/inicio/controllers/inicio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/inicio/models/email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/inicio/models/imagen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/inicio/views/error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/inicio/views/inicio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/inicio/views/perfil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/inicio/views/recuperar-contrasena.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/perfil/controllers/perfil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/perfil/views/perfil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/controllers/accesos_directos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/controllers/slider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/controllers/somos_tv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/slider/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/slider/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/somos_tv/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/portada/views/somos_tv/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/administradores/agregar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/administradores/editar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/administradores/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/datos-generales/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/imagenes/simple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/index/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/index/recuperar-contrasena.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/perfil/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/slider/agregar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/slider/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/noticias/noticias/agregar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/noticias/noticias/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/portada/accesos_directos/agregar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/portada/accesos_directos/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/portada/banners_transparencia/agregar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/portada/banners_transparencia/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/portada/slider_turismo/agregar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/portada/slider_turismo/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/portada/somos_tv/agregar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sistema/portada/somos_tv/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/controllers/como_llegar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/controllers/como_llegar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/controllers/condiciones_reglamentos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/controllers/condiciones_reglamentos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/controllers/contactos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/controllers/contactos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/controllers/preguntas_frecuentes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/controllers/preguntas_frecuentes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/controllers/trabaja_con_nosotros.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/controllers/trabaja_con_nosotros.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/como-llegar/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/como-llegar/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/como-llegar/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/como-llegar/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/como-llegar/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/como-llegar/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/condiciones-reglamentos/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/condiciones-reglamentos/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/condiciones-reglamentos/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/condiciones-reglamentos/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/condiciones-reglamentos/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/condiciones-reglamentos/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/contactos/detalle.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/contactos/detalle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/contactos/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/contactos/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/preguntas-frecuentes/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/preguntas-frecuentes/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/preguntas-frecuentes/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/preguntas-frecuentes/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/preguntas-frecuentes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/preguntas-frecuentes/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/trabaja_con_nosotros/detalle.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/trabaja_con_nosotros/detalle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/ayuda/views/trabaja_con_nosotros/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/ayuda/views/trabaja_con_nosotros/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/controllers/bike_park.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/controllers/bike_park.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/controllers/programas_valores.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/controllers/programas_valores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/views/bike_park/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/views/bike_park/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/views/programas_valores/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/views/programas_valores/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/bike_park/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/bike_park/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/controllers/administradores.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/controllers/administradores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/controllers/areas_trabajo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/controllers/areas_trabajo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/controllers/asuntos_contacto.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/controllers/asuntos_contacto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/controllers/camaras_vivo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/controllers/camaras_vivo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/controllers/categorias_calendario.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/controllers/categorias_calendario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/controllers/categorias_noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/controllers/categorias_noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/controllers/datos_generales.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/controllers/datos_generales.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/controllers/temporadas_calendario.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/controllers/temporadas_calendario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/administradores/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/administradores/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/administradores/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/administradores/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/administradores/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/administradores/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/areas-trabajo/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/areas-trabajo/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/areas-trabajo/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/areas-trabajo/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/areas-trabajo/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/areas-trabajo/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/asuntos-contacto/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/asuntos-contacto/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/asuntos-contacto/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/asuntos-contacto/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/asuntos-contacto/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/asuntos-contacto/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/camaras-vivo/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/camaras-vivo/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/camaras-vivo/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/camaras-vivo/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/camaras-vivo/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/camaras-vivo/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/categorias-calendario/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/categorias-calendario/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/categorias-calendario/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/categorias-calendario/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/categorias-calendario/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/categorias-calendario/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/categorias-noticias/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/categorias-noticias/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/categorias-noticias/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/categorias-noticias/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/categorias-noticias/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/categorias-noticias/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/datos-generales/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/datos-generales/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/temporadas-calendario/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/temporadas-calendario/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/temporadas-calendario/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/temporadas-calendario/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/configuracion/views/temporadas-calendario/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/configuracion/views/temporadas-calendario/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/contactos_landing/controllers/contactos_landing.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/contactos_landing/controllers/contactos_landing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/contactos_landing/views/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/contactos_landing/views/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/contactos_landing/views/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/contactos_landing/views/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/contactos_landing/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/contactos_landing/views/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/controllers/hoteles.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/controllers/hoteles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/controllers/introduccion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/controllers/introduccion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/hoteles/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/hoteles/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/hoteles/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/hoteles/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/hoteles/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/hoteles/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/introduccion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/introduccion/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/descubrenos/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/descubrenos/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/controllers/conoce_instalaciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/controllers/conoce_instalaciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/controllers/profesor_guia.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/controllers/profesor_guia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/controllers/programas_valores.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/controllers/programas_valores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/views/conoce_instalaciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/views/conoce_instalaciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/views/profesor_guia/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/views/profesor_guia/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/views/programas_valores/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/views/programas_valores/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/escuela/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/escuela/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/freeride/controllers/freeride.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/freeride/controllers/freeride.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/freeride/views/freeride/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/freeride/views/freeride/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/controllers/introduccion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/controllers/introduccion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/views/introduccion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/views/introduccion/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/historia/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/historia/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/controllers/actividades.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/controllers/actividades.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/controllers/banners.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/controllers/banners.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/controllers/calendario.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/controllers/calendario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/controllers/habitaciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/controllers/habitaciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/controllers/introduccion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/controllers/introduccion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/controllers/servicios_complementarios.php_" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/controllers/servicios_complementarios.php_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/controllers/testimonios.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/controllers/testimonios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/actividades/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/actividades/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/actividades/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/actividades/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/actividades/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/actividades/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/banners/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/banners/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/banners/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/banners/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/banners/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/banners/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/calendario/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/calendario/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/calendario/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/calendario/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/calendario/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/calendario/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/habitaciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/habitaciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/habitaciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/habitaciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/habitaciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/habitaciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/introduccion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/introduccion/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/servicios_complementarios/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/servicios_complementarios/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/servicios_complementarios/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/servicios_complementarios/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/servicios_complementarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/servicios_complementarios/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/testimonios/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/testimonios/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/testimonios/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/testimonios/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/hoteles/views/testimonios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/hoteles/views/testimonios/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/controllers/estado_andariveles.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/controllers/estado_andariveles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/controllers/estado_camino.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/controllers/estado_camino.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/controllers/estado_pistas.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/controllers/estado_pistas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/controllers/introduccion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/controllers/introduccion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/controllers/nieve.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/controllers/nieve.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/views/estado_andariveles/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/views/estado_andariveles/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/views/estado_andariveles/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/views/estado_andariveles/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/views/estado_andariveles/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/views/estado_andariveles/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/views/estado_camino/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/views/estado_camino/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/views/estado_pistas/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/views/estado_pistas/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/views/estado_pistas/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/views/estado_pistas/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/views/estado_pistas/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/views/estado_pistas/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/views/introduccion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/views/introduccion/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/info_nieve/views/nieve/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/info_nieve/views/nieve/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/inicio/controllers/inicio.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/inicio/controllers/inicio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/inicio/models/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/inicio/models/email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/inicio/models/imagen.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/inicio/models/imagen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/inicio/views/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/inicio/views/error.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/inicio/views/inicio.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/inicio/views/inicio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/inicio/views/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/inicio/views/perfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/inicio/views/recuperar-contrasena.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/inicio/views/recuperar-contrasena.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/controllers/cafeterias.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/controllers/cafeterias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/controllers/introduccion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/controllers/introduccion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/controllers/mapa_pistas.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/controllers/mapa_pistas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/controllers/programas_valores.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/controllers/programas_valores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/cafeterias/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/cafeterias/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/cafeterias/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/cafeterias/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/cafeterias/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/cafeterias/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/introduccion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/introduccion/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/mapa_pistas/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/mapa_pistas/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/programas_valores/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/programas_valores/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/invierno/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/invierno/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/landing_pages/controllers/landing_pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/landing_pages/controllers/landing_pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/landing_pages/views/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/landing_pages/views/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/landing_pages/views/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/landing_pages/views/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/landing_pages/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/landing_pages/views/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/newsletter/controllers/newsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/newsletter/controllers/newsletter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/newsletter/views/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/newsletter/views/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/newsletter/views/detalle.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/newsletter/views/detalle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/newsletter/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/newsletter/views/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/controllers/banners.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/controllers/banners.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/controllers/introduccion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/controllers/introduccion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/controllers/programas_valores.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/controllers/programas_valores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/controllers/servicios_complementarios.php_" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/controllers/servicios_complementarios.php_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/banners/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/banners/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/banners/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/banners/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/banners/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/banners/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/introduccion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/introduccion/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/programas_valores/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/programas_valores/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/servicios_complementarios/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/servicios_complementarios/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/servicios_complementarios/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/servicios_complementarios/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/servicios_complementarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/servicios_complementarios/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/parque_agua/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/parque_agua/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/perfil/controllers/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/perfil/controllers/perfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/perfil/views/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/perfil/views/perfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/accesos_directos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/controllers/accesos_directos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/auspiciadores.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/controllers/auspiciadores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/calendario_general.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/controllers/calendario_general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/informacion_prensa.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/controllers/informacion_prensa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/controllers/noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/accesos_directos/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/accesos_directos/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/accesos_directos/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/auspiciadores/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/auspiciadores/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/auspiciadores/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/auspiciadores/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/auspiciadores/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/auspiciadores/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/calendario/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/calendario/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/calendario/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/calendario/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/calendario/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/calendario/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/informacion_prensa/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/informacion_prensa/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/noticias/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/noticias/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/noticias/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/noticias/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/noticias/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/noticias/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/portada/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/promociones/controllers/promociones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/promociones/controllers/promociones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/promociones/views/promociones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/promociones/views/promociones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/promociones/views/promociones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/promociones/views/promociones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/promociones/views/promociones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/promociones/views/promociones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/servicios_complementarios/controllers/servicios_complementarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/servicios_complementarios/controllers/servicios_complementarios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/servicios_complementarios/views/servicios_complementarios/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/servicios_complementarios/views/servicios_complementarios/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/servicios_complementarios/views/servicios_complementarios/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/servicios_complementarios/views/servicios_complementarios/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/servicios_complementarios/views/servicios_complementarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/servicios_complementarios/views/servicios_complementarios/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/controllers/actividades.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/controllers/actividades.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/controllers/banners.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/controllers/banners.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/controllers/habitaciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/controllers/habitaciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/actividades/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/actividades/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/actividades/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/actividades/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/actividades/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/actividades/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/banners/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/banners/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/banners/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/banners/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/banners/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/banners/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/habitaciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/habitaciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/habitaciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/habitaciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/habitaciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/habitaciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_hermoso/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_hermoso/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/controllers/introduccion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/controllers/introduccion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/views/introduccion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/views/introduccion/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/valle_trancas/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/valle_trancas/views/slider/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/controllers/introduccion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/controllers/introduccion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/controllers/programas_valores.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/controllers/programas_valores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/controllers/secciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/controllers/secciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/views/introduccion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/views/introduccion/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/views/programas_valores/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/views/programas_valores/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/views/secciones/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/views/secciones/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/views/secciones/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/views/secciones/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/views/secciones/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/views/secciones/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/views/slider/agregar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/views/slider/agregar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/views/slider/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/views/slider/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/verano/views/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/WWW/verano/views/slider/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/ws.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/ws.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/tab.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/tab.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/como-llegar/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/como-llegar/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/como-llegar/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/como-llegar/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/como-llegar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/como-llegar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/condiciones-reglamentos/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/condiciones-reglamentos/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/condiciones-reglamentos/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/condiciones-reglamentos/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/condiciones-reglamentos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/condiciones-reglamentos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/preguntas-frecuentes/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/preguntas-frecuentes/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/preguntas-frecuentes/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/preguntas-frecuentes/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/preguntas-frecuentes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/preguntas-frecuentes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/ayuda/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/ayuda/slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/bike-park/bike-park/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/bike-park/bike-park/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/bike-park/programas-valores/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/bike-park/programas-valores/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/bike-park/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/bike-park/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/bike-park/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/bike-park/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/bike-park/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/bike-park/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/bike-park/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/bike-park/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/bike-park/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/bike-park/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/bike-park/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/bike-park/slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/areas-trabajo/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/areas-trabajo/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/areas-trabajo/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/areas-trabajo/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/areas-trabajo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/areas-trabajo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/asuntos-contacto/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/asuntos-contacto/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/asuntos-contacto/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/asuntos-contacto/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/asuntos-contacto/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/asuntos-contacto/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/camaras-vivo/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/camaras-vivo/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/camaras-vivo/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/camaras-vivo/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/camaras-vivo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/camaras-vivo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/categorias-calendario/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/categorias-calendario/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/categorias-calendario/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/categorias-calendario/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/categorias-calendario/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/categorias-calendario/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/categorias-noticias/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/categorias-noticias/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/categorias-noticias/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/categorias-noticias/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/categorias-noticias/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/categorias-noticias/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/temporadas-calendario/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/temporadas-calendario/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/temporadas-calendario/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/temporadas-calendario/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/configuracion/temporadas-calendario/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/configuracion/temporadas-calendario/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/contactos_landing/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/contactos_landing/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/contactos_landing/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/contactos_landing/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/contactos_landing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/contactos_landing/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/hoteles/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/hoteles/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/hoteles/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/hoteles/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/hoteles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/hoteles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/introduccion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/introduccion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/descubrenos/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/descubrenos/slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/escuela/conoce-instalaciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/escuela/conoce-instalaciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/escuela/profesor-guia/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/escuela/profesor-guia/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/escuela/programas-valores/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/escuela/programas-valores/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/escuela/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/escuela/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/escuela/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/escuela/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/escuela/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/escuela/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/freeride/freeride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/freeride/freeride/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/historia/introduccion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/historia/introduccion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/historia/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/historia/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/historia/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/historia/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/historia/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/historia/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/historia/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/historia/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/historia/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/historia/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/historia/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/historia/slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/actividades/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/actividades/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/actividades/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/actividades/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/actividades/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/actividades/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/banners/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/banners/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/banners/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/banners/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/banners/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/banners/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/calendario/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/calendario/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/calendario/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/calendario/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/calendario/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/calendario/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/habitaciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/habitaciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/habitaciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/habitaciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/habitaciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/habitaciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/introduccion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/introduccion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/servicios-complementarios/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/servicios-complementarios/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/servicios-complementarios/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/servicios-complementarios/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/servicios-complementarios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/servicios-complementarios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/testimonios/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/testimonios/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/testimonios/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/testimonios/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/hoteles/testimonios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/hoteles/testimonios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/info-nieve/estado-andariveles/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/info-nieve/estado-andariveles/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/info-nieve/estado-andariveles/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/info-nieve/estado-andariveles/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/info-nieve/estado-andariveles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/info-nieve/estado-andariveles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/info-nieve/estado-camino/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/info-nieve/estado-camino/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/info-nieve/estado-pistas/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/info-nieve/estado-pistas/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/info-nieve/estado-pistas/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/info-nieve/estado-pistas/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/info-nieve/estado-pistas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/info-nieve/estado-pistas/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/info-nieve/introduccion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/info-nieve/introduccion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/info-nieve/nieve/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/info-nieve/nieve/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/cafeterias/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/cafeterias/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/cafeterias/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/cafeterias/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/cafeterias/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/cafeterias/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/introduccion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/introduccion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/mapa-pistas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/mapa-pistas/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/programas-valores/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/programas-valores/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/invierno/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/invierno/slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/landing/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/landing/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/landing/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/landing/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/landing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/landing/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/newsletter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/newsletter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/banners/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/banners/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/banners/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/banners/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/banners/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/banners/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/introduccion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/introduccion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/programas-valores/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/programas-valores/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/servicios-complementarios/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/servicios-complementarios/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/servicios-complementarios/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/servicios-complementarios/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/servicios-complementarios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/servicios-complementarios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/parque-agua/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/parque-agua/slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/accesos-directos/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/accesos-directos/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/accesos-directos/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/accesos-directos/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/accesos-directos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/accesos-directos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/auspiciadores/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/auspiciadores/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/auspiciadores/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/auspiciadores/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/auspiciadores/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/auspiciadores/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/calendario/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/calendario/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/calendario/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/calendario/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/calendario/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/calendario/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/informacion-prensa/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/informacion-prensa/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/noticias/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/noticias/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/noticias/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/noticias/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/noticias/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/noticias/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/portada/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/portada/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/portada/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/promociones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/promociones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/promociones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/promociones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/promociones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/promociones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/servicios-complementarios/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/servicios-complementarios/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/servicios-complementarios/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/servicios-complementarios/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/servicios-complementarios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/servicios-complementarios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/actividades/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/actividades/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/actividades/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/actividades/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/actividades/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/actividades/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/banners/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/banners/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/banners/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/banners/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/banners/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/banners/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/habitaciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/habitaciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/habitaciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/habitaciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/habitaciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/habitaciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/introduccion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/introduccion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-hermoso/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-hermoso/slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-las-trancas/introduccion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-las-trancas/introduccion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-las-trancas/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-las-trancas/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-las-trancas/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-las-trancas/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-las-trancas/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-las-trancas/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-las-trancas/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-las-trancas/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-las-trancas/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-las-trancas/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/valle-las-trancas/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/valle-las-trancas/slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/verano/introduccion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/verano/introduccion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/verano/programas-valores/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/verano/programas-valores/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/verano/secciones/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/verano/secciones/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/verano/secciones/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/verano/secciones/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/verano/secciones/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/verano/secciones/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/verano/slider/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/verano/slider/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/verano/slider/editar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/verano/slider/editar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/verano/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/WWW/verano/slider/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -296,46 +250,67 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="tab.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/application/views/tab.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="410">
-                  <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-                  <folding>
-                    <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="432">
-                  <caret line="163" column="37" lean-forward="true" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="80" column="59" lean-forward="true" selection-start-line="80" selection-start-column="59" selection-end-line="80" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>daem</find>
+      <find>obtener</find>
+      <find>valida_seccion</find>
+      <find>sql</find>
+      <find>$slider</find>
+      <find>$contenido</find>
+      <find>nevados</find>
+      <find>$datos</find>
+      <find>mod_</find>
+      <find>slid</find>
+      <find>vehiculos/modelos</find>
+      <find>$aux</find>
+      <find>slid_</find>
+      <find>sli_</find>
+      <find>portada/slider</find>
+      <find>slider-turismo</find>
+      <find>slider_turismo</find>
+      <find>/editar/(:num)</find>
+      <find>acc_</find>
+      <find>slider</find>
+      <find>accesos-directos</find>
+      <find>/editar/$1</find>
+      <find>acces</find>
+      <find>directo</find>
+      <find>CENTRO ATENCION VECINO</find>
+    </findStrings>
     <replaceStrings>
       <replace>consejo</replace>
       <replace>organigrama</replace>
+      <replace>slider-turismo</replace>
+      <replace>$result</replace>
+      <replace>$data</replace>
+      <replace>portada/slider</replace>
+      <replace>slid_</replace>
+      <replace>slit_</replace>
+      <replace>portada/slider-turismo</replace>
+      <replace>portada/accesos-directos</replace>
+      <replace>accesos-directos</replace>
+      <replace>accesos_directos</replace>
+      <replace>/agregar/(:num)</replace>
+      <replace>somos-tv</replace>
+      <replace>stv_</replace>
+      <replace>banners-transparencia</replace>
+      <replace>/agregar/$1</replace>
+      <replace>bant_</replace>
+      <replace>SERVICIOS</replace>
+      <replace>noticias</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -344,7 +319,46 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/js/sistema/portada/slider-turismo/index.js" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/slider-turismo/agregar.js" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/slider-turismo/editar.js" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/editar.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/agregar.php" />
         <option value="$PROJECT_DIR$/application/views/tab.php" />
+        <option value="$PROJECT_DIR$/application/libraries/layout.php" />
+        <option value="$PROJECT_DIR$/application/views/main.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/slider/crear.php" />
+        <option value="$PROJECT_DIR$/application/modules/inicio/controllers/inicio.php" />
+        <option value="$PROJECT_DIR$/application/libraries/ws.php" />
+        <option value="$PROJECT_DIR$/application/modules/configuracion/controllers/administradores.php" />
+        <option value="$PROJECT_DIR$/application/modules/configuracion/views/administradores/index.php" />
+        <option value="$PROJECT_DIR$/application/modules/configuracion/views/administradores/editar.php" />
+        <option value="$PROJECT_DIR$/application/modules/configuracion/views/administradores/crear.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/slider/agregar.js" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/slider/editar.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/slider/index.php" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/slider_turismo/agregar.js" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/slider_turismo/index.js" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/index.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/index.php" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/accesos_directos/agregar.js" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/accesos_directos/index.js" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/controllers/accesos_directos.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/controllers/slider.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/somos_tv/index.js" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/somos_tv/agregar.js" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/somos_tv/index.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/somos_tv/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/controllers/somos_tv.php" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/banners_transparencia/index.js" />
+        <option value="$PROJECT_DIR$/js/sistema/portada/banners_transparencia/agregar.js" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/index.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
       </list>
     </option>
@@ -357,8 +371,8 @@
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="1440" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="1024" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -406,13 +420,74 @@
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sistema" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sistema" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="noticias" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sistema" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -434,10 +509,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js/sistema" />
+      <recent name="$PROJECT_DIR$/js/sistema/WWW" />
       <recent name="$PROJECT_DIR$/application/modules/WWW" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/application/views" />
+      <recent name="$PROJECT_DIR$/js/sistema/noticias" />
+      <recent name="$PROJECT_DIR$/application/modules/portada/controllers" />
+      <recent name="$PROJECT_DIR$/application/modules/portada/views" />
+      <recent name="$PROJECT_DIR$/js/sistema/portada" />
+      <recent name="$PROJECT_DIR$/application/modules/portada/views/accesos_directos" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -462,12 +543,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523459565511</updated>
-      <workItem from="1523459567979" duration="4655000" />
+      <workItem from="1523459567979" duration="33563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4655000" />
+    <option name="totallyTimeSpent" value="33563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -476,7 +557,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" weight="0.32935324" />
+      <window_info anchor="bottom" id="File Transfer" weight="0.1800995" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -495,6 +576,29 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="0" weight="0.32960597" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.185836" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="File Transfer" order="2" weight="0.1800995" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -503,6 +607,70 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/sistema/imagenes/simple.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/slider-turismo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="41" column="79" selection-start-line="41" selection-start-column="79" selection-end-line="41" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/slider-turismo/agregar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="34" column="79" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/slider-turismo/editar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/slider_turismo/crear.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/slider_turismo/editar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/WWW/admthno2018.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="25" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/top.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/tab_.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -510,17 +678,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/perfil/controllers/perfil.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/inicio/views/inicio.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/layout/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="163" column="37" lean-forward="true" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
+        <state relative-caret-position="459">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/tab.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+        <state relative-caret-position="153">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
@@ -528,6 +709,345 @@
             <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/configuracion/views/administradores/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/configuracion/controllers/administradores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="95" column="35" lean-forward="true" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/configuracion/views/administradores/editar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/configuracion/views/administradores/crear.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/ws.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="292" column="21" selection-start-line="292" selection-start-column="18" selection-end-line="292" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/inicio/controllers/inicio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/slider/editar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/slider/crear.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/slider/agregar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/slider/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/slider/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/slider/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/slider_turismo/agregar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/slider_turismo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/slider_turismo/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/accesos_directos/agregar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/accesos_directos/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/accesos_directos/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="81" lean-forward="true" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/accesos_directos/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/accesos_directos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="131" column="24" lean-forward="true" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="n#cargar_imagen#0;n#Slider#0;n#!!top" />
+            <element signature="n#cortar_imagen#0;n#Slider#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="12" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/somos_tv/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/somos_tv/agregar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/somos_tv/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/somos_tv/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/somos_tv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="62" column="79" lean-forward="true" selection-start-line="62" selection-start-column="79" selection-end-line="62" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/banners_transparencia/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/portada/banners_transparencia/agregar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/noticias/noticias/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="80" column="59" lean-forward="true" selection-start-line="80" selection-start-column="59" selection-end-line="80" selection-end-column="59" />
         </state>
       </provider>
     </entry>

@@ -22,7 +22,7 @@ $(function(){
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/portada/slider/process/',
+                    url: '/portada/slider_turismo/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -39,7 +39,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.href = '/portada/slider/';
+                                    window.location.href = '/portada/slider-turismo/';
                             }, 1000);
                         }
                         else

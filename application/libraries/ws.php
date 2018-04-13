@@ -6,7 +6,7 @@ class Ws{
     
     public function __construct(){
         
-        $this->key = 'd821dae9a321eecfc252932d6089d283';
+        $this->key = 'f860d0ff64fd73f33ba36cdecfaa5e36';
         $this->url_base = 'http://admintalcahuano2018.aeurus.cl/webservice/api/';
     }
     

@@ -5,9 +5,9 @@
    <div class="col-md-8">
        <div id="logo">
            <?php if(isset($home_indicador)){ ?>
-           <h1>Nevados de Chillán</h1>
+           <h1>Talcahuano</h1>
            <?php } else{ ?>
-           <a href="/" title="Inicio: Tecla de Acceso 0" accesskey="0"><img src="/imagenes/template/logo.jpg" alt="Nevados de Chillán" /></a>
+           <a href="/" title="Inicio: Tecla de Acceso 0" accesskey="0"><img src="/imagenes/template/logo.jpg" alt="Talcahuano" /></a>
            <?php } ?>
        </div>
    </div>
