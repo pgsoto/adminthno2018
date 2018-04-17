@@ -2,7 +2,7 @@
 
 class Administradores extends CI_Controller {
 	    
-	private $modulo = 32;
+	private $modulo = 28;
     
 	function __construct(){
 		parent::__construct();

@@ -2,7 +2,7 @@
 
 class Datos_generales extends CI_Controller {
 	    
-	private $modulo = 34;
+	private $modulo = 27;
     
 	function __construct(){
 		parent::__construct();
@@ -31,8 +31,8 @@ class Datos_generales extends CI_Controller {
         if($this->input->post()){
             
 			#validaciones
-			$this->form_validation->set_rules('chillan_email','Email Oficina Chillán','valid_email');
-			$this->form_validation->set_rules('concepcion_email','Email Oficina Concepción','valid_email');
+			#$this->form_validation->set_rules('chillan_email','Email Oficina Chillán','valid_email');
+			#$this->form_validation->set_rules('concepcion_email','Email Oficina Concepción','valid_email');
 			
             $this->form_validation->set_message('required', '* %s es obligatorio');
             $this->form_validation->set_message('valid_email', '* %s no es válido');

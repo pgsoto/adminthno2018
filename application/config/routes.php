@@ -134,6 +134,15 @@ $route['municipio/direcciones/cargar-imagen']    = "municipio/direcciones/cargar
 $route['municipio/direcciones/cortar-imagen']    = "municipio/direcciones/cortar_imagen";
 $route['municipio/direcciones/eliminar-imagen']  = "municipio/direcciones/eliminar_imagen";
 
+$route['municipio/direcciones/subsecciones/(:num)']                  = "municipio/subsecciones_direcciones/index/$1";
+$route['municipio/direcciones/subsecciones/(:num)/(:num)']           = "municipio/subsecciones_direcciones/index/$1";
+$route['municipio/direcciones/subsecciones/agregar/(:num)']          = "municipio/subsecciones_direcciones/agregar/$1";
+$route['municipio/direcciones/subsecciones/editar/(:num)/(:num)']    = "municipio/subsecciones_direcciones/agregar/$1/$2";
+$route['municipio/direcciones/subsecciones/eliminar']         = "municipio/subsecciones_direcciones/eliminar";
+$route['municipio/direcciones/subsecciones/cargar-imagen']    = "municipio/subsecciones_direcciones/cargar_imagen";
+$route['municipio/direcciones/subsecciones/cortar-imagen']    = "municipio/subsecciones_direcciones/cortar_imagen";
+$route['municipio/direcciones/subsecciones/eliminar-imagen']  = "municipio/subsecciones_direcciones/eliminar_imagen";
+
 #DAS
 $route['municipio/das']                  = "municipio/das";
 $route['municipio/das/(:num)']           = "municipio/das";

@@ -2,7 +2,7 @@
 
 class Inicio extends CI_Controller {
     
-	private $modulo = 32;
+	private $modulo = 28;
 	
 	public function index()
 	{/*

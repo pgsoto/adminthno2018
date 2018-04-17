@@ -51,14 +51,14 @@ foreach ($secciones_menu as $aux) {
             <li>
                 <a style="cursor:pointer;">Centro de atención al vecino</a>
                 <ul>
-                    <li><a href="/centro-atencion-vecino/tramites/">Trámites</a></li>
-                    <li><a href="/centro-atencion-vecino/desarrollo-social/">Desarrollo social</a></li>
+                    <li><a href="/servicios/tramites/">Trámites</a></li>
+                    <li><a href="/servicios/desarrollo-social/">Desarrollo social</a></li>
                 </ul>
             </li>
             <li>
                 <a style="cursor:pointer;">Municipio</a>
                 <ul>
-                    <li><a href="/municipio/direciones/">Direcciones</a></li>
+                    <li><a href="/municipio/direcciones/">Direcciones</a></li>
                     <li><a href="/municipio/das/">DAS</a></li>
                     <li><a href="/municipio/daem/">DAEM</a></li>
                     <li><a href="/municipio/alcalde/">Alcalde</a></li>
