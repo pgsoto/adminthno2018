@@ -17,8 +17,8 @@ class Datos_generales extends CI_Controller {
         $this->layout->js('/js/sistema/configuracion/datos-generales/index.js');
         
 		#contenido
-		$contenido["datos"] = $this->ws->obtener($this->modulo,"dag_codigo = 1");
-        
+		$contenido["datos"] = $datos = $this->ws->obtener($this->modulo,"dag_codigo = 1");
+        print_array($datos);
 		#Nav
 		$this->layout->nav(array("Datos Generales" => '/'));
 		
@@ -31,8 +31,8 @@ class Datos_generales extends CI_Controller {
         if($this->input->post()){
             
 			#validaciones
-			#$this->form_validation->set_rules('chillan_email','Email Oficina Chillán','valid_email');
-			#$this->form_validation->set_rules('concepcion_email','Email Oficina Concepción','valid_email');
+			$this->form_validation->set_rules('nombre','Nombre','required');
+			$this->form_validation->set_rules('email','Email','valid_email');
 			
             $this->form_validation->set_message('required', '* %s es obligatorio');
             $this->form_validation->set_message('valid_email', '* %s no es válido');
@@ -46,37 +46,27 @@ class Datos_generales extends CI_Controller {
                 echo json_encode(array("result"=>false,"msg"=>$error));
                 exit;
             }
+
+            $datos['dag_estado'] = 1;
+            $datos['dag_url'] = slug($this->input->post('nombre'));
             
             #metadatos
-            $datos['dag_metadato_titulo'] = $this->input->post('metadato_titulo');
-            $datos['dag_metadato_descripcion'] = $this->input->post('metadato_descripcion');
-            $datos['dag_metadato_keywords'] = $this->input->post('metadato_keywords');
-            
-            #reservas
-            $datos['dag_reserva_telefono'] = $this->input->post('reserva_telefono');
-            $datos['dag_reserva_telefono_extranjero'] = $this->input->post('reserva_telefono_extranjero');
-            $datos['dag_reserva_email'] = $this->input->post('reserva_email');
-            
-            #oficina chillan
-            $datos['dag_chillan_telefono'] = $this->input->post('chillan_telefono');
-            $datos['dag_chillan_email'] = $this->input->post('chillan_email');
-            $datos['dag_chillan_horario'] = $this->input->post('chillan_horario');
-            
-            #oficina concepcion
-            $datos['dag_concepcion_telefono'] = $this->input->post('concepcion_telefono');
-            $datos['dag_concepcion_email'] = $this->input->post('concepcion_email');
-            $datos['dag_concepcion_horario'] = $this->input->post('concepcion_horario');
-            
-            #oficina santiago
-            $datos['dag_santiago_telefono'] = $this->input->post('santiago_telefono');
-            $datos['dag_santiago_email'] = $this->input->post('santiago_email');
-            $datos['dag_santiago_horario'] = $this->input->post('santiago_horario');
-            
+            #$datos['dag_metadato_titulo'] = $this->input->post('metadato_titulo');
+            #$datos['dag_metadato_descripcion'] = $this->input->post('metadato_descripcion');
+            #$datos['dag_metadato_keywords'] = $this->input->post('metadato_keywords');
+
+            #info
+            $datos['dag_nombre'] = $this->input->post('nombre');
+            $datos['dag_direccion'] = $this->input->post('direccion');
+            $datos['dag_mesa_central'] = $this->input->post('mesa_central');
+            $datos['dag_telefono_1'] = $this->input->post('telefono_1');
+            $datos['dag_telefono_2'] = $this->input->post('telefono_2');
+            $datos['dag_email'] = $this->input->post('email');
+
             #redes sociales
             $datos['dag_facebook'] = $this->input->post('facebook');
-            $datos['dag_instagram'] = $this->input->post('instagram');
             $datos['dag_twitter'] = $this->input->post('twitter');
-            $datos['dag_youtube'] = $this->input->post('youtube');
+            $datos['dag_instagram'] = $this->input->post('instagram');
             
             if($codigo = $this->input->post('codigo'))
                 $this->ws->actualizar($this->modulo,$datos,"dag_codigo = $codigo");

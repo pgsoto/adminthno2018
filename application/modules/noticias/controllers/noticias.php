@@ -1,10 +1,10 @@
 ﻿<?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
 
-class Subsecciones_direcciones extends CI_Controller
+class Noticias extends CI_Controller
 {
 
-    private $nombre = 'Subsecciones';
-    private $modulo = 31, $modulo_imagenes = 32, $modulo_seccion = 29;
+    private $nombre = 'Noticias';
+    private $modulo = 19, $modulo_categoria = 20, $modulo_imagenes = 21;
     public $img;
 
     function __construct()
@@ -12,64 +12,56 @@ class Subsecciones_direcciones extends CI_Controller
         parent::__construct();
 
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_2 = 120;
-        $this->img->min_alto_2 = 120;
+        $this->img->min_ancho_1 = 1065;
+        $this->img->min_alto_1 = 360;
 
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_2 = 120 * 4;
-        $this->img->max_alto_2 = 120 * 4;
+        $this->img->max_ancho_1 = 1065*4;
+        $this->img->max_alto_1 = 360*4;
 
         #define el tamaño del recorte
-        $this->img->recorte_ancho_2 = 120;
-        $this->img->recorte_alto_2 = 120;
+        $this->img->recorte_ancho_1 = 1065;
+        $this->img->recorte_alto_1 = 360;
 
-        #GALERIA SLIDER
+        /*GALERIA*/
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_1 = 1920;
-        $this->img->min_alto_1 = 720;
+        $this->img->min_ancho_2 = 510;
+        $this->img->min_alto_2 = 320;
 
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_1 = 1920 * 4;
-        $this->img->max_alto_1 = 720 * 4;
+        $this->img->max_ancho_2 = 510*4;
+        $this->img->max_alto_2 = 320*4;
 
         #define el tamaño del recorte
-        $this->img->recorte_ancho_1 = 1920;
-        $this->img->recorte_alto_1 = 720;
+        $this->img->recorte_ancho_2 = 510;
+        $this->img->recorte_alto_2 = 320;
 
-        $this->img->upload_dir = '/imagenes/modulos/municipio/direcciones/subsecciones/';
+        $this->img->upload_dir = '/imagenes/modulos/noticias/noticias/';
 
         #lib imagenes
         $this->load->model('inicio/imagen', 'objImagen');
     }
 
-    public function index($seccion)
+    public function index()
     {
-        # Contenido
-        $data = array();
-
-        $data['seccion'] = $seccion;
-
         #Title
         $data['titulo'] = $this->nombre;
         $this->layout->title($this->nombre);
 
         #js
-        $this->layout->js('/js/sistema/municipio/direcciones/subsecciones/index.js');
+        $this->layout->js('/js/sistema/noticias/noticias/index.js');
 
         $where = $and = "";
         $url = "";
 
-        $where .= "subdir_visible = 1";
-        $and = " and ";
-
-        $where .= $and."subdir_visible = 1";
+        $where = "not_visible = 1";
         $and = " and ";
 
         if (count($_GET) > 0)
             $url = '?' . http_build_query($_GET, '', "&");
 
-        $config['uri_segment'] = 5;
-        $config['base_url'] = '/municipio/direcciones/subsecciones/' . $seccion . '/';
+        $config['uri_segment'] = 3;
+        $config['base_url'] = '/noticias/noticias/';
         $config['per_page'] = 20;
         $config['total_rows'] = count($this->ws->listar($this->modulo, $where));
         $config['suffix'] = '/' . $url;
@@ -80,29 +72,25 @@ class Subsecciones_direcciones extends CI_Controller
         $pagina = ($this->uri->segment($config['uri_segment'])) ? $this->uri->segment($config['uri_segment']) - 1 : 0;
 
         #contenido
-        $this->ws->order("subdir_orden ASC");
+        $this->ws->order("not_fecha_publicacion DESC");
         $this->ws->limit($config['per_page'], ($config['per_page'] * $pagina));
         $data["result"] = $this->ws->listar($this->modulo, $where);
+        foreach ($data["result"] as $aux){
+            $aux->categoria = $this->ws->obtener($this->modulo_categoria, array("catn_codigo"=>$aux->categoria));
+        }
         $data['pagination'] = $this->pagination->create_links();
-
-        $seccion = $this->ws->obtener($this->modulo_seccion, "dir_codigo = " . $seccion);
-
+        #rint_array($data["result"]);
         #Nav
-        $this->layout->nav(array('Direcciones' => '/municipio/direcciones/', $seccion->nombre => '/municipio/direcciones/editar/'.$seccion->codigo.'/' ,$this->nombre => '/'));
+        $this->layout->nav(array($this->nombre => '/'));
 
         #view
-        $this->layout->view('direcciones/subsecciones/index', $data);
+        $this->layout->view('noticias/noticias/index', $data);
     }
 
-    public function agregar($seccion = false, $codigo = false)
+    public function agregar($codigo = false)
     {
-        # Contenido
-        $data = array();
-
-        $data['seccion'] = $seccion;
-
         #js
-        $this->layout->js('/js/sistema/municipio/direcciones/subsecciones/agregar.js');
+        $this->layout->js('/js/sistema/noticias/noticias/agregar.js');
 
         #JS - Editor
         $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
@@ -113,47 +101,44 @@ class Subsecciones_direcciones extends CI_Controller
         $this->layout->css('/js/jquery/croppic/croppic.css');
         $this->layout->js('/js/sistema/imagenes/simple.js');
 
+        # Contenido
+        $data = array();
+
         if ($codigo && is_numeric($codigo)) {
-            $result = $this->ws->obtener($this->modulo, "subdir_codigo = " . $codigo);
-            if ($result) {
-                $result->mapa_coor = explode(",", $result->mapa);
-                $result->imagenes = $this->ws->listar($this->modulo_imagenes, "galsubdir_subseccion = " . $codigo);
-            }
+            $result = $this->ws->obtener($this->modulo, "not_codigo = " . $codigo);
             #print_array($result);
             if (!$result) {
-                redirect('/municipio/direcciones/subsecciones/');
+                redirect('/noticias/noticias/');
             } else {
                 $data['result'] = $result;
             }
         }
 
-        $seccion = $this->ws->obtener($this->modulo_seccion, "dir_codigo = " . $seccion);
-
         #nav
         if (isset($result)) {
             $data['titulo'] = 'Editar ' . $this->nombre;
             $this->layout->title('Editar ' . $this->nombre);
-            $this->layout->nav(array("Direcciones" => "/municipio/direcciones/", $seccion->nombre => '/municipio/direcciones/editar/'.$seccion->codigo.'/', $this->nombre => "/municipio/direcciones/subsecciones/".$seccion->codigo."/", "Editar " . $result->nombre => "/"));
+            $this->layout->nav(array($this->nombre => "/noticias/noticias/", "Editar " . $result->nombre => "/"));
         } else {
             $data['titulo'] = 'Agregar ' . $this->nombre;
             $this->layout->title('Agregar ' . $this->nombre);
-            $this->layout->nav(array("Direcciones" => "/municipio/direcciones/", $seccion->nombre => '/municipio/direcciones/editar/'.$seccion->codigo.'/', $this->nombre => "/municipio/direcciones/subsecciones/".$seccion->codigo."/", "Agregar " . $this->nombre => "/"));
+            $this->layout->nav(array($this->nombre => "/noticias/noticias/", "Agregar " . $this->nombre => "/"));
         }
 
+        $data["categoria"] = $this->ws->listar($this->modulo_categoria);
+
         #view
-        $this->layout->view('direcciones/subsecciones/add', $data);
+        $this->layout->view('noticias/noticias/add', $data);
 
     }
 
     public function process()
     {
-        #print_array($this->input->post());#die;
+        #print_array($this->input->post());
         if ($this->input->post()) {
 
             #validaciones
-            $this->form_validation->set_rules('nombre', 'Nombre', 'required');
-            $this->form_validation->set_rules('orden', 'Orden', 'required');
-            $this->form_validation->set_rules('mapa', 'Mapa', 'required');
+            $this->form_validation->set_rules('titulo', 'Título', 'required');
             $this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');
@@ -166,26 +151,25 @@ class Subsecciones_direcciones extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    $data['subdir_estado'] = $this->input->post('estado');
-                    $data['subdir_url'] = slug($this->input->post('nombre'));
-                    $data['subdir_nombre'] = $this->input->post('nombre');
-                    $data['subdir_orden'] = $this->input->post('orden');
-                    $data['subdir_descripcion'] = $this->input->post('descripcion');
-                    $data['subdir_datos_contacto'] = $this->input->post('datos_contacto');
+                    $data['not_estado'] = $this->input->post('estado');
+                    $data['not_url'] = slug($this->input->post('titulo'));
+                    $data['not_titulo'] = $this->input->post('titulo');
+                    $data['not_fecha_publicacion'] = date("Y-m-d");
+                    $data['not_resumen'] = $this->input->post('resumen');
+                    $data['not_descripcion'] = $this->input->post('descripcion');
 
-                    if ($this->input->post('ruta_interna_2')) {
-                        $data['subdir_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');
-                        $data['subdir_imagen_ruta_grande'] = $this->input->post('ruta_grande_2');
-                    }
+                    if ($this->input->post('categoria'))
+                        $data['not_categoria'] = $this->input->post('categoria');
 
-                    if ($this->input->post("mapa"))
-                        $data['subdir_mapa'] = str_replace(array("(", ")", " "), "", $this->input->post("mapa"));
+                    if ($this->input->post('ruta_interna_2'))
+                        $data['not_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');
 
-                    $data['subdir_seccion'] = $this->input->post('seccion');
+                    if ($this->input->post('ruta_grande_2'))
+                        $data['not_imagen_ruta_grande'] = $this->input->post('ruta_grande_2');
 
                     # Si es una actualización el código es mayor a 0 ya que 0 es el valor predeterminado
                     if ($codigo > 0) {
-                        if ($codigo = $this->ws->actualizar($this->modulo, $data, 'subdir_codigo = ' . $codigo)) {
+                        if ($codigo = $this->ws->actualizar($this->modulo, $data, 'not_codigo = ' . $codigo)) {
 
                             #GALERIA
                             $internas = $this->input->post('ruta_interna_1');
@@ -193,16 +177,16 @@ class Subsecciones_direcciones extends CI_Controller
                             if ($grandes) {
                                 foreach ($grandes as $k => $aux) {
                                     if ($aux) {
-                                        $data2['galsubdir_imagen_ruta_interna'] = $internas[$k];
-                                        $data2['galsubdir_imagen_ruta_grande'] = $aux;
-                                        $data2['galsubdir_subseccion'] = $codigo->subdir_codigo;
+                                        $data2['galn_imagen_ruta_interna'] = $internas[$k];
+                                        $data2['galn_imagen_ruta_grande'] = $aux;
+                                        $data2['galn_noticia'] = $codigo->not_codigo;
 
                                         $this->ws->insertar($this->modulo_imagenes, $data2);
                                     }
                                 }
                             }
 
-                            echo json_encode(array("result" => true, "codigo" => $codigo->subdir_codigo, "seccion" => $this->input->post('seccion')));
+                            echo json_encode(array("result" => true, "codigo" => $codigo->not_codigo));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
@@ -217,16 +201,16 @@ class Subsecciones_direcciones extends CI_Controller
                             if ($grandes) {
                                 foreach ($grandes as $k => $aux) {
                                     if ($aux) {
-                                        $data2['galsubdir_imagen_ruta_interna'] = $internas[$k];
-                                        $data2['galsubdir_imagen_ruta_grande'] = $aux;
-                                        $data2['galsubdir_direccion'] = $codigo->subdir_codigo;
+                                        $data2['galn_imagen_ruta_interna'] = $internas[$k];
+                                        $data2['galn_imagen_ruta_grande'] = $aux;
+                                        $data2['galn_noticia'] = $codigo->not_codigo;
 
                                         $this->ws->insertar($this->modulo_imagenes, $data2);
                                     }
                                 }
                             }
 
-                            echo json_encode(array("result" => true, "codigo" => $codigo->subdir_codigo, "seccion" => $this->input->post('seccion')));
+                            echo json_encode(array("result" => true, "codigo" => $codigo->not_codigo));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
@@ -245,7 +229,7 @@ class Subsecciones_direcciones extends CI_Controller
     public function eliminar()
     {
         try {
-            $this->ws->eliminar($this->modulo, "subdir_codigo = {$this->input->post('codigo')}");
+            $this->ws->eliminar($this->modulo, "not_codigo = {$this->input->post('codigo')}");
             echo json_encode(array("result" => true));
         } catch (Exception $e) {
             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, int�ntelo nuevamente."));
@@ -286,24 +270,24 @@ class Subsecciones_direcciones extends CI_Controller
         if ($codigo = $this->input->post('codigo')) {
 
             if ($this->input->post('tipo') == 1) {
-                if ($modelo = $this->ws->obtener($this->modulo_imagenes, "galsubdir_codigo = $codigo")) {
+                if ($modelo = $this->ws->obtener($this->modulo_imagenes, "galn_codigo = $codigo")) {
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
 
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
 
-                    $this->ws->eliminar($this->modulo_imagenes, "galsubdir_codigo = $codigo");
+                    $this->ws->eliminar($this->modulo_imagenes, "galn_codigo = $codigo");
                 }
             } elseif ($this->input->post('tipo') == 2) {
-                if ($modelo = $this->ws->obtener($this->modulo, "subdir_codigo = $codigo")) {
+                if ($modelo = $this->ws->obtener($this->modulo, "not_codigo = $codigo")) {
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
-                    $data['subdir_imagen_ruta_interna'] = '';
-                    $data['subdir_imagen_ruta_grande'] = '';
-                    $this->ws->actualizar($this->modulo, $data, "subdir_codigo = $codigo");
+                    $data['not_imagen_ruta_interna'] = '';
+                    $data['not_imagen_ruta_grande'] = '';
+                    $this->ws->actualizar($this->modulo, $data, "not_codigo = $codigo");
                 }
             }
         }

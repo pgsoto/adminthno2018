@@ -18,13 +18,11 @@ $(function(){
                     template: '<div class="noty_message"><img src="/imagenes/sitio/ajax-loader.gif">&nbsp;&nbsp;<span class="noty_text"></span><div class="noty_close"></div></div>',
                     fondo: '<div id="fondo" style=" position: fixed; top:0; height: 100%; width:100%; background-color: rgba(60, 56, 56, 0.38); display:block;z-index: 9999;"></div>'
                 });
-
-                $('#descripcion').html(CKEDITOR.instances.descripcion.getData());
                 
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/noticias/noticias/process/',
+                    url: '/noticias/categorias/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -41,7 +39,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.href = '/noticias/noticias/';
+                                    window.location.href = '/noticias/categorias/';
                             }, 1000);
                         }
                         else

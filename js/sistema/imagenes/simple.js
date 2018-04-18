@@ -3,7 +3,7 @@ $(function(){
         var codigo = $(this).attr('rel');
         var contenedor = $(this).parent().parent().parent();
         var cont = $(this).parent().parent().attr('rel');
-
+alert(cont);
         $.ajax({
             type: "POST",
             data: "codigo="+codigo+"&tipo="+cont,
@@ -12,8 +12,11 @@ $(function(){
             success: function(json){
                 contenedor.remove();
 
-                if(!galeria)
+                if(galeria && cont == 2)
                     cargar_imagen(cont);
+                else
+                    if (!galeria)
+                        cargar_imagen(cont);
             }
         });
     });

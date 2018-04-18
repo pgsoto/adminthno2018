@@ -1,10 +1,10 @@
 <div class="col-sm-10 text-left marg-fix">
   	<div class="titulo-btn">
-        <h1>Datos Generales</h1>
+        <h1>Datos generales</h1>
     </div>
     
     <form action="#" method="post" id="form-agregar" >
-    
+        <?php /*
         <!-- metadatos -->
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
             
@@ -21,69 +21,30 @@
                 <textarea class="form-control" name="metadato_keywords" rows="3"><?php echo ($datos)?$datos->metadato_keywords:''; ?></textarea>
         	</div>
        	</div>
-        
-        <!-- reservas -->
-        <div class="row" style="margin-top:30px; margin-bottom:30px;">
-            
-            <div class="col-md-5">
-                <h3>Reservas</h3>
-                
-            	<label>Teléfono de Reserva</label>
-                <input type="text" class="form-control" name="reserva_telefono" value="<?php echo ($datos)?$datos->reserva_telefono:''; ?>" />
-                
-                <label>Teléfono Desde el Extranjero</label>
-                <input type="text" class="form-control" name="reserva_telefono_extranjero" value="<?php echo ($datos)?$datos->reserva_telefono_extranjero:''; ?>" />
-                
-                <label>Email de Reserva</label>
-                <input type="text" class="form-control validate[custom[email]]" name="reserva_email" value="<?php echo ($datos)?$datos->reserva_email:''; ?>" />
-            </div>
-        </div>
-            
-        <!-- oficina chillan -->
-        <div class="row" style="margin-top:30px; margin-bottom:30px;">
-            <div class="col-md-5">
-                <h3>Oficina Chillán</h3>
-                
-            	<label>Teléfono</label>
-                <input type="text" class="form-control" name="chillan_telefono" value="<?php echo ($datos)?$datos->chillan_telefono:''; ?>" />
-                
-                <label>Email</label>
-                <input type="text" class="form-control validate[custom[email]]" name="chillan_email" value="<?php echo ($datos)?$datos->chillan_email:''; ?>" />
-                
-                <label>Horario</label>
-                <textarea class="form-control" name="chillan_horario" rows="3"><?php echo ($datos)?$datos->chillan_horario:''; ?></textarea>
-            </div>
-        </div>
+ */ ?>
         
         <!-- oficina concepcion -->
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
             <div class="col-md-5">
-                <h3>Oficina Concepción</h3>
+                <h3>Información municipal</h3>
+
+                <label>Nombre (*)</label>
+                <input type="text" class="form-control" name="nombre" value="<?php echo ($datos)?$datos->nombre:''; ?>" />
+
+                <label>Dirección</label>
+                <input type="text" class="form-control" name="direccion" value="<?php echo ($datos)?$datos->direccion:''; ?>" />
+
+                <label>Mesa Central</label>
+                <input type="text" class="form-control" name="mesa_central" value="<?php echo ($datos)?$datos->mesa_central:''; ?>" />
                 
-            	<label>Teléfono</label>
-                <input type="text" class="form-control" name="concepcion_telefono" value="<?php echo ($datos)?$datos->concepcion_telefono:''; ?>" />
-                
-                <label>Email</label>
-                <input type="text" class="form-control validate[custom[email]]" name="concepcion_email" value="<?php echo ($datos)?$datos->concepcion_email:''; ?>" />
-                
-                <label>Horario</label>
-                <textarea class="form-control" name="concepcion_horario" rows="3"><?php echo ($datos)?$datos->concepcion_horario:''; ?></textarea>
-            </div>
-        </div>
-        
-        <!-- oficina santiago -->
-        <div class="row" style="margin-top:30px; margin-bottom:30px;">
-            <div class="col-md-5">
-                <h3>Oficina Santiago</h3>
-                
-            	<label>Teléfono</label>
-                <input type="text" class="form-control" name="santiago_telefono" value="<?php echo ($datos)?$datos->santiago_telefono:''; ?>" />
+            	<label>CATOE 1</label>
+                <input type="text" class="form-control" name="telefono_1" value="<?php echo ($datos)?$datos->telefono_1:''; ?>" />
+
+                <label>CATOE 2</label>
+                <input type="text" class="form-control" name="telefono_2" value="<?php echo ($datos)?$datos->telefono_2:''; ?>" />
                 
                 <label>Email</label>
-                <input type="text" class="form-control validate[custom[email]]" name="santiago_email" value="<?php echo ($datos)?$datos->santiago_email:''; ?>" />
-                
-                <label>Horario</label>
-                <textarea class="form-control" name="santiago_horario" rows="3"><?php echo ($datos)?$datos->santiago_horario:''; ?></textarea>
+                <input type="text" class="form-control validate[custom[email]]" name="email" value="<?php echo ($datos)?$datos->email:''; ?>" />
             </div>
         </div>
             
@@ -95,14 +56,11 @@
             	<label>Facebook</label>
                 <input type="text" class="form-control" name="facebook" value="<?php echo ($datos)?$datos->facebook:''; ?>" />
                 
-                <label>Instagram</label>
-                <input type="text" class="form-control" name="instagram" value="<?php echo ($datos)?$datos->instagram:''; ?>" />
-                
                 <label>Twitter</label>
                 <input type="text" class="form-control" name="twitter" value="<?php echo ($datos)?$datos->twitter:''; ?>" />
-                
-                <label>Youtube</label>
-                <input type="text" class="form-control" name="youtube" value="<?php echo ($datos)?$datos->youtube:''; ?>" />
+
+                <label>Instagram</label>
+                <input type="text" class="form-control" name="instagram" value="<?php echo ($datos)?$datos->instagram:''; ?>" />
              
              </div>
             

@@ -94,7 +94,9 @@ $route['noticias/noticias/eliminar-imagen']  = "noticias/noticias/eliminar_image
 
 #categorias
 $route['noticias/categorias']                  = "noticias/categorias";
+$route['noticias/categorias/(:num)']           = "noticias/categorias";
 $route['noticias/categorias/agregar']          = "noticias/categorias/agregar";
+$route['noticias/categorias/editar/(:num)']    = "noticias/categorias/agregar/$1";
 
 #FIN NOTICIAS
 

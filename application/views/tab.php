@@ -42,7 +42,7 @@ foreach ($secciones_menu as $aux) {
                 <ul>
                     <li><a href="/noticias/slider/">Slider</a></li>
                     <li><a href="/noticias/noticias/">Noticias</a></li>
-                    <li><a href="/noticias/categorias/">Categorias</a></li>
+                    <li><a href="/noticias/categorias/">Categorías de Noticias</a></li>
                 </ul>
             </li>
 
@@ -68,11 +68,20 @@ foreach ($secciones_menu as $aux) {
             </li>
             <li><a style="background: #FFF;"></a></li>
 
+        <!-- evento y actividades -->
+        <li>
+            <a style="cursor:pointer;">Eventos y actividades</a>
+            <ul>
+                <li><a href="/eventos/listado/">Eventos</a></li>
+                <li><a href="/eventos/categorias/">Categorías de Eventos</a></li>
+            </ul>
+        </li>
+
         <!-- configuraciones -->
             <li>
                 <a style="cursor:pointer;">Configuraciones</a>
                 <ul>
-                    <li><a href="/configuracion/informacion-municipal/">Información municipal</a></li>
+                    <li><a href="/configuracion/datos-generales/">Información municipal</a></li>
                     <li><a href="/configuracion/administradores/">Administradores</a></li>
                 </ul>
             </li>

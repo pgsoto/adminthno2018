@@ -139,7 +139,6 @@ class Direcciones extends CI_Controller
             #validaciones
             $this->form_validation->set_rules('nombre', 'Nombre', 'required');
             $this->form_validation->set_rules('orden', 'Orden', 'required');
-            $this->form_validation->set_rules('mapa', 'Mapa', 'required');
             $this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');
@@ -169,34 +168,9 @@ class Direcciones extends CI_Controller
 
                     # Si es una actualización el código es mayor a 0 ya que 0 es el valor predeterminado
                     if ($codigo > 0) {
-                        if ($update = $this->ws->actualizar($this->modulo, $data, 'dir_codigo = ' . $codigo)) {
+                        if ($codigo = $this->ws->actualizar($this->modulo, $data, 'dir_codigo = ' . $codigo)) {
 
-                            #GALERIA SLIDER
-                            $internas = $this->input->post('ruta_interna_1');
-                            $grandes = $this->input->post('ruta_grande_1');
-                            if ($grandes) {
-                                foreach ($grandes as $k => $aux) {
-                                    if ($aux) {
-                                        $data2['gald_imagen_ruta_interna'] = $internas[$k];
-                                        $data2['gald_imagen_ruta_grande'] = $aux;
-                                        $data2['gald_direccion'] = $codigo;
-
-                                        $this->ws->insertar($this->modulo_imagenes, $data2);
-                                    }
-                                }
-                            }
-                            unset($data2);
-
-                            echo json_encode(array("result" => true, "codigo" => $codigo));
-                            exit;
-                        } else {
-                            echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
-                            exit;
-                        }
-                    } else {
-                        if ($codigo = $this->ws->insertar($this->modulo, $data)) {
-
-                            #GALERIA SLIDER
+                            #GALERIA
                             $internas = $this->input->post('ruta_interna_1');
                             $grandes = $this->input->post('ruta_grande_1');
                             if ($grandes) {
@@ -210,7 +184,30 @@ class Direcciones extends CI_Controller
                                     }
                                 }
                             }
-                            unset($data2);
+
+                            echo json_encode(array("result" => true, "codigo" => $codigo->dir_codigo));
+                            exit;
+                        } else {
+                            echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
+                            exit;
+                        }
+                    } else {
+                        if ($codigo = $this->ws->insertar($this->modulo, $data)) {
+
+                            #GALERIA
+                            $internas = $this->input->post('ruta_interna_1');
+                            $grandes = $this->input->post('ruta_grande_1');
+                            if ($grandes) {
+                                foreach ($grandes as $k => $aux) {
+                                    if ($aux) {
+                                        $data2['gald_imagen_ruta_interna'] = $internas[$k];
+                                        $data2['gald_imagen_ruta_grande'] = $aux;
+                                        $data2['gald_direccion'] = $codigo->dir_codigo;
+
+                                        $this->ws->insertar($this->modulo_imagenes, $data2);
+                                    }
+                                }
+                            }
 
                             echo json_encode(array("result" => true, "codigo" => $codigo->dir_codigo));
                             exit;
@@ -219,7 +216,6 @@ class Direcciones extends CI_Controller
                             exit;
                         }
                     }
-                    unset($data);
 
                 } catch (Exception $e) {
                     echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
@@ -265,21 +261,35 @@ class Direcciones extends CI_Controller
 
     public function eliminar_imagen()
     {
-
-        if ($codigo = $this->input->post('codigo')) {
-            if ($modelo = $this->ws->obtener($this->modulo, "dir_codigo = $codigo")) {
-                if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
-                    unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
-
-                if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
-                    unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
-
-                $this->ws->actualizar($this->modulo, array("dir_imagen_ruta_interna" => ""), "dir_codigo = $codigo");
-
-                $this->ws->actualizar($this->modulo, array("dir_imagen_ruta_grande" => ""), "dir_codigo = $codigo");
-            }
+        if ($ruta = $this->input->post('ruta_imagen')) {
+            if (file_exists($_SERVER['DOCUMENT_ROOT'] . $ruta))
+                unlink($_SERVER['DOCUMENT_ROOT'] . $ruta);
         }
 
+        if ($codigo = $this->input->post('codigo')) {
+
+            if ($this->input->post('tipo') == 1) {
+                if ($modelo = $this->ws->obtener($this->modulo_imagenes, "gald_codigo = $codigo")) {
+                    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
+                        unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
+
+                    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
+                        unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
+
+                    $this->ws->eliminar($this->modulo_imagenes, "gald_codigo = $codigo");
+                }
+            } elseif ($this->input->post('tipo') == 2) {
+                if ($modelo = $this->ws->obtener($this->modulo, "dir_codigo = $codigo")) {
+                    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
+                        unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
+                    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
+                        unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
+                    $data['dir_imagen_ruta_interna'] = '';
+                    $data['dir_imagen_ruta_grande'] = '';
+                    $this->ws->actualizar($this->modulo, $data, "dir_codigo = $codigo");
+                }
+            }
+        }
         echo json_encode(array("result" => true));
     }
 

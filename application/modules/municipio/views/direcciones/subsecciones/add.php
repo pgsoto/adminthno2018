@@ -104,41 +104,22 @@
 
 <script>
     //configuracion para imagenes
-	var id = 1;
-	var urlDelete = '/municipio/direcciones/eliminar-imagen/';
+    var id = 1;
+    var urlDelete = '/municipio/direcciones/eliminar-imagen/';
     var urlCargar = '/municipio/direcciones/cargar-imagen/';
     var urlCortar = '/municipio/direcciones/cortar-imagen/';
     var galeria = true;
 
-    <?php if( isset($result->codigo) ){ ?>
-
-    var cargar = [];
-    <?php #if(!($result->imagenes)){ ?>
+    var cargar=[];
     //cargar.push(1);
-    <?php #} ?>
-
-    <?php if(isset($result->imagen_ruta_interna)){ ?>
+    <?php if(!isset($result->imagen_ruta_interna) || $result->imagen_ruta_interna == ''){ ?>
     cargar.push(2);
     <?php } ?>
 
     cargar_imagenes();
-
-    if(cargar)
-        cargar_imagen(cargar);
-
-    <?php }else{ ?>
-
-    var cargar = [];
-    //cargar.push(1);
-    cargar.push(2);
     cargar_imagen(cargar);
-    cargar_imagenes();
 
-    <?php } ?>
-
-
-
-</script> 
+</script>
 
 <script>
     function initAutocomplete() {
@@ -149,7 +130,7 @@
             mapTypeId: 'roadmap'
         });
 
-        <?php if(isset($result)){ ?>
+        <?php if(isset($result->mapa)){ ?>
         var markers2 = [];
         markers2 = [
             ['<?= $result->nombre;?>', <?= $result->mapa_coor[0];?>,<?= $result->mapa_coor[1];?>]
