@@ -185,7 +185,7 @@ class Subsecciones_direcciones extends CI_Controller
 
                     # Si es una actualización el código es mayor a 0 ya que 0 es el valor predeterminado
                     if ($codigo > 0) {
-                        if ($codigo = $this->ws->actualizar($this->modulo, $data, 'subdir_codigo = ' . $codigo)) {
+                        if ($this->ws->actualizar($this->modulo, $data, 'subdir_codigo = ' . $codigo)) {
 
                             #GALERIA
                             $internas = $this->input->post('ruta_interna_1');
@@ -195,14 +195,14 @@ class Subsecciones_direcciones extends CI_Controller
                                     if ($aux) {
                                         $data2['galsubdir_imagen_ruta_interna'] = $internas[$k];
                                         $data2['galsubdir_imagen_ruta_grande'] = $aux;
-                                        $data2['galsubdir_subseccion'] = $codigo->subdir_codigo;
+                                        $data2['galsubdir_subseccion'] = $codigo;
 
                                         $this->ws->insertar($this->modulo_imagenes, $data2);
                                     }
                                 }
                             }
 
-                            echo json_encode(array("result" => true, "codigo" => $codigo->subdir_codigo, "seccion" => $this->input->post('seccion')));
+                            echo json_encode(array("result" => true, "codigo" => $codigo, "seccion" => $this->input->post('seccion')));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));

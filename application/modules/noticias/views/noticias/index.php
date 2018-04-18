@@ -12,7 +12,7 @@
         <thead>
             <tr>
                 <th class="col-xs-5">Título</th>
-				<th class="col-xs-2">Fecha pubícación</th>
+				<th class="col-xs-2">Fecha publícación</th>
                 <th class="col-xs-2">Categoría</th>
 				<th class="col-xs-2">Estado</th>
                 <th colspan="2" class="text-center">Opciones</th>

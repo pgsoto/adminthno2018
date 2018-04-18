@@ -75,7 +75,6 @@
                 <input id="coor" type="hidden" name="mapa" value="<?= isset($result->mapa) ? $result->mapa : ''; ?>">
                 <div class="mapa" id="map"></div>
 
-
                 <label>Estado</label>
 				<select class="form-control validate[required]" name="estado">
                     <option <?= (isset($result->estado) && $result->estado == 1) ? 'selected' : ''; ?> value="1">Activo</option>

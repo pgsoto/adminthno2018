@@ -5,30 +5,28 @@
     
   	<div class="subtitulo-btn">
     	<h2>&nbsp;</h2>
-        <a class="btn btn-default" href="/noticias/noticias/agregar/">Agregar</a>
+        <a class="btn btn-default" href="/eventos/eventos/agregar/">Agregar</a>
     </div>
-  
+
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th class="col-xs-5">Título</th>
-				<th class="col-xs-2">Fecha pubícación</th>
+                <th class="col-xs-5">Nombre</th>
                 <th class="col-xs-2">Categoría</th>
 				<th class="col-xs-2">Estado</th>
                 <th colspan="2" class="text-center">Opciones</th>
             </tr>
         </thead>
-        
+
         <tbody>
             <?php if($result){ ?>
                 <?php foreach($result as $aux){ ?>
-                    <tr> 
-                        <td><?php echo $aux->titulo; ?></td>
-                        <td><?php echo $aux->fecha_publicacion; ?></td>
+                    <tr>
+                        <td><?php echo $aux->nombre; ?></td>
                         <td><?php echo $aux->categoria ? $aux->categoria->nombre : 'Sin categoría'; ?></td>
                         <td><?php echo ($aux->estado)?'Activo':'Inactivo'; ?></td>
 						<td class="text-center">
-                            <a href="/noticias/noticias/editar/<?php echo $aux->codigo; ?>/"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                            <a href="/eventos/eventos/editar/<?php echo $aux->codigo; ?>/"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                         </td>
                         <td class="text-center">
 							<a rel="<?php echo $aux->codigo; ?>" class="eliminar" style="cursor:pointer;">

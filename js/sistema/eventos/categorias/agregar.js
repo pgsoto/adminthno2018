@@ -22,7 +22,7 @@ $(function(){
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/noticias/categorias/process/',
+                    url: '/eventos/categorias/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -39,7 +39,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.href = '/noticias/categorias/';
+                                    window.location.href = '/eventos/categorias/';
                             }, 1000);
                         }
                         else

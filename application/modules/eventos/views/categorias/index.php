@@ -5,7 +5,7 @@
     
   	<div class="subtitulo-btn">
     	<h2>&nbsp;</h2>
-        <a class="btn btn-default" href="/noticias/categorias/agregar/">Agregar</a>
+        <a class="btn btn-default" href="/eventos/categorias/agregar/">Agregar</a>
     </div>
   
     <table class="table table-bordered">
@@ -26,7 +26,7 @@
                         <td><?php echo $aux->orden; ?></td>
                         <td><?php echo ($aux->estado)?'Activo':'Inactivo'; ?></td>
 						<td class="text-center">
-                            <a href="/noticias/categorias/editar/<?php echo $aux->codigo; ?>/"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                            <a href="/eventos/categorias/editar/<?php echo $aux->codigo; ?>/"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                         </td>
                         <td class="text-center">
 							<a rel="<?php echo $aux->codigo; ?>" class="eliminar" style="cursor:pointer;">

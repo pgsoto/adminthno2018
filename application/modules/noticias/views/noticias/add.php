@@ -8,27 +8,6 @@
         	<div class="col-md-5">
             	<label>Título (*) </label>
                 <input type="text" class="form-control validate[required]" name="titulo" value="<?= isset($result->titulo) ? $result->titulo : ''; ?>" />
-                <?php /*
-                <label>Adjuntar imagen tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
-                <div class="multi-imagen" style="margin-bottom:20px;">
-                    <div style="display:none;" id="replicar-1" class="box">
-            			<div class="img" style="width:<?php echo $this->img->min_ancho_1/4+2; ?>px; height:<?php echo $this->img->min_alto_1/4+2; ?>px;" ></div>
-            		</div>
-                    <div id="cont-imagenes-1">
-                        <?php if(isset($result) && $result->imagen_ruta_interna){ ?>
-                            <div class="box" >
-                    			<div rel="1" class="img" style="width:<?php echo $this->img->min_ancho_1/4+2; ?>px; height:<?php echo $this->img->min_alto_1/4+2; ?>px;" >
-                                    <img class="croppedImg" src="<?php echo $result->imagen_ruta_interna; ?>" />
-                                    <div class="cropControls cropControlsUpload">
-                                        <i class="cropControlRemoveCroppedImage eliminar_imagen" rel="<?php echo $result->codigo; ?>"></i>
-                                    </div>
-                                </div>
-                    		</div>
-                        <?php } ?>
-                    </div>
-                    <div id="rutas-imagenes"></div>
-                </div>
-                */ ?>
 
                 <label>Galería slider tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
@@ -121,9 +100,9 @@
 <script>
     //configuracion para imagenes
     var id = 1;
-    var urlDelete = '/municipio/direcciones/eliminar-imagen/';
-    var urlCargar = '/municipio/direcciones/cargar-imagen/';
-    var urlCortar = '/municipio/direcciones/cortar-imagen/';
+    var urlDelete = '/noticias/noticias/eliminar-imagen/';
+    var urlCargar = '/noticias/noticias/cargar-imagen/';
+    var urlCortar = '/noticias/noticias/cortar-imagen/';
     var galeria = true;
 
     var cargar=[];

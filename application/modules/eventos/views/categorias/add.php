@@ -24,7 +24,7 @@
 
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
-					<a href="/noticias/categorias/" class="btn btn-can">Cancelar</a>
+					<a href="/eventos/categorias/" class="btn btn-can">Cancelar</a>
 					<button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
 			</div>

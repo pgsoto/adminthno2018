@@ -169,7 +169,7 @@ class Noticias extends CI_Controller
 
                     # Si es una actualización el código es mayor a 0 ya que 0 es el valor predeterminado
                     if ($codigo > 0) {
-                        if ($codigo = $this->ws->actualizar($this->modulo, $data, 'not_codigo = ' . $codigo)) {
+                        if ($this->ws->actualizar($this->modulo, $data, 'not_codigo = ' . $codigo)) {
 
                             #GALERIA
                             $internas = $this->input->post('ruta_interna_1');
@@ -179,14 +179,14 @@ class Noticias extends CI_Controller
                                     if ($aux) {
                                         $data2['galn_imagen_ruta_interna'] = $internas[$k];
                                         $data2['galn_imagen_ruta_grande'] = $aux;
-                                        $data2['galn_noticia'] = $codigo->not_codigo;
+                                        $data2['galn_noticia'] = $codigo;
 
                                         $this->ws->insertar($this->modulo_imagenes, $data2);
                                     }
                                 }
                             }
 
-                            echo json_encode(array("result" => true, "codigo" => $codigo->not_codigo));
+                            echo json_encode(array("result" => true, "codigo" => $codigo));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));

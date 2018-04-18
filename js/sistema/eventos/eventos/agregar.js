@@ -24,7 +24,7 @@ $(function(){
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/noticias/noticias/process/',
+                    url: '/eventos/eventos/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -41,7 +41,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.href = '/noticias/noticias/';
+                                    window.location.href = '/eventos/eventos/';
                             }, 1000);
                         }
                         else

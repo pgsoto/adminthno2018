@@ -137,7 +137,7 @@
 		return $arreglo[$mes][$idioma];
 	}
 
-	function fecha_corta($fecha, $idioma, $abreviado=true){
+	function fecha_corta($fecha, $idioma=1, $abreviado=true){
 		
 		$ano=substr($fecha,0, 4);
 		
@@ -179,7 +179,7 @@
 	function formatearFecha($fecha, $despliegue=false, $separador='-'){
 		$fecha = str_replace("/","-",$fecha);
 		if(!$fecha)
-			return "Sin dato.";
+			return "Sin dato";
 		if($despliegue):
 			$new_fecha = explode(' ',$fecha);
 			$new_fecha = explode('-',$new_fecha[0]);

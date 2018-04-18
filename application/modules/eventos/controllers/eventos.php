@@ -1,10 +1,10 @@
 ﻿<?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
 
-class Noticias extends CI_Controller
+class Eventos extends CI_Controller
 {
 
-    private $nombre = 'Noticias';
-    private $modulo = 19, $modulo_categoria = 20, $modulo_imagenes = 21;
+    private $nombre = 'Eventos';
+    private $modulo = 33, $modulo_categoria = 34;
     public $img;
 
     function __construct()
@@ -23,20 +23,7 @@ class Noticias extends CI_Controller
         $this->img->recorte_ancho_1 = 1065;
         $this->img->recorte_alto_1 = 360;
 
-        /*GALERIA*/
-        #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_2 = 510;
-        $this->img->min_alto_2 = 320;
-
-        #define el tamaño de la imagen grande
-        $this->img->max_ancho_2 = 510*4;
-        $this->img->max_alto_2 = 320*4;
-
-        #define el tamaño del recorte
-        $this->img->recorte_ancho_2 = 510;
-        $this->img->recorte_alto_2 = 320;
-
-        $this->img->upload_dir = '/imagenes/modulos/noticias/noticias/';
+        $this->img->upload_dir = '/imagenes/modulos/eventos/eventos/';
 
         #lib imagenes
         $this->load->model('inicio/imagen', 'objImagen');
@@ -49,19 +36,19 @@ class Noticias extends CI_Controller
         $this->layout->title($this->nombre);
 
         #js
-        $this->layout->js('/js/sistema/noticias/noticias/index.js');
+        $this->layout->js('/js/sistema/eventos/eventos/index.js');
 
         $where = $and = "";
         $url = "";
 
-        $where = "not_visible = 1";
+        $where = "eve_visible = 1";
         $and = " and ";
 
         if (count($_GET) > 0)
             $url = '?' . http_build_query($_GET, '', "&");
 
         $config['uri_segment'] = 3;
-        $config['base_url'] = '/noticias/noticias/';
+        $config['base_url'] = '/eventos/eventos/';
         $config['per_page'] = 20;
         $config['total_rows'] = count($this->ws->listar($this->modulo, $where));
         $config['suffix'] = '/' . $url;
@@ -72,11 +59,11 @@ class Noticias extends CI_Controller
         $pagina = ($this->uri->segment($config['uri_segment'])) ? $this->uri->segment($config['uri_segment']) - 1 : 0;
 
         #contenido
-        $this->ws->order("not_fecha_publicacion DESC");
+        $this->ws->order("eve_fecha DESC");
         $this->ws->limit($config['per_page'], ($config['per_page'] * $pagina));
         $data["result"] = $this->ws->listar($this->modulo, $where);
         foreach ($data["result"] as $aux){
-            $aux->categoria = $this->ws->obtener($this->modulo_categoria, array("catn_codigo"=>$aux->categoria));
+            $aux->categoria = $this->ws->obtener($this->modulo_categoria, array("cate_codigo"=>$aux->categoria));
         }
         $data['pagination'] = $this->pagination->create_links();
         #rint_array($data["result"]);
@@ -84,13 +71,13 @@ class Noticias extends CI_Controller
         $this->layout->nav(array($this->nombre => '/'));
 
         #view
-        $this->layout->view('noticias/noticias/index', $data);
+        $this->layout->view('eventos/eventos/index', $data);
     }
 
     public function agregar($codigo = false)
     {
         #js
-        $this->layout->js('/js/sistema/noticias/noticias/agregar.js');
+        $this->layout->js('/js/sistema/eventos/eventos/agregar.js');
 
         #JS - Editor
         $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
@@ -101,14 +88,22 @@ class Noticias extends CI_Controller
         $this->layout->css('/js/jquery/croppic/croppic.css');
         $this->layout->js('/js/sistema/imagenes/simple.js');
 
+        #TIMER
+        $this->layout->js('/js/jquery/datepicker/bootstrap-datepicker.js');
+        $this->layout->js('/js/jquery/bootstrap-timepicker/js/bootstrap-timepicker.js');
+        $this->layout->css('/js/jquery/datepicker/datepicker3.css');
+
         # Contenido
         $data = array();
 
         if ($codigo && is_numeric($codigo)) {
-            $result = $this->ws->obtener($this->modulo, "not_codigo = " . $codigo);
+            $result = $this->ws->obtener($this->modulo, "eve_codigo = " . $codigo);
+            if ($result) {
+                $result->mapa_coor = explode(",", $result->mapa);
+            }
             #print_array($result);
             if (!$result) {
-                redirect('/noticias/noticias/');
+                redirect('/eventos/eventos/');
             } else {
                 $data['result'] = $result;
             }
@@ -118,17 +113,17 @@ class Noticias extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = 'Editar ' . $this->nombre;
             $this->layout->title('Editar ' . $this->nombre);
-            $this->layout->nav(array($this->nombre => "/noticias/noticias/", "Editar " . $result->nombre => "/"));
+            $this->layout->nav(array($this->nombre => "/eventos/eventos/", "Editar " . $result->nombre => "/"));
         } else {
             $data['titulo'] = 'Agregar ' . $this->nombre;
             $this->layout->title('Agregar ' . $this->nombre);
-            $this->layout->nav(array($this->nombre => "/noticias/noticias/", "Agregar " . $this->nombre => "/"));
+            $this->layout->nav(array($this->nombre => "/eventos/eventos/", "Agregar " . $this->nombre => "/"));
         }
 
         $data["categoria"] = $this->ws->listar($this->modulo_categoria);
 
         #view
-        $this->layout->view('noticias/noticias/add', $data);
+        $this->layout->view('eventos/eventos/add', $data);
 
     }
 
@@ -138,7 +133,7 @@ class Noticias extends CI_Controller
         if ($this->input->post()) {
 
             #validaciones
-            $this->form_validation->set_rules('titulo', 'Título', 'required');
+            $this->form_validation->set_rules('nombre', 'Nombre', 'required');
             $this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');
@@ -151,42 +146,34 @@ class Noticias extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    $data['not_estado'] = $this->input->post('estado');
-                    $data['not_url'] = slug($this->input->post('titulo'));
-                    $data['not_titulo'] = $this->input->post('titulo');
-                    $data['not_fecha_publicacion'] = date("Y-m-d");
-                    $data['not_resumen'] = $this->input->post('resumen');
-                    $data['not_descripcion'] = $this->input->post('descripcion');
+                    $data['eve_estado'] = $this->input->post('estado');
+                    $data['eve_url'] = slug($this->input->post('nombre'));
+                    $data['eve_nombre'] = $this->input->post('nombre');
+                    $data['eve_fecha'] = formatearFecha($this->input->post('fecha'));
+                    $data['eve_hora_inicio'] = $this->input->post('hora_inicio');
+                    $data['eve_hora_termino'] = $this->input->post('hora_termino');
+                    $data['eve_ubicacion'] = $this->input->post('ubicacion');
+                    $data['eve_organiza'] = $this->input->post('organiza');
+                    $data['eve_link'] = $this->input->post('link');
+                    $data['eve_descripcion'] = $this->input->post('descripcion');
 
                     if ($this->input->post('categoria'))
-                        $data['not_categoria'] = $this->input->post('categoria');
+                        $data['eve_categoria'] = $this->input->post('categoria');
 
-                    if ($this->input->post('ruta_interna_2'))
-                        $data['not_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');
+                    if ($this->input->post('ruta_interna_1'))
+                        $data['eve_imagen_ruta_interna'] = $this->input->post('ruta_interna_1');
 
-                    if ($this->input->post('ruta_grande_2'))
-                        $data['not_imagen_ruta_grande'] = $this->input->post('ruta_grande_2');
+                    if ($this->input->post('ruta_grande_1'))
+                        $data['eve_imagen_ruta_grande'] = $this->input->post('ruta_grande_1');
+
+                    if ($this->input->post("mapa"))
+                        $data['eve_mapa'] = str_replace(array("(", ")", " "), "", $this->input->post("mapa"));
 
                     # Si es una actualización el código es mayor a 0 ya que 0 es el valor predeterminado
                     if ($codigo > 0) {
-                        if ($codigo = $this->ws->actualizar($this->modulo, $data, 'not_codigo = ' . $codigo)) {
+                        if ($this->ws->actualizar($this->modulo, $data, 'eve_codigo = ' . $codigo)) {
 
-                            #GALERIA
-                            $internas = $this->input->post('ruta_interna_1');
-                            $grandes = $this->input->post('ruta_grande_1');
-                            if ($grandes) {
-                                foreach ($grandes as $k => $aux) {
-                                    if ($aux) {
-                                        $data2['galn_imagen_ruta_interna'] = $internas[$k];
-                                        $data2['galn_imagen_ruta_grande'] = $aux;
-                                        $data2['galn_noticia'] = $codigo->not_codigo;
-
-                                        $this->ws->insertar($this->modulo_imagenes, $data2);
-                                    }
-                                }
-                            }
-
-                            echo json_encode(array("result" => true, "codigo" => $codigo->not_codigo));
+                            echo json_encode(array("result" => true, "codigo" => $codigo));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
@@ -195,22 +182,7 @@ class Noticias extends CI_Controller
                     } else {
                         if ($codigo = $this->ws->insertar($this->modulo, $data)) {
 
-                            #GALERIA
-                            $internas = $this->input->post('ruta_interna_1');
-                            $grandes = $this->input->post('ruta_grande_1');
-                            if ($grandes) {
-                                foreach ($grandes as $k => $aux) {
-                                    if ($aux) {
-                                        $data2['galn_imagen_ruta_interna'] = $internas[$k];
-                                        $data2['galn_imagen_ruta_grande'] = $aux;
-                                        $data2['galn_noticia'] = $codigo->not_codigo;
-
-                                        $this->ws->insertar($this->modulo_imagenes, $data2);
-                                    }
-                                }
-                            }
-
-                            echo json_encode(array("result" => true, "codigo" => $codigo->not_codigo));
+                            echo json_encode(array("result" => true, "codigo" => $codigo->eve_codigo));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
@@ -229,7 +201,7 @@ class Noticias extends CI_Controller
     public function eliminar()
     {
         try {
-            $this->ws->eliminar($this->modulo, "not_codigo = {$this->input->post('codigo')}");
+            $this->ws->eliminar($this->modulo, "eve_codigo = {$this->input->post('codigo')}");
             echo json_encode(array("result" => true));
         } catch (Exception $e) {
             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, int�ntelo nuevamente."));
@@ -269,27 +241,16 @@ class Noticias extends CI_Controller
 
         if ($codigo = $this->input->post('codigo')) {
 
-            if ($this->input->post('tipo') == 1) {
-                if ($modelo = $this->ws->obtener($this->modulo_imagenes, "galn_codigo = $codigo")) {
-                    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
-                        unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
-
-                    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
-                        unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
-
-                    $this->ws->eliminar($this->modulo_imagenes, "galn_codigo = $codigo");
-                }
-            } elseif ($this->input->post('tipo') == 2) {
-                if ($modelo = $this->ws->obtener($this->modulo, "not_codigo = $codigo")) {
+                if ($modelo = $this->ws->obtener($this->modulo, "eve_codigo = $codigo")) {
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
-                    $data['not_imagen_ruta_interna'] = '';
-                    $data['not_imagen_ruta_grande'] = '';
-                    $this->ws->actualizar($this->modulo, $data, "not_codigo = $codigo");
+                    $data['eve_imagen_ruta_interna'] = '';
+                    $data['eve_imagen_ruta_grande'] = '';
+                    $this->ws->actualizar($this->modulo, $data, "eve_codigo = $codigo");
                 }
-            }
+
         }
         echo json_encode(array("result" => true));
     }

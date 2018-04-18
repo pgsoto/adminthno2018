@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="084cd69e-672c-46bd-a32f-5a06d061b894" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/helpers/funciones_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/helpers/funciones_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/eventos/controllers/categorias.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/controllers/categorias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/eventos/controllers/eventos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/controllers/eventos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/eventos/views/categorias/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/views/categorias/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/eventos/views/categorias/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/views/categorias/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/eventos/views/eventos/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/views/eventos/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/eventos/views/eventos/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/views/eventos/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/noticias/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/noticias/views/categorias/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/views/categorias/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/noticias/views/slider/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/views/slider/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/accesos_directos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/controllers/accesos_directos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/controllers/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/somos_tv.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/controllers/somos_tv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/slider/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/views/slider/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/somos_tv/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/views/somos_tv/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/noticias/views/noticias/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/views/noticias/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/tab.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/tab.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/eventos/categorias/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/eventos/categorias/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/eventos/categorias/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/eventos/categorias/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/eventos/eventos/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/eventos/eventos/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/eventos/eventos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/eventos/eventos/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +35,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="90" column="70" selection-start-line="90" selection-start-column="70" selection-end-line="90" selection-end-column="70" />
+            <state relative-caret-position="141">
+              <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
             </state>
           </provider>
         </entry>
@@ -40,11 +45,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>vehiculos/modelos</find>
-      <find>$aux</find>
-      <find>slid_</find>
-      <find>sli_</find>
-      <find>portada/slider</find>
       <find>slider-turismo</find>
       <find>slider_turismo</find>
       <find>/editar/(:num)</find>
@@ -54,7 +54,6 @@
       <find>CENTRO ATENCION VECINO</find>
       <find>listado</find>
       <find>acces</find>
-      <find>mapa</find>
       <find>$talleres_sucursales</find>
       <find>mapa_coordenadas</find>
       <find>3</find>
@@ -70,12 +69,14 @@
       <find>slider</find>
       <find>.multi-imagen .box</find>
       <find>gald_</find>
+      <find>direcciones</find>
+      <find>noticias</find>
+      <find>catn_</find>
+      <find>formatear</find>
+      <find>mapa</find>
+      <find>not_</find>
     </findStrings>
     <replaceStrings>
-      <replace>organigrama</replace>
-      <replace>slider-turismo</replace>
-      <replace>$data</replace>
-      <replace>portada/slider</replace>
       <replace>slid_</replace>
       <replace>slit_</replace>
       <replace>portada/slider-turismo</replace>
@@ -102,6 +103,10 @@
       <replace>noticias</replace>
       <replace>not_</replace>
       <replace>galn_</replace>
+      <replace>Eventos</replace>
+      <replace>cate_</replace>
+      <replace>eventos</replace>
+      <replace>eve_</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -110,17 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/sistema/portada/somos_tv/agregar.js" />
-        <option value="$PROJECT_DIR$/application/modules/portada/views/somos_tv/index.php" />
-        <option value="$PROJECT_DIR$/js/sistema/portada/banners_transparencia/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/portada/banners_transparencia/agregar.js" />
-        <option value="$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/index.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/direcciones/index.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/sistema/municipio/direcciones/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/municipio/direcciones/agregar.js" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/subsecciones_direcciones/add.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/subsecciones_direcciones/index.php" />
         <option value="$PROJECT_DIR$/application/modules/configuracion/controllers/administradores.php" />
         <option value="$PROJECT_DIR$/application/modules/inicio/controllers/inicio.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/index.php" />
@@ -132,20 +126,13 @@
         <option value="$PROJECT_DIR$/js/sistema/noticias/slider/index.js" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/slider/index.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/categorias/index.php" />
-        <option value="$PROJECT_DIR$/application/views/tab.php" />
         <option value="$PROJECT_DIR$/js/sistema/noticias/categorias/index.js" />
         <option value="$PROJECT_DIR$/js/sistema/noticias/categorias/agregar.js" />
-        <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/js/sistema/noticias/noticias/index.js" />
         <option value="$PROJECT_DIR$/js/sistema/imagenes/simple.js" />
         <option value="$PROJECT_DIR$/css/hoja-estilos.css" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" />
         <option value="$PROJECT_DIR$/js/sistema/noticias/noticias/agregar.js" />
         <option value="$PROJECT_DIR$/application/modules/noticias/controllers/categorias.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php" />
-        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php" />
-        <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
-        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticias/index.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/controllers/slider.php" />
         <option value="$PROJECT_DIR$/application/modules/portada/controllers/somos_tv.php" />
         <option value="$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php" />
@@ -154,13 +141,31 @@
         <option value="$PROJECT_DIR$/application/modules/portada/controllers/accesos_directos.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/categorias/add.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/slider/add.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php" />
         <option value="$PROJECT_DIR$/application/modules/portada/views/somos_tv/add.php" />
         <option value="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php" />
         <option value="$PROJECT_DIR$/application/modules/portada/views/slider/add.php" />
         <option value="$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/add.php" />
         <option value="$PROJECT_DIR$/application/modules/portada/views/accesos_directos/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/eventos/views/categorias/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/eventos/views/categorias/index.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticias/index.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/js/sistema/eventos/categorias/agregar.js" />
+        <option value="$PROJECT_DIR$/js/sistema/eventos/categorias/index.js" />
+        <option value="$PROJECT_DIR$/js/sistema/eventos/eventos/agregar.js" />
+        <option value="$PROJECT_DIR$/js/sistema/eventos/eventos/index.js" />
+        <option value="$PROJECT_DIR$/application/views/tab.php" />
+        <option value="$PROJECT_DIR$/application/modules/eventos/controllers/categorias.php" />
+        <option value="$PROJECT_DIR$/application/modules/eventos/views/eventos/index.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php" />
+        <option value="$PROJECT_DIR$/application/helpers/funciones_helper.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
+        <option value="$PROJECT_DIR$/application/modules/eventos/controllers/eventos.php" />
+        <option value="$PROJECT_DIR$/application/modules/eventos/views/eventos/add.php" />
       </list>
     </option>
   </component>
@@ -175,9 +180,8 @@
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="1440" />
-    <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1058" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -220,41 +224,86 @@
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sistema" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sistema" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="noticias" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="accesos_directos" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sistema" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="noticias" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="categorias" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="banners_transparencia" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sistema" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="noticias" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="noticias" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="slider" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="slider_turismo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portada" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="somos_tv" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -275,11 +324,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/modules" />
+      <recent name="$PROJECT_DIR$/js/sistema" />
       <recent name="$PROJECT_DIR$/application/modules/noticias/views" />
       <recent name="$PROJECT_DIR$/application/modules/noticias/controllers" />
       <recent name="$PROJECT_DIR$/js/sistema/noticias" />
-      <recent name="$PROJECT_DIR$/js/sistema/municipio" />
-      <recent name="$PROJECT_DIR$/application/modules/municipio/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/application/modules/municipio/views/direcciones" />
@@ -314,12 +363,12 @@
       <workItem from="1523459567979" duration="34638000" />
       <workItem from="1523593926770" duration="22537000" />
       <workItem from="1523847621059" duration="14730000" />
-      <workItem from="1523909110506" duration="23131000" />
+      <workItem from="1523909110506" duration="31872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95036000" />
+    <option name="totallyTimeSpent" value="103777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -383,114 +432,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/sistema/portada/banners_transparencia/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/direcciones/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/direcciones/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/ws.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="292" column="21" selection-start-line="292" selection-start-column="18" selection-end-line="292" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/inicio/controllers/inicio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/direcciones/subsecciones/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="85" lean-forward="true" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/configuracion/controllers/administradores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="56" column="73" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/configuracion/controllers/datos_generales.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/configuracion/datos-generales/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-          <folding>
-            <element signature="e#69#75#0" expanded="true" />
-            <element signature="e#75#81#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/noticias/slider/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="e#69#75#0" expanded="true" />
-            <element signature="e#75#81#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/sistema/noticias/slider/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -528,16 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tab.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticias/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/inicio/models/imagen.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
@@ -629,20 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="208" column="9" selection-start-line="208" selection-start-column="9" selection-end-line="208" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="267" column="9" lean-forward="true" selection-start-line="267" selection-start-column="9" selection-end-line="267" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/categorias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="105" column="30" lean-forward="true" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -681,27 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1345">
-          <caret line="197" column="53" selection-start-line="197" selection-start-column="53" selection-end-line="197" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1569">
-          <caret line="166" column="40" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/categorias/add.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -720,13 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="86" column="30" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -758,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/accesos_directos/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="62" column="63" lean-forward="true" selection-start-line="62" selection-start-column="63" selection-end-line="62" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/configuracion/views/administradores/crear.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -775,10 +650,202 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/eventos/slider/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/views/slider/add.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticias/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/eventos/eventos/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/eventos/eventos/agregar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/eventos/categorias/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/eventos/categorias/agregar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="e#69#75#0" expanded="true" />
+            <element signature="e#75#81#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/views/categorias/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/views/categorias/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/layout.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="218" column="29" lean-forward="true" selection-start-line="121" selection-end-line="218" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/funciones_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="207" column="27" selection-start-line="207" selection-start-column="13" selection-end-line="207" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/controllers/categorias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1675">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="202" column="29" lean-forward="true" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="183" column="37" lean-forward="true" selection-start-line="183" selection-start-column="37" selection-end-line="183" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tab.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="74" column="61" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/categorias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="105" column="30" lean-forward="true" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/controllers/eventos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1640">
+          <caret line="132" column="22" lean-forward="true" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/views/eventos/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/accesos_directos/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/views/eventos/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="58" column="42" lean-forward="true" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="90" column="70" selection-start-line="90" selection-start-column="70" selection-end-line="90" selection-end-column="70" />
+        <state relative-caret-position="141">
+          <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
         </state>
       </provider>
     </entry>

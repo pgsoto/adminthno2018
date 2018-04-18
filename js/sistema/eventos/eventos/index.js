@@ -28,7 +28,7 @@ $(function(){
 					type: "POST",
 					data: "codigo="+codigo,
 					dataType: "json",
-					url: '/noticias/noticias/eliminar/',
+					url: '/eventos/eventos/eliminar/',
 					success: function(json){
 						if(json.result){
 							noty({
@@ -39,7 +39,7 @@ $(function(){
 							});
 
                             setTimeout(function(){
-                                window.location.href = '/noticias/noticias/';
+                                window.location.href = '/eventos/eventos/';
                             }, 1000);
 						} 
 						else

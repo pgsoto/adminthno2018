@@ -197,6 +197,26 @@ $route['municipio/organigrama/eliminar-imagen']  = "municipio/organigrama/elimin
 
 #FIN MUNICIPIO
 
+#EVENTOS
+
+#eventos
+$route['eventos/eventos']                  = "eventos/eventos";
+$route['eventos/eventos/(:num)']           = "eventos/eventos";
+$route['eventos/eventos/agregar']          = "eventos/eventos/agregar";
+$route['eventos/eventos/editar/(:num)']    = "eventos/eventos/agregar/$1";
+$route['eventos/eventos/eliminar']         = "eventos/eventos/eliminar";
+$route['eventos/eventos/cargar-imagen']    = "eventos/eventos/cargar_imagen";
+$route['eventos/eventos/cortar-imagen']    = "eventos/eventos/cortar_imagen";
+$route['eventos/eventos/eliminar-imagen']  = "eventos/eventos/eliminar_imagen";
+
+#categorias
+$route['eventos/categorias']                  = "eventos/categorias";
+$route['eventos/categorias/(:num)']           = "eventos/categorias";
+$route['eventos/categorias/agregar']          = "eventos/categorias/agregar";
+$route['eventos/categorias/editar/(:num)']    = "eventos/categorias/agregar/$1";
+
+#FIN EVENTOS
+
 #CONFIGURACION
 
 #administradores

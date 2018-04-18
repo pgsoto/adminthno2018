@@ -3,8 +3,8 @@
 class Categorias extends CI_Controller
 {
 
-    private $nombre = 'Categorías de Noticias';
-    private $modulo = 20;
+    private $nombre = 'Categorías de Eventos';
+    private $modulo = 34;
     public $img;
 
     function __construct()
@@ -20,19 +20,19 @@ class Categorias extends CI_Controller
         $this->layout->title($this->nombre);
 
         #js
-        $this->layout->js('/js/sistema/noticias/categorias/index.js');
+        $this->layout->js('/js/sistema/eventos/categorias/index.js');
 
         $where = $and = "";
         $url = "";
 
-        $where = "catn_visible = 1";
+        $where = "cate_visible = 1";
         $and = " and ";
 
         if (count($_GET) > 0)
             $url = '?' . http_build_query($_GET, '', "&");
 
         $config['uri_segment'] = 3;
-        $config['base_url'] = '/noticias/categorias/';
+        $config['base_url'] = '/eventos/categorias/';
         $config['per_page'] = 20;
         $config['total_rows'] = count($this->ws->listar($this->modulo, $where));
         $config['suffix'] = '/' . $url;
@@ -43,7 +43,7 @@ class Categorias extends CI_Controller
         $pagina = ($this->uri->segment($config['uri_segment'])) ? $this->uri->segment($config['uri_segment']) - 1 : 0;
 
         #contenido
-        $this->ws->order("catn_orden ASC");
+        $this->ws->order("cate_orden ASC");
         $this->ws->limit($config['per_page'], ($config['per_page'] * $pagina));
         $data["result"] = $this->ws->listar($this->modulo, $where);
         $data['pagination'] = $this->pagination->create_links();
@@ -58,7 +58,7 @@ class Categorias extends CI_Controller
     public function agregar($codigo = false)
     {
         #js
-        $this->layout->js('/js/sistema/noticias/categorias/agregar.js');
+        $this->layout->js('/js/sistema/eventos/categorias/agregar.js');
 
         #js Imagen Cropic
         $this->layout->js('/js/jquery/croppic/croppic.js');
@@ -69,10 +69,10 @@ class Categorias extends CI_Controller
         $data = array();
 
         if ($codigo && is_numeric($codigo)) {
-            $result = $this->ws->obtener($this->modulo, "catn_codigo = " . $codigo);
+            $result = $this->ws->obtener($this->modulo, "cate_codigo = " . $codigo);
             #print_array($result);
             if (!$result) {
-                redirect('/noticias/categorias/');
+                redirect('/eventos/categorias/');
             } else {
                 $data['result'] = $result;
             }
@@ -82,11 +82,11 @@ class Categorias extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = 'Editar ' . $this->nombre;
             $this->layout->title('Editar ' . $this->nombre);
-            $this->layout->nav(array($this->nombre => "/noticias/categorias/", "Editar " . $result->nombre => "/"));
+            $this->layout->nav(array($this->nombre => "/eventos/categorias/", "Editar " . $result->nombre => "/"));
         } else {
             $data['titulo'] = 'Agregar ' . $this->nombre;
             $this->layout->title('Agregar ' . $this->nombre);
-            $this->layout->nav(array($this->nombre => "/noticias/categorias/", "Agregar " . $this->nombre => "/"));
+            $this->layout->nav(array($this->nombre => "/eventos/categorias/", "Agregar " . $this->nombre => "/"));
         }
 
         #view
@@ -113,14 +113,14 @@ class Categorias extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    $data['catn_estado'] = $this->input->post('estado');
-                    $data['catn_url'] = slug($this->input->post('nombre'));
-                    $data['catn_nombre'] = $this->input->post('nombre');
-                    $data['catn_orden'] = $this->input->post('orden');
+                    $data['cate_estado'] = $this->input->post('estado');
+                    $data['cate_url'] = slug($this->input->post('nombre'));
+                    $data['cate_nombre'] = $this->input->post('nombre');
+                    $data['cate_orden'] = $this->input->post('orden');
 
                     # Si es una actualización el código es mayor a 0 ya que 0 es el valor predeterminado
                     if ($codigo > 0) {
-                        if ($this->ws->actualizar($this->modulo, $data, 'catn_codigo = ' . $codigo)) {
+                        if ($this->ws->actualizar($this->modulo, $data, 'cate_codigo = ' . $codigo)) {
                             echo json_encode(array("result" => true, "codigo" => $codigo));
                             exit;
                         } else {
@@ -129,7 +129,7 @@ class Categorias extends CI_Controller
                         }
                     } else {
                         if ($codigo = $this->ws->insertar($this->modulo, $data)) {
-                            echo json_encode(array("result" => true, "codigo" => $codigo->catn_codigo));
+                            echo json_encode(array("result" => true, "codigo" => $codigo->cate_codigo));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
@@ -148,7 +148,7 @@ class Categorias extends CI_Controller
     public function eliminar()
     {
         try {
-            $this->ws->eliminar($this->modulo, "catn_codigo = {$this->input->post('codigo')}");
+            $this->ws->eliminar($this->modulo, "cate_codigo = {$this->input->post('codigo')}");
             echo json_encode(array("result" => true));
         } catch (Exception $e) {
             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, int�ntelo nuevamente."));
