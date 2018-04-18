@@ -23,9 +23,8 @@
                 
         	</div>
 
-            <?php if(isset($result->codigo)){ ?>
-                <input type="hidden" id="codigo" name="codigo" value="<?= $result->codigo; ?>" />
-            <?php } ?>
+            <input type="hidden" id="codigo" name="codigo" value="<?= isset($result->codigo) ? $result->codigo : '0'; ?>" />
+
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
 					<a href="/portada/somos-tv/" class="btn btn-can">Cancelar</a>

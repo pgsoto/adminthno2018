@@ -203,6 +203,10 @@ class Slider extends CI_Controller
 
     public function eliminar_imagen()
     {
+        if ($ruta = $this->input->post('ruta_imagen')) {
+            if (file_exists($_SERVER['DOCUMENT_ROOT'] . $ruta))
+                unlink($_SERVER['DOCUMENT_ROOT'] . $ruta);
+        }
 
         if ($codigo = $this->input->post('codigo')) {
             if ($modelo = $this->ws->obtener($this->modulo, "slin_codigo = $codigo")) {
