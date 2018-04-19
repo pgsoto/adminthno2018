@@ -3,7 +3,7 @@ $(function(){
         var codigo = $(this).attr('rel');
         var contenedor = $(this).parent().parent().parent();
         var cont = $(this).parent().parent().attr('rel');
-alert(cont);
+
         $.ajax({
             type: "POST",
             data: "codigo="+codigo+"&tipo="+cont,

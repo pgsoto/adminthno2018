@@ -146,50 +146,53 @@ $route['municipio/direcciones/subsecciones/cortar-imagen']    = "municipio/subse
 $route['municipio/direcciones/subsecciones/eliminar-imagen']  = "municipio/subsecciones_direcciones/eliminar_imagen";
 
 #DAS
-$route['municipio/das']                  = "municipio/das";
-$route['municipio/das/(:num)']           = "municipio/das";
-$route['municipio/das/agregar']          = "municipio/das/agregar";
-$route['municipio/das/editar/(:num)']    = "municipio/das/agregar/$1";
+$route['municipio/das']                  = "municipio/das/agregar";
 $route['municipio/das/eliminar']         = "municipio/das/eliminar";
 $route['municipio/das/cargar-imagen']    = "municipio/das/cargar_imagen";
 $route['municipio/das/cortar-imagen']    = "municipio/das/cortar_imagen";
 $route['municipio/das/eliminar-imagen']  = "municipio/das/eliminar_imagen";
 
+$route['municipio/das/subsecciones/(:num)']                  = "municipio/subsecciones_das/index/$1";
+$route['municipio/das/subsecciones/(:num)/(:num)']           = "municipio/subsecciones_das/index/$1";
+$route['municipio/das/subsecciones/agregar/(:num)']          = "municipio/subsecciones_das/agregar/$1";
+$route['municipio/das/subsecciones/editar/(:num)/(:num)']    = "municipio/subsecciones_das/agregar/$1/$2";
+$route['municipio/das/subsecciones/eliminar']                = "municipio/subsecciones_das/eliminar";
+$route['municipio/das/subsecciones/cargar-imagen']           = "municipio/subsecciones_das/cargar_imagen";
+$route['municipio/das/subsecciones/cortar-imagen']           = "municipio/subsecciones_das/cortar_imagen";
+$route['municipio/das/subsecciones/eliminar-imagen']         = "municipio/subsecciones_das/eliminar_imagen";
+
 #DAEM
-$route['municipio/daem']                  = "municipio/daem";
-$route['municipio/daem/(:num)']           = "municipio/daem";
-$route['municipio/daem/agregar']          = "municipio/daem/agregar";
-$route['municipio/daem/editar/(:num)']    = "municipio/daem/agregar/$1";
+$route['municipio/daem']                  = "municipio/daem/agregar";
 $route['municipio/daem/eliminar']         = "municipio/daem/eliminar";
 $route['municipio/daem/cargar-imagen']    = "municipio/daem/cargar_imagen";
 $route['municipio/daem/cortar-imagen']    = "municipio/daem/cortar_imagen";
 $route['municipio/daem/eliminar-imagen']  = "municipio/daem/eliminar_imagen";
 
+$route['municipio/daem/subsecciones/(:num)']                  = "municipio/subsecciones_daem/index/$1";
+$route['municipio/daem/subsecciones/(:num)/(:num)']           = "municipio/subsecciones_daem/index/$1";
+$route['municipio/daem/subsecciones/agregar/(:num)']          = "municipio/subsecciones_daem/agregar/$1";
+$route['municipio/daem/subsecciones/editar/(:num)/(:num)']    = "municipio/subsecciones_daem/agregar/$1/$2";
+$route['municipio/daem/subsecciones/eliminar']                = "municipio/subsecciones_daem/eliminar";
+$route['municipio/daem/subsecciones/cargar-imagen']           = "municipio/subsecciones_daem/cargar_imagen";
+$route['municipio/daem/subsecciones/cortar-imagen']           = "municipio/subsecciones_daem/cortar_imagen";
+$route['municipio/daem/subsecciones/eliminar-imagen']         = "municipio/subsecciones_daem/eliminar_imagen";
+
 #alcalde
-$route['municipio/alcalde']                  = "municipio/alcalde";
-$route['municipio/alcalde/(:num)']           = "municipio/alcalde";
-$route['municipio/alcalde/agregar']          = "municipio/alcalde/agregar";
-$route['municipio/alcalde/editar/(:num)']    = "municipio/alcalde/agregar/$1";
+$route['municipio/alcalde']                  = "municipio/alcalde/agregar";
 $route['municipio/alcalde/eliminar']         = "municipio/alcalde/eliminar";
 $route['municipio/alcalde/cargar-imagen']    = "municipio/alcalde/cargar_imagen";
 $route['municipio/alcalde/cortar-imagen']    = "municipio/alcalde/cortar_imagen";
 $route['municipio/alcalde/eliminar-imagen']  = "municipio/alcalde/eliminar_imagen";
 
 #consejo
-$route['municipio/consejo']                  = "municipio/consejo";
-$route['municipio/consejo/(:num)']           = "municipio/consejo";
-$route['municipio/consejo/agregar']          = "municipio/consejo/agregar";
-$route['municipio/consejo/editar/(:num)']    = "municipio/consejo/agregar/$1";
+$route['municipio/consejo']                  = "municipio/consejo/agregar";
 $route['municipio/consejo/eliminar']         = "municipio/consejo/eliminar";
 $route['municipio/consejo/cargar-imagen']    = "municipio/consejo/cargar_imagen";
 $route['municipio/consejo/cortar-imagen']    = "municipio/consejo/cortar_imagen";
 $route['municipio/consejo/eliminar-imagen']  = "municipio/consejo/eliminar_imagen";
 
 #organigrama
-$route['municipio/organigrama']                  = "municipio/organigrama";
-$route['municipio/organigrama/(:num)']           = "municipio/organigrama";
-$route['municipio/organigrama/agregar']          = "municipio/organigrama/agregar";
-$route['municipio/organigrama/editar/(:num)']    = "municipio/organigrama/agregar/$1";
+$route['municipio/organigrama']                  = "municipio/organigrama/agregar";
 $route['municipio/organigrama/eliminar']         = "municipio/organigrama/eliminar";
 $route['municipio/organigrama/cargar-imagen']    = "municipio/organigrama/cargar_imagen";
 $route['municipio/organigrama/cortar-imagen']    = "municipio/organigrama/cortar_imagen";
@@ -225,48 +228,6 @@ $route['configuracion/administradores/(:num)']           = "configuracion/admini
 $route['configuracion/administradores/agregar']          = "configuracion/administradores/agregar";
 $route['configuracion/administradores/editar/(:num)']    = "configuracion/administradores/agregar/$1";
 $route['configuracion/administradores/eliminar']         = "configuracion/administradores/eliminar";
-
-#temporadas de calendario
-$route['configuracion/temporadas-calendario']                  = "configuracion/temporadas_calendario";
-$route['configuracion/temporadas-calendario/(:num)']           = "configuracion/temporadas_calendario";
-$route['configuracion/temporadas-calendario/agregar']          = "configuracion/temporadas_calendario/agregar";
-$route['configuracion/temporadas-calendario/editar/(:num)']    = "configuracion/temporadas_calendario/agregar/$1";
-$route['configuracion/temporadas-calendario/eliminar']         = "configuracion/temporadas_calendario/eliminar";
-
-#categorias de calendario
-$route['configuracion/categorias-calendario']                  = "configuracion/categorias_calendario";
-$route['configuracion/categorias-calendario/(:num)']           = "configuracion/categorias_calendario";
-$route['configuracion/categorias-calendario/agregar']          = "configuracion/categorias_calendario/agregar";
-$route['configuracion/categorias-calendario/editar/(:num)']    = "configuracion/categorias_calendario/agregar/$1";
-$route['configuracion/categorias-calendario/eliminar']         = "configuracion/categorias_calendario/eliminar";
-
-#categorias de noticias
-$route['configuracion/categorias-noticias']                  = "configuracion/categorias_noticias";
-$route['configuracion/categorias-noticias/(:num)']           = "configuracion/categorias_noticias";
-$route['configuracion/categorias-noticias/agregar']          = "configuracion/categorias_noticias/agregar";
-$route['configuracion/categorias-noticias/editar/(:num)']    = "configuracion/categorias_noticias/agregar/$1";
-$route['configuracion/categorias-noticias/eliminar']         = "configuracion/categorias_noticias/eliminar";
-
-#camaras en vivo
-$route['configuracion/camaras-vivo']                  = "configuracion/camaras_vivo";
-$route['configuracion/camaras-vivo/(:num)']           = "configuracion/camaras_vivo";
-$route['configuracion/camaras-vivo/agregar']          = "configuracion/camaras_vivo/agregar";
-$route['configuracion/camaras-vivo/editar/(:num)']    = "configuracion/camaras_vivo/agregar/$1";
-$route['configuracion/camaras-vivo/eliminar']         = "configuracion/camaras_vivo/eliminar";
-
-#asuntos de contactos
-$route['configuracion/asuntos-contacto']                  = "configuracion/asuntos_contacto";
-$route['configuracion/asuntos-contacto/(:num)']           = "configuracion/asuntos_contacto";
-$route['configuracion/asuntos-contacto/agregar']          = "configuracion/asuntos_contacto/agregar";
-$route['configuracion/asuntos-contacto/editar/(:num)']    = "configuracion/asuntos_contacto/agregar/$1";
-$route['configuracion/asuntos-contacto/eliminar']         = "configuracion/asuntos_contacto/eliminar";
-
-#areas de trabajo
-$route['configuracion/areas-trabajo']                  = "configuracion/areas_trabajo";
-$route['configuracion/areas-trabajo/(:num)']           = "configuracion/areas_trabajo";
-$route['configuracion/areas-trabajo/agregar']          = "configuracion/areas_trabajo/agregar";
-$route['configuracion/areas-trabajo/editar/(:num)']    = "configuracion/areas_trabajo/agregar/$1";
-$route['configuracion/areas-trabajo/eliminar']         = "configuracion/areas_trabajo/eliminar";
 
 #datos generales
 $route['configuracion/datos-generales']                  = "configuracion/datos_generales";

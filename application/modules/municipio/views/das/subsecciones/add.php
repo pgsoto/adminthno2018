@@ -88,7 +88,7 @@
 
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
-					<a href="/municipio/direcciones/" class="btn btn-can">Cancelar</a>
+					<a href="/municipio/das/" class="btn btn-can">Cancelar</a>
 					<button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
 			</div>
@@ -104,9 +104,9 @@
 <script>
     //configuracion para imagenes
     var id = 1;
-    var urlDelete = '/municipio/direcciones/subsecciones/eliminar-imagen/';
-    var urlCargar = '/municipio/direcciones/subsecciones/cargar-imagen/';
-    var urlCortar = '/municipio/direcciones/subsecciones/cortar-imagen/';
+    var urlDelete = '/municipio/das/subsecciones/eliminar-imagen/';
+    var urlCargar = '/municipio/das/subsecciones/cargar-imagen/';
+    var urlCortar = '/municipio/das/subsecciones/cortar-imagen/';
     var galeria = true;
 
     var cargar=[];

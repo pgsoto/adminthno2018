@@ -2,16 +2,12 @@
   	<div class="titulo-btn">
         <h1><?= $titulo; ?></h1>
     </div>
-
+    <?php if( isset($result->codigo) ){ ?>
+    <a href="/municipio/das/subsecciones/<?= $result->codigo; ?>" class="btn btn-primary">Subsecciones</a>
+    <?php } ?>
     <form action="#" method="post" id="form-agregar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
-            	<label>Nombres (*) </label>
-                <input type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
-
-                <label>Orden (*) </label>
-                <input type="number" min="0" class="form-control validate[numeric]" name="orden" value="<?= isset($result->orden) ? $result->orden : ''; ?>" />
-
                 <label>Galería slider tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
                     <div style="display:none;" id="replicar-1" class="box">
@@ -20,7 +16,7 @@
                     <?php if(isset($result)) {?>
                         <div id="cont-imagenes-1">
                             <?php if($result->imagenes){ ?>
-                                <?php foreach($result->imagenes as $aux){ ?>
+                                <?php foreach(array_reverse($result->imagenes) as $aux){ ?>
                                     <div class="box" >
                                         <div rel="1" class="img" style="width:<?php echo $this->img->min_ancho_1/4+2; ?>px; height:<?php echo $this->img->min_alto_1/4+2; ?>px;" >
                                             <img class="croppedImg" src="<?php echo $aux->imagen_ruta_interna; ?>" />
@@ -73,22 +69,19 @@
                 <input id="coor" type="hidden" name="mapa" value="<?= isset($result->mapa) ? $result->mapa : ''; ?>">
                 <div class="mapa" id="map"></div>
 
-
                 <label>Estado</label>
 				<select class="form-control validate[required]" name="estado">
                     <option <?= (isset($result->estado) && $result->estado == 1) ? 'selected' : ''; ?> value="1">Activo</option>
                     <option <?= (isset($result->estado) && $result->estado == 0) ? 'selected' : ''; ?> value="0">Inactivo</option>
 				</select>
-                
+
         	</div>
 
-            <input type="hidden" id="seccion" name="seccion" value="<?= $seccion; ?>" />
-
-            <input type="hidden" id="codigo" name="codigo" value="<?= isset($result->codigo) ? $result->codigo : '0'; ?>" />
+            <input type="hidden" id="codigo" name="codigo" value="<?= isset($result->codigo) ? $result->codigo : ''; ?>" />
 
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
-					<a href="/municipio/direcciones/" class="btn btn-can">Cancelar</a>
+					<a href="/municipio/das/" class="btn btn-can">Cancelar</a>
 					<button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
 			</div>
@@ -103,10 +96,10 @@
 
 <script>
     //configuracion para imagenes
-    var id = 1;
-    var urlDelete = '/municipio/direcciones/subsecciones/eliminar-imagen/';
-    var urlCargar = '/municipio/direcciones/subsecciones/cargar-imagen/';
-    var urlCortar = '/municipio/direcciones/subsecciones/cortar-imagen/';
+	var id = 1;
+	var urlDelete = '/municipio/das/eliminar-imagen/';
+    var urlCargar = '/municipio/das/cargar-imagen/';
+    var urlCortar = '/municipio/das/cortar-imagen/';
     var galeria = true;
 
     var cargar=[];
@@ -118,7 +111,7 @@
     cargar_imagenes();
     cargar_imagen(cargar);
 
-</script>
+</script> 
 
 <script>
     function initAutocomplete() {
