@@ -104,8 +104,8 @@ class DAS extends CI_Controller
         if ($this->input->post()) {
 
             #validaciones
-            #$this->form_validation->set_rules('nombre', 'Nombre', 'required');
-            $this->form_validation->set_rules('estado', 'Estado', 'required');
+            $this->form_validation->set_rules('nombre', 'Nombre', 'required');
+            #$this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');
             $this->form_validation->set_error_delimiters('<div>', '</div>');
@@ -117,8 +117,8 @@ class DAS extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    $data['das_estado'] = $this->input->post('estado');
-                    $data['das_url'] = slug($this->input->post('nombre'));
+                    #$data['das_estado'] = $this->input->post('estado');
+                    #$data['das_url'] = slug($this->input->post('nombre'));
                     $data['das_nombre'] = $this->input->post('nombre');
                     $data['das_descripcion'] = $this->input->post('descripcion');
                     $data['das_datos_contacto'] = $this->input->post('datos_contacto');

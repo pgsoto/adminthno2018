@@ -20,12 +20,12 @@ $(function(){
                 });
 
                 $('#descripcion').html(CKEDITOR.instances.descripcion.getData());
-                $('#datos_contacto').html(CKEDITOR.instances.datos_contacto.getData());
+                $('#descripcion_lateral').html(CKEDITOR.instances.descripcion_lateral.getData());
                 
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/municipio/das/process/',
+                    url: '/municipio/alcalde/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -42,7 +42,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.href = '/municipio/das/';
+                                    window.location.href = '/municipio/alcalde/';
                             }, 1000);
                         }
                         else

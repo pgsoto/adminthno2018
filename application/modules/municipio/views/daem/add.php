@@ -8,6 +8,9 @@
     <form action="#" method="post" id="form-agregar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
+                <label>Nombre (*) </label>
+                <input type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
+
                 <label>Galería slider tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
                     <div style="display:none;" id="replicar-1" class="box">
@@ -68,12 +71,13 @@
                 <input id="pac-input" class="controls" type="text" placeholder="Busqueda">
                 <input id="coor" type="hidden" name="mapa" value="<?= isset($result->mapa) ? $result->mapa : ''; ?>">
                 <div class="mapa" id="map"></div>
-
+                <?php /*
                 <label>Estado</label>
 				<select class="form-control validate[required]" name="estado">
                     <option <?= (isset($result->estado) && $result->estado == 1) ? 'selected' : ''; ?> value="1">Activo</option>
                     <option <?= (isset($result->estado) && $result->estado == 0) ? 'selected' : ''; ?> value="0">Inactivo</option>
 				</select>
+                */ ?>
 
         	</div>
 
@@ -81,7 +85,7 @@
 
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
-					<a href="/municipio/daem/" class="btn btn-can">Cancelar</a>
+					<!--<a href="/municipio/daem/" class="btn btn-can">Cancelar</a>-->
 					<button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
 			</div>

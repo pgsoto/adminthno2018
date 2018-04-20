@@ -2,14 +2,12 @@
   	<div class="titulo-btn">
         <h1><?= $titulo; ?></h1>
     </div>
-    <?php if( isset($result->codigo) ){ ?>
-    <a href="/municipio/das/subsecciones/<?= $result->codigo; ?>" class="btn btn-primary">Subsecciones</a>
-    <?php } ?>
+
     <form action="#" method="post" id="form-agregar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
                 <label>Nombre (*) </label>
-                <input type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
+                <input type="hidden" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
 
                 <label>Galería slider tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
@@ -64,13 +62,14 @@
                 <label>Descripción</label>
                 <textarea class="form-control" rows="3"  id="descripcion" name="descripcion"><?= isset($result->descripcion) ? $result->descripcion : ''; ?></textarea>
 
-                <label>Datos de contacto</label>
-                <textarea class="form-control" rows="3"  id="datos_contacto" name="datos_contacto"><?= isset($result->datos_contacto) ? $result->datos_contacto : ''; ?></textarea>
+                <label>Descripción lateral</label>
+                <textarea class="form-control" rows="3"  id="descripcion_lateral" name="descripcion_lateral"><?= isset($result->descripcion_lateral) ? $result->descripcion_lateral : ''; ?></textarea>
 
-                <label>Mapa</label>
-                <input id="pac-input" class="controls" type="text" placeholder="Busqueda">
-                <input id="coor" type="hidden" name="mapa" value="<?= isset($result->mapa) ? $result->mapa : ''; ?>">
-                <div class="mapa" id="map"></div>
+                <label>Facebook</label>
+                <input type="text" class="form-control" name="facebook" value="<?= isset($result->facebook) ? $result->facebook : ''; ?>" />
+
+                <label>Twitter </label>
+                <input type="text" class="form-control" name="twitter" value="<?= isset($result->twitter) ? $result->twitter : ''; ?>" />
                 <?php /*
                 <label>Estado</label>
 				<select class="form-control validate[required]" name="estado">
@@ -85,7 +84,7 @@
 
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
-					<!--<a href="/municipio/das/" class="btn btn-can">Cancelar</a>-->
+					<!--<a href="/municipio/alcalde/" class="btn btn-can">Cancelar</a>-->
 					<button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
 			</div>
@@ -95,15 +94,15 @@
 
 <script>
     CKEDITOR.replace( 'descripcion' );
-    CKEDITOR.replace( 'datos_contacto' );
+    CKEDITOR.replace( 'descripcion_lateral' );
 </script>
 
 <script>
     //configuracion para imagenes
 	var id = 1;
-	var urlDelete = '/municipio/das/eliminar-imagen/';
-    var urlCargar = '/municipio/das/cargar-imagen/';
-    var urlCortar = '/municipio/das/cortar-imagen/';
+	var urlDelete = '/municipio/alcalde/eliminar-imagen/';
+    var urlCargar = '/municipio/alcalde/cargar-imagen/';
+    var urlCortar = '/municipio/alcalde/cortar-imagen/';
     var galeria = true;
 
     var cargar=[];
@@ -116,102 +115,3 @@
     cargar_imagen(cargar);
 
 </script> 
-
-<script>
-    function initAutocomplete() {
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -36.82013519999999, lng: -73.0443904},
-            zoom: 12,
-            mapTypeId: 'roadmap'
-        });
-
-        <?php if(isset($result->mapa)){ ?>
-        var markers2 = [];
-        markers2 = [
-            ['<?= $result->nombre;?>', <?= $result->mapa_coor[0];?>,<?= $result->mapa_coor[1];?>]
-        ];
-        //console.log(markers2);
-        var bounds = new google.maps.LatLngBounds();
-        // Loop through our array of markers & place each one on the map
-        for( i = 0; i < markers2.length; i++ ) {
-            var position = new google.maps.LatLng(markers2[i][1], markers2[i][2]);
-            bounds.extend(position);
-            marker = new google.maps.Marker({
-                position: position,
-                map: map,
-                title: markers2[i][0]
-            });
-
-            // Automatically center the map fitting all markers on the screen
-            map.fitBounds(bounds);
-        }
-        <?php } ?>
-
-        // Create the search box and link it to the UI element.
-        var input = document.getElementById('pac-input');
-        var searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
-        // Bias the SearchBox results towards current map's viewport.
-        map.addListener('bounds_changed', function() {
-            searchBox.setBounds(map.getBounds());
-        });
-
-        var markers = [];
-        // Listen for the event fired when the user selects a prediction and retrieve
-        // more details for that place.
-        searchBox.addListener('places_changed', function() {
-            var places = searchBox.getPlaces();
-
-            if (places.length == 0) {
-                return;
-            }
-
-            // Clear out the old markers.
-            markers.forEach(function(marker) {
-                marker.setMap(null);
-            });
-            markers = [];
-
-            // For each place, get the icon, name and location.
-            var bounds = new google.maps.LatLngBounds();
-            places.forEach(function(place) {
-                if (!place.geometry) {
-                    console.log("Returned place contains no geometry");
-                    return;
-                }
-                var icon = {
-                    url: place.icon,
-                    size: new google.maps.Size(71, 71),
-                    origin: new google.maps.Point(0, 0),
-                    anchor: new google.maps.Point(17, 34),
-                    scaledSize: new google.maps.Size(25, 25)
-                };
-
-                // Create a marker for each place.
-                markers.push(new google.maps.Marker({
-                    map: map,
-                    zoom: 5,
-                    icon: icon,
-                    title: place.name,
-                    position: place.geometry.location
-                }));
-
-                if (place.geometry.viewport) {
-                    // Only geocodes have viewport.
-                    bounds.union(place.geometry.viewport);
-                } else {
-                    bounds.extend(place.geometry.location);
-                }
-                document.getElementById("coor").value = place.geometry.location;
-            });
-
-            map.fitBounds(bounds);
-        });
-
-    }
-
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdSXBzktlVz-DwJ0r1PSNCZA7TnO4BNI0&libraries=places&callback=initAutocomplete"
-        async defer></script>

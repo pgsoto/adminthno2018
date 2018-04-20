@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="084cd69e-672c-46bd-a32f-5a06d061b894" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/daem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/das.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_daem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_das.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/views/daem/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/views/daem/subsecciones/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/views/daem/subsecciones/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/views/das/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/views/das/subsecciones/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/modules/municipio/views/das/subsecciones/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sistema/municipio/alcalce/agregar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sistema/municipio/alcalce/subsecciones/agregar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sistema/municipio/alcalce/subsecciones/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sistema/municipio/daem/agregar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sistema/municipio/daem/subsecciones/agregar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sistema/municipio/daem/subsecciones/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sistema/municipio/das/agregar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sistema/municipio/das/subsecciones/agregar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sistema/municipio/das/subsecciones/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/municipio/views/alcalde/add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sistema/imagenes/simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/imagenes/simple.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/daem.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/daem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/das.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/das.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/daem/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/daem/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/das/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/das/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/municipio/alcalce/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/municipio/alcalde/agregar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/municipio/alcalce/subsecciones/agregar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sistema/municipio/alcalce/subsecciones/index.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -45,11 +31,45 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="agregar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/sistema/municipio/alcalde/agregar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <folding>
+                <element signature="e#69#75#0" expanded="true" />
+                <element signature="e#75#81#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alcalde.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/alcalde/add.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <folding>
+                <element signature="e#4469#4869#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>acc_</find>
       <find>/editar/$1</find>
       <find>directo</find>
       <find>CENTRO ATENCION VECINO</find>
@@ -78,11 +98,10 @@
       <find>direcciones</find>
       <find>gald_</find>
       <find>'Direcciones'</find>
+      <find>das/</find>
       <find>das</find>
     </findStrings>
     <replaceStrings>
-      <replace>somos-tv</replace>
-      <replace>stv_</replace>
       <replace>banners-transparencia</replace>
       <replace>/agregar/$1</replace>
       <replace>bant_</replace>
@@ -111,6 +130,8 @@
       <replace>'DAS'</replace>
       <replace>daem/</replace>
       <replace>daem</replace>
+      <replace>alcalde</replace>
+      <replace>alcalde/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -119,10 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/noticias/controllers/slider.php" />
-        <option value="$PROJECT_DIR$/application/modules/portada/controllers/somos_tv.php" />
-        <option value="$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php" />
-        <option value="$PROJECT_DIR$/application/modules/portada/controllers/slider.php" />
         <option value="$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php" />
         <option value="$PROJECT_DIR$/application/modules/portada/controllers/accesos_directos.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/categorias/add.php" />
@@ -151,16 +168,12 @@
         <option value="$PROJECT_DIR$/application/modules/eventos/views/eventos/add.php" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/das/agregar.js" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/das/index.js" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/das/add.php" />
         <option value="$PROJECT_DIR$/js/sistema/imagenes/simple.js" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/das/subsecciones/index.js" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/das/subsecciones/agregar.js" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/das.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/daem.php" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/daem/agregar.js" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/daem/subsecciones/index.js" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/daem/subsecciones/agregar.js" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/daem/add.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/views/das/subsecciones/index.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/views/das/subsecciones/add.php" />
@@ -170,6 +183,14 @@
         <option value="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_daem.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/views/daem/subsecciones/add.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/views/daem/subsecciones/index.php" />
+        <option value="$PROJECT_DIR$/js/sistema/municipio/alcalce/agregar.js" />
+        <option value="$PROJECT_DIR$/js/sistema/municipio/alcalde/agregar.js" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/alcalde/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/daem.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/das.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/daem/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/das/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php" />
       </list>
     </option>
   </component>
@@ -283,7 +304,7 @@
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="municipio" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="daem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="alcalde" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
@@ -293,7 +314,6 @@
               <item name="municipio" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="daem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="subsecciones" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
@@ -311,31 +331,11 @@
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="municipio" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="das" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="subsecciones" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="municipio" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="direcciones" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="municipio" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="direcciones" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="subsecciones" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admintalcahuano2018" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -357,7 +357,7 @@
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="sistema" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="municipio" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="alcalce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="alcalde" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -378,19 +378,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/modules/municipio/views" />
+      <recent name="$PROJECT_DIR$/application/modules/municipio/controllers" />
+      <recent name="$PROJECT_DIR$/js/sistema/municipio" />
+      <recent name="$PROJECT_DIR$/application/modules/municipio/views/daem" />
+      <recent name="$PROJECT_DIR$/application/modules" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/application/modules/municipio/views/direcciones" />
       <recent name="$PROJECT_DIR$/js/sistema/municipio/direcciones" />
       <recent name="$PROJECT_DIR$/js/sistema" />
       <recent name="$PROJECT_DIR$/js/sistema/WWW" />
       <recent name="$PROJECT_DIR$/application/modules/WWW" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js/sistema/municipio" />
-      <recent name="$PROJECT_DIR$/application/modules/municipio/views/daem" />
-      <recent name="$PROJECT_DIR$/application/modules/municipio/controllers" />
-      <recent name="$PROJECT_DIR$/application/modules/municipio/views" />
-      <recent name="$PROJECT_DIR$/application/modules" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,19 +420,21 @@
       <workItem from="1523847621059" duration="14730000" />
       <workItem from="1523909110506" duration="31872000" />
       <workItem from="1524145266843" duration="7317000" />
-      <workItem from="1524170277344" duration="422000" />
+      <workItem from="1524170277344" duration="2096000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111516000" />
+    <option name="totallyTimeSpent" value="113190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="7" visible="true" weight="0.23084576" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -449,7 +451,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" order="7" visible="true" weight="0.23084576" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
@@ -488,20 +489,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="209" column="9" selection-start-line="209" selection-start-column="9" selection-end-line="209" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/accesos_directos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="207" column="28" lean-forward="true" selection-start-line="207" selection-start-column="28" selection-end-line="207" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/categorias/add.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -608,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="218" column="29" lean-forward="true" selection-start-line="121" selection-end-line="218" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/helpers/funciones_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -686,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/das/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/sistema/municipio/daem/agregar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
@@ -711,20 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/daem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/daem/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -784,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/das.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_das.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1889">
@@ -819,10 +771,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/alcalce/agregar.js">
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="17">
+          <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/alcalde/agregar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
           <folding>
             <element signature="e#69#75#0" expanded="true" />
             <element signature="e#75#81#0" expanded="true" />
@@ -831,10 +790,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/das.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
+        <state relative-caret-position="312">
+          <caret line="119" column="48" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/daem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="105" column="25" lean-forward="true" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/das/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="e#4546#4946#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/daem/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/alcalde/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#4469#4869#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>

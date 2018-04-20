@@ -1,10 +1,10 @@
 ﻿<?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
 
-class DAEM extends CI_Controller
+class Alcalde extends CI_Controller
 {
 
-    private $nombre = 'DAEM';
-    private $modulo = 39, $modulo_imagenes = 40;
+    private $nombre = 'Alcalde';
+    private $modulo = 43, $modulo_imagenes = 44;
     public $img;
 
     function __construct()
@@ -36,7 +36,7 @@ class DAEM extends CI_Controller
         $this->img->recorte_ancho_1 = 1920;
         $this->img->recorte_alto_1 = 720;
 
-        $this->img->upload_dir = '/imagenes/modulos/municipio/daem/';
+        $this->img->upload_dir = '/imagenes/modulos/municipio/alcalde/';
 
         #lib imagenes
         $this->load->model('inicio/imagen', 'objImagen');
@@ -44,9 +44,9 @@ class DAEM extends CI_Controller
         #Si la tabla está vacía, se inserta el primer registro
         if (count($this->ws->listar($this->modulo)) == 0) {
             $data = array();
-            $data['daem_estado'] = 1;
-            $data['daem_url'] = slug($this->nombre);
-            $data['daem_nombre'] = $this->nombre;
+            $data['alc_estado'] = 1;
+            $data['alc_url'] = slug($this->nombre);
+            $data['alc_nombre'] = $this->nombre;
             $this->ws->insertar($this->modulo, $data);
             unset($data);
         }
@@ -58,7 +58,7 @@ class DAEM extends CI_Controller
         $codigo = 1; //obligatoria primer registro
 
         #js
-        $this->layout->js('/js/sistema/municipio/daem/agregar.js');
+        $this->layout->js('/js/sistema/municipio/alcalde/agregar.js');
 
         #JS - Editor
         $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
@@ -73,14 +73,13 @@ class DAEM extends CI_Controller
         $data = array();
 
         if ($codigo && is_numeric($codigo)) {
-            $result = $this->ws->obtener($this->modulo, "daem_codigo = " . $codigo);
+            $result = $this->ws->obtener($this->modulo, "alc_codigo = " . $codigo);
             if ($result) {
-                $result->mapa_coor = explode(",", $result->mapa);
-                $result->imagenes = $this->ws->listar($this->modulo_imagenes, "galdaem_daem = " . $codigo);
+                $result->imagenes = $this->ws->listar($this->modulo_imagenes, "galalc_alcalde = " . $codigo);
             }
             #print_array($result);
             if (!$result) {
-                redirect('/municipio/daem/');
+                redirect('/municipio/alcalde/');
             } else {
                 $data['result'] = $result;
             }
@@ -90,11 +89,11 @@ class DAEM extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = $this->nombre;
             $this->layout->title($this->nombre);
-            $this->layout->nav(array($this->nombre => "/municipio/daem/", $result->nombre => "/"));
+            $this->layout->nav(array($this->nombre => "/municipio/alcalde/", $result->nombre => "/"));
         }
 
         #view
-        $this->layout->view('daem/add', $data);
+        $this->layout->view('alcalde/add', $data);
 
     }
 
@@ -117,23 +116,22 @@ class DAEM extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    #$data['daem_estado'] = $this->input->post('estado');
-                    #$data['daem_url'] = slug($this->input->post('nombre'));
-                    $data['daem_nombre'] = $this->input->post('nombre');
-                    $data['daem_descripcion'] = $this->input->post('descripcion');
-                    $data['daem_datos_contacto'] = $this->input->post('datos_contacto');
+                    #$data['alc_estado'] = $this->input->post('estado');
+                    #$data['alc_url'] = slug($this->input->post('nombre'));
+                    $data['alc_nombre'] = $this->input->post('nombre');
+                    $data['alc_descripcion'] = $this->input->post('descripcion');
+                    $data['alc_descripcion_lateral'] = $this->input->post('descripcion_lateral');
+                    $data['alc_facebook'] = $this->input->post('facebook');
+                    $data['alc_twitter'] = $this->input->post('twitter');
 
                     if ($this->input->post('ruta_interna_2')) {
-                        $data['daem_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');
-                        $data['daem_imagen_ruta_grande'] = $this->input->post('ruta_grande_2');
+                        $data['alc_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');
+                        $data['alc_imagen_ruta_grande'] = $this->input->post('ruta_grande_2');
                     }
-
-                    if ($this->input->post("mapa"))
-                        $data['daem_mapa'] = str_replace(array("(", ")", " "), "", $this->input->post("mapa"));
 
                     # Si es una actualización el código es mayor a 0 ya que 0 es el valor predeterminado
                     if ($codigo > 0) {
-                        if ($this->ws->actualizar($this->modulo, $data, 'daem_codigo = ' . $codigo)) {
+                        if ($this->ws->actualizar($this->modulo, $data, 'alc_codigo = ' . $codigo)) {
 
                             #GALERIA
                             $internas = $this->input->post('ruta_interna_1');
@@ -141,9 +139,9 @@ class DAEM extends CI_Controller
                             if ($grandes) {
                                 foreach ($grandes as $k => $aux) {
                                     if ($aux) {
-                                        $data2['galdaem_imagen_ruta_interna'] = $internas[$k];
-                                        $data2['galdaem_imagen_ruta_grande'] = $aux;
-                                        $data2['galdaem_daem'] = $codigo;
+                                        $data2['galalc_imagen_ruta_interna'] = $internas[$k];
+                                        $data2['galalc_imagen_ruta_grande'] = $aux;
+                                        $data2['galalc_alcalde'] = $codigo;
 
                                         $this->ws->insertar($this->modulo_imagenes, $data2);
                                     }
@@ -165,16 +163,16 @@ class DAEM extends CI_Controller
                             if ($grandes) {
                                 foreach ($grandes as $k => $aux) {
                                     if ($aux) {
-                                        $data2['galdaem_imagen_ruta_interna'] = $internas[$k];
-                                        $data2['galdaem_imagen_ruta_grande'] = $aux;
-                                        $data2['galdaem_daem'] = $codigo->daem_codigo;
+                                        $data2['galalc_imagen_ruta_interna'] = $internas[$k];
+                                        $data2['galalc_imagen_ruta_grande'] = $aux;
+                                        $data2['galalc_alcalde'] = $codigo->alc_codigo;
 
                                         $this->ws->insertar($this->modulo_imagenes, $data2);
                                     }
                                 }
                             }
 
-                            echo json_encode(array("result" => true, "codigo" => $codigo->daem_codigo));
+                            echo json_encode(array("result" => true, "codigo" => $codigo->alc_codigo));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
@@ -193,7 +191,7 @@ class DAEM extends CI_Controller
     public function eliminar()
     {
         try {
-            $this->ws->eliminar($this->modulo, "daem_codigo = {$this->input->post('codigo')}");
+            $this->ws->eliminar($this->modulo, "alc_codigo = {$this->input->post('codigo')}");
             echo json_encode(array("result" => true));
         } catch (Exception $e) {
             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, int�ntelo nuevamente."));
@@ -234,24 +232,24 @@ class DAEM extends CI_Controller
         if ($codigo = $this->input->post('codigo')) {
 
             if ($this->input->post('tipo') == 1) {
-                if ($modelo = $this->ws->obtener($this->modulo_imagenes, "galdaem_codigo = $codigo")) {
+                if ($modelo = $this->ws->obtener($this->modulo_imagenes, "galalc_codigo = $codigo")) {
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
 
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
 
-                    $this->ws->eliminar($this->modulo_imagenes, "galdaem_codigo = $codigo");
+                    $this->ws->eliminar($this->modulo_imagenes, "galalc_codigo = $codigo");
                 }
             } elseif ($this->input->post('tipo') == 2) {
-                if ($modelo = $this->ws->obtener($this->modulo, "daem_codigo = $codigo")) {
+                if ($modelo = $this->ws->obtener($this->modulo, "alc_codigo = $codigo")) {
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
-                    $data['daem_imagen_ruta_interna'] = '';
-                    $data['daem_imagen_ruta_grande'] = '';
-                    $this->ws->actualizar($this->modulo, $data, "daem_codigo = $codigo");
+                    $data['alc_imagen_ruta_interna'] = '';
+                    $data['alc_imagen_ruta_grande'] = '';
+                    $this->ws->actualizar($this->modulo, $data, "alc_codigo = $codigo");
                 }
             }
         }
