@@ -64,9 +64,6 @@ class Subsecciones_daem extends CI_Controller
         $where .= "subdaem_visible = 1";
         $and = " and ";
 
-        $where .= $and."subdaem_visible = 1";
-        $and = " and ";
-
         if (count($_GET) > 0)
             $url = '?' . http_build_query($_GET, '', "&");
 
@@ -172,7 +169,11 @@ class Subsecciones_daem extends CI_Controller
                     $data['subdaem_nombre'] = $this->input->post('nombre');
                     $data['subdaem_orden'] = $this->input->post('orden');
                     $data['subdaem_descripcion'] = $this->input->post('descripcion');
-                    $data['subdaem_datos_contacto'] = $this->input->post('datos_contacto');
+                    $data['subdaem_encargado'] = $this->input->post('encargado');
+                    $data['subdaem_secretaria'] = $this->input->post('secretaria');
+                    $data['subdaem_telefono'] = $this->input->post('telefono');
+                    $data['subdaem_email'] = $this->input->post('email');
+                    $data['subdaem_direccion'] = $this->input->post('direccion');
 
                     if ($this->input->post('ruta_interna_2')) {
                         $data['subdaem_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');

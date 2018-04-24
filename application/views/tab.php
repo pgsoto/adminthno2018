@@ -72,6 +72,7 @@ foreach ($secciones_menu as $aux) {
         <li>
             <a style="cursor:pointer;">Eventos y actividades</a>
             <ul>
+                <li><a href="/eventos/slider/">Slider</a></li>
                 <li><a href="/eventos/eventos/">Eventos</a></li>
                 <li><a href="/eventos/categorias/">Categorías de Eventos</a></li>
             </ul>

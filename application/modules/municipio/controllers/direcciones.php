@@ -139,9 +139,11 @@ class Direcciones extends CI_Controller
             #validaciones
             $this->form_validation->set_rules('nombre', 'Nombre', 'required');
             $this->form_validation->set_rules('orden', 'Orden', 'required');
+            $this->form_validation->set_rules('email','Email','valid_email');
             $this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');
+            $this->form_validation->set_message('valid_email', '* %s no es válido');
             $this->form_validation->set_error_delimiters('<div>', '</div>');
 
             if (!$this->form_validation->run()) {
@@ -156,7 +158,11 @@ class Direcciones extends CI_Controller
                     $data['dir_nombre'] = $this->input->post('nombre');
                     $data['dir_orden'] = $this->input->post('orden');
                     $data['dir_descripcion'] = $this->input->post('descripcion');
-                    $data['dir_datos_contacto'] = $this->input->post('datos_contacto');
+                    $data['dir_encargado'] = $this->input->post('encargado');
+                    $data['dir_secretaria'] = $this->input->post('secretaria');
+                    $data['dir_telefono'] = $this->input->post('telefono');
+                    $data['dir_email'] = $this->input->post('email');
+                    $data['dir_direccion'] = $this->input->post('direccion');
 
                     if ($this->input->post('ruta_interna_2')) {
                         $data['dir_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');

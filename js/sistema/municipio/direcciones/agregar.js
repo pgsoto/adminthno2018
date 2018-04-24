@@ -20,7 +20,6 @@ $(function(){
                 });
 
                 $('#descripcion').html(CKEDITOR.instances.descripcion.getData());
-                $('#datos_contacto').html(CKEDITOR.instances.datos_contacto.getData());
                 
                 var formData = new FormData(document.getElementById("form-agregar"));
 

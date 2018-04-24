@@ -105,9 +105,11 @@ class DAEM extends CI_Controller
 
             #validaciones
             $this->form_validation->set_rules('nombre', 'Nombre', 'required');
+            $this->form_validation->set_rules('email','Email','valid_email');
             #$this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');
+            $this->form_validation->set_message('valid_email', '* %s no es válido');
             $this->form_validation->set_error_delimiters('<div>', '</div>');
 
             if (!$this->form_validation->run()) {
@@ -121,7 +123,11 @@ class DAEM extends CI_Controller
                     #$data['daem_url'] = slug($this->input->post('nombre'));
                     $data['daem_nombre'] = $this->input->post('nombre');
                     $data['daem_descripcion'] = $this->input->post('descripcion');
-                    $data['daem_datos_contacto'] = $this->input->post('datos_contacto');
+                    $data['daem_encargado'] = $this->input->post('encargado');
+                    $data['daem_secretaria'] = $this->input->post('secretaria');
+                    $data['daem_telefono'] = $this->input->post('telefono');
+                    $data['daem_email'] = $this->input->post('email');
+                    $data['daem_direccion'] = $this->input->post('direccion');
 
                     if ($this->input->post('ruta_interna_2')) {
                         $data['daem_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');

@@ -62,9 +62,6 @@ class Subsecciones_direcciones extends CI_Controller
         $where .= "subdir_visible = 1";
         $and = " and ";
 
-        $where .= $and."subdir_visible = 1";
-        $and = " and ";
-
         if (count($_GET) > 0)
             $url = '?' . http_build_query($_GET, '', "&");
 
@@ -153,9 +150,11 @@ class Subsecciones_direcciones extends CI_Controller
             #validaciones
             $this->form_validation->set_rules('nombre', 'Nombre', 'required');
             $this->form_validation->set_rules('orden', 'Orden', 'required');
+            $this->form_validation->set_rules('email','Email','valid_email');
             $this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');
+            $this->form_validation->set_message('valid_email', '* %s no es válido');
             $this->form_validation->set_error_delimiters('<div>', '</div>');
 
             if (!$this->form_validation->run()) {
@@ -170,7 +169,11 @@ class Subsecciones_direcciones extends CI_Controller
                     $data['subdir_nombre'] = $this->input->post('nombre');
                     $data['subdir_orden'] = $this->input->post('orden');
                     $data['subdir_descripcion'] = $this->input->post('descripcion');
-                    $data['subdir_datos_contacto'] = $this->input->post('datos_contacto');
+                    $data['subdir_encargado'] = $this->input->post('encargado');
+                    $data['subdir_secretaria'] = $this->input->post('secretaria');
+                    $data['subdir_telefono'] = $this->input->post('telefono');
+                    $data['subdir_email'] = $this->input->post('email');
+                    $data['subdir_direccion'] = $this->input->post('direccion');
 
                     if ($this->input->post('ruta_interna_2')) {
                         $data['subdir_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');

@@ -12,29 +12,29 @@ class Noticias extends CI_Controller
         parent::__construct();
 
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_1 = 1065;
-        $this->img->min_alto_1 = 360;
+        $this->img->min_ancho_1 = 510;
+        $this->img->min_alto_1 = 320;
 
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_1 = 1065*4;
-        $this->img->max_alto_1 = 360*4;
+        $this->img->max_ancho_1 = 510*4;
+        $this->img->max_alto_1 = 320*4;
 
         #define el tamaño del recorte
-        $this->img->recorte_ancho_1 = 1065;
-        $this->img->recorte_alto_1 = 360;
+        $this->img->recorte_ancho_1 = 510;
+        $this->img->recorte_alto_1 = 320;
 
         /*GALERIA*/
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_2 = 510;
-        $this->img->min_alto_2 = 320;
+        $this->img->min_ancho_2 = 1065;
+        $this->img->min_alto_2 = 360;
 
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_2 = 510*4;
-        $this->img->max_alto_2 = 320*4;
+        $this->img->max_ancho_2 = 1065*4;
+        $this->img->max_alto_2 = 360*4;
 
         #define el tamaño del recorte
-        $this->img->recorte_ancho_2 = 510;
-        $this->img->recorte_alto_2 = 320;
+        $this->img->recorte_ancho_2 = 1065;
+        $this->img->recorte_alto_2 = 360;
 
         $this->img->upload_dir = '/imagenes/modulos/noticias/noticias/';
 
@@ -79,7 +79,7 @@ class Noticias extends CI_Controller
             $aux->categoria = $this->ws->obtener($this->modulo_categoria, array("catn_codigo"=>$aux->categoria));
         }
         $data['pagination'] = $this->pagination->create_links();
-        #rint_array($data["result"]);
+        #print_array($data["result"]);
         #Nav
         $this->layout->nav(array($this->nombre => '/'));
 
@@ -106,6 +106,9 @@ class Noticias extends CI_Controller
 
         if ($codigo && is_numeric($codigo)) {
             $result = $this->ws->obtener($this->modulo, "not_codigo = " . $codigo);
+            if ($result) {
+                $result->imagenes = $this->ws->listar($this->modulo_imagenes, "galn_noticia = " . $codigo);
+            }
             #print_array($result);
             if (!$result) {
                 redirect('/noticias/noticias/');
@@ -118,7 +121,7 @@ class Noticias extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = 'Editar ' . $this->nombre;
             $this->layout->title('Editar ' . $this->nombre);
-            $this->layout->nav(array($this->nombre => "/noticias/noticias/", "Editar " . $result->nombre => "/"));
+            $this->layout->nav(array($this->nombre => "/noticias/noticias/", "Editar " . $result->titulo => "/"));
         } else {
             $data['titulo'] = 'Agregar ' . $this->nombre;
             $this->layout->title('Agregar ' . $this->nombre);

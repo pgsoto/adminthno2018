@@ -8,7 +8,7 @@
     <form action="#" method="post" id="form-agregar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
-                <label>Nombre (*) </label>
+                <!--<label>Nombre (*) </label>-->
                 <input type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
 
                 <label>Galería slider tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
@@ -64,8 +64,20 @@
                 <label>Descripción</label>
                 <textarea class="form-control" rows="3"  id="descripcion" name="descripcion"><?= isset($result->descripcion) ? $result->descripcion : ''; ?></textarea>
 
-                <label>Datos de contacto</label>
-                <textarea class="form-control" rows="3"  id="datos_contacto" name="datos_contacto"><?= isset($result->datos_contacto) ? $result->datos_contacto : ''; ?></textarea>
+                <label>Encargado</label>
+                <textarea class="form-control" rows="3"  id="encargado" name="encargado"><?= isset($result->encargado) ? $result->encargado : ''; ?></textarea>
+
+                <label>Secretaria</label>
+                <textarea class="form-control" rows="3"  id="secretaria" name="secretaria"><?= isset($result->secretaria) ? $result->secretaria : ''; ?></textarea>
+
+                <label>Teléfono</label>
+                <input type="text" class="form-control" name="telefono" value="<?= isset($result->telefono) ? $result->telefono : ''; ?>" />
+
+                <label>Email</label>
+                <input type="text" class="form-control validate[custom[email]]" name="email" value="<?= isset($result->email) ? $result->email : ''; ?>" />
+
+                <label>Dirección</label>
+                <input type="text" class="form-control" name="direccion" value="<?= isset($result->direccion) ? $result->direccion : ''; ?>" />
 
                 <label>Mapa</label>
                 <input id="pac-input" class="controls" type="text" placeholder="Busqueda">
@@ -95,7 +107,6 @@
 
 <script>
     CKEDITOR.replace( 'descripcion' );
-    CKEDITOR.replace( 'datos_contacto' );
 </script>
 
 <script>

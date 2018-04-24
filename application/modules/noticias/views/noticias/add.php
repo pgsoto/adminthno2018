@@ -9,7 +9,7 @@
             	<label>Título (*) </label>
                 <input type="text" class="form-control validate[required]" name="titulo" value="<?= isset($result->titulo) ? $result->titulo : ''; ?>" />
 
-                <label>Galería slider tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
+                <label>Galería imágenes tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
                     <div style="display:none;" id="replicar-1" class="box">
                         <div class="img" style="width:<?php echo $this->img->min_ancho_1/2+2; ?>px; height:<?php echo $this->img->min_alto_1/2+2; ?>px;" ></div>

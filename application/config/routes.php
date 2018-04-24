@@ -191,6 +191,12 @@ $route['municipio/consejo/cargar-imagen']    = "municipio/consejo/cargar_imagen"
 $route['municipio/consejo/cortar-imagen']    = "municipio/consejo/cortar_imagen";
 $route['municipio/consejo/eliminar-imagen']  = "municipio/consejo/eliminar_imagen";
 
+$route['municipio/consejo/documentos/(:num)']                  = "municipio/documentos_consejo/index/$1";
+$route['municipio/consejo/documentos/(:num)/(:num)']           = "municipio/documentos_consejo/index/$1";
+$route['municipio/consejo/documentos/agregar/(:num)']          = "municipio/documentos_consejo/agregar/$1";
+$route['municipio/consejo/documentos/editar/(:num)/(:num)']    = "municipio/documentos_consejo/agregar/$1/$2";
+$route['municipio/consejo/documentos/eliminar']         = "municipio/documentos_consejo/eliminar";
+
 #organigrama
 $route['municipio/organigrama']                  = "municipio/organigrama/agregar";
 $route['municipio/organigrama/eliminar']         = "municipio/organigrama/eliminar";
@@ -201,6 +207,16 @@ $route['municipio/organigrama/eliminar-imagen']  = "municipio/organigrama/elimin
 #FIN MUNICIPIO
 
 #EVENTOS
+
+#slider
+$route['eventos/slider']                  = "eventos/slider";
+$route['eventos/slider/(:num)']           = "eventos/slider";
+$route['eventos/slider/agregar']          = "eventos/slider/agregar";
+$route['eventos/slider/editar/(:num)']    = "eventos/slider/agregar/$1";
+$route['eventos/slider/eliminar']         = "eventos/slider/eliminar";
+$route['eventos/slider/cargar-imagen']    = "eventos/slider/cargar_imagen";
+$route['eventos/slider/cortar-imagen']    = "eventos/slider/cortar_imagen";
+$route['eventos/slider/eliminar-imagen']  = "eventos/slider/eliminar_imagen";
 
 #eventos
 $route['eventos/eventos']                  = "eventos/eventos";
