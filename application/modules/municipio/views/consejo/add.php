@@ -5,11 +5,12 @@
     <?php foreach($tipos_documentos as $tipdoc){ ?>
     <a href="/municipio/consejo/documentos/<?= $tipdoc->codigo; ?>" class="btn btn-primary"><?= $tipdoc->nombre; ?></a>
     <?php } ?>
+    <a href="/municipio/consejo/integrantes/" class="btn btn-primary">Integrantes</a>
     <form action="#" method="post" id="form-agregar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
                 <!--<label>Nombre (*) </label>-->
-                <input type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
+                <input disabled type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
 
                 <label>Galería slider tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">

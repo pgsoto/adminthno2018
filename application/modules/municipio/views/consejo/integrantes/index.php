@@ -4,7 +4,7 @@
     </div>
 
   	<div class="subtitulo-btn">
-        <a class="btn btn-default" href="/municipio/consejo/documentos/agregar/<?= $tipo_documento->codigo; ?>/">Agregar</a>
+        <a class="btn btn-default" href="/municipio/consejo/integrantes/agregar/">Agregar</a>
     </div>
 
     <table class="table table-bordered">
@@ -21,16 +21,15 @@
             <?php if($result){ ?>
                 <?php foreach($result as $aux){ ?>
                     <tr>
-                        <td><?php echo $aux->archivo; ?></td>
+                        <td><?php echo $aux->nombre; ?></td>
                         <td><?php echo $aux->orden; ?></td>
 						<td class="text-center">
-                            <a href="/municipio/consejo/documentos/editar/<?php echo $seccion; ?>/<?php echo $aux->codigo; ?>/"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                            <a href="/municipio/consejo/integrantes/editar/<?php echo $aux->codigo; ?>/"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                         </td>
                         <td class="text-center">
 							<a rel="<?php echo $aux->codigo; ?>" class="eliminar" style="cursor:pointer;">
 								<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 							</a>
-                            <input type="hidden" id="tipodocumento" rel="<?= $tipo_documento->codigo; ?>" />
 						</td>
                     </tr>
                 <?php } ?>

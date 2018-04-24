@@ -191,6 +191,15 @@ $route['municipio/consejo/cargar-imagen']    = "municipio/consejo/cargar_imagen"
 $route['municipio/consejo/cortar-imagen']    = "municipio/consejo/cortar_imagen";
 $route['municipio/consejo/eliminar-imagen']  = "municipio/consejo/eliminar_imagen";
 
+$route['municipio/consejo/integrantes']                  = "municipio/integrantes_consejo/index";
+$route['municipio/consejo/integrantes/(:num)']           = "municipio/integrantes_consejo/index/$1";
+$route['municipio/consejo/integrantes/agregar']          = "municipio/integrantes_consejo/agregar";
+$route['municipio/consejo/integrantes/editar/(:num)']    = "municipio/integrantes_consejo/agregar/$1";
+$route['municipio/consejo/integrantes/eliminar']         = "municipio/integrantes_consejo/eliminar";
+$route['municipio/consejo/integrantes/cargar-imagen']    = "municipio/integrantes_consejo/cargar_imagen";
+$route['municipio/consejo/integrantes/cortar-imagen']    = "municipio/integrantes_consejo/cortar_imagen";
+$route['municipio/consejo/integrantes/eliminar-imagen']  = "municipio/integrantes_consejo/eliminar_imagen";
+
 $route['municipio/consejo/documentos/(:num)']                  = "municipio/documentos_consejo/index/$1";
 $route['municipio/consejo/documentos/(:num)/(:num)']           = "municipio/documentos_consejo/index/$1";
 $route['municipio/consejo/documentos/agregar/(:num)']          = "municipio/documentos_consejo/agregar/$1";
