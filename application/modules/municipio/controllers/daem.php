@@ -119,8 +119,8 @@ class DAEM extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    #$data['daem_estado'] = $this->input->post('estado');
-                    #$data['daem_url'] = slug($this->input->post('nombre'));
+                    $data['daem_estado'] = $this->input->post('estado');
+                    $data['daem_url'] = slug($this->input->post('nombre'));
                     $data['daem_nombre'] = $this->input->post('nombre');
                     $data['daem_descripcion'] = $this->input->post('descripcion');
                     $data['daem_encargado'] = $this->input->post('encargado');

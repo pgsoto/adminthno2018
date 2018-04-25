@@ -116,8 +116,8 @@ class Alcalde extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    #$data['alc_estado'] = $this->input->post('estado');
-                    #$data['alc_url'] = slug($this->input->post('nombre'));
+                    $data['alc_estado'] = $this->input->post('estado');
+                    $data['alc_url'] = slug($this->input->post('nombre'));
                     $data['alc_nombre'] = $this->input->post('nombre');
                     $data['alc_descripcion'] = $this->input->post('descripcion');
                     $data['alc_descripcion_lateral'] = $this->input->post('descripcion_lateral');

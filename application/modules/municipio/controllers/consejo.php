@@ -118,8 +118,8 @@ class Consejo extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    #$data['con_estado'] = $this->input->post('estado');
-                    #$data['con_url'] = slug($this->input->post('nombre'));
+                    $data['con_estado'] = $this->input->post('estado');
+                    $data['con_url'] = slug($this->input->post('nombre'));
                     $data['con_nombre'] = $this->input->post('nombre');
                     $data['con_resena_integrantes'] = $this->input->post('resena_integrantes');
                     $data['con_funciones'] = $this->input->post('funciones');

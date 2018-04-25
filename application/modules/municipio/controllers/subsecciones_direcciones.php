@@ -62,6 +62,9 @@ class Subsecciones_direcciones extends CI_Controller
         $where .= "subdir_visible = 1";
         $and = " and ";
 
+        $where .= $and."subdir_seccion = ".$seccion;
+        $and = " and ";
+
         if (count($_GET) > 0)
             $url = '?' . http_build_query($_GET, '', "&");
 

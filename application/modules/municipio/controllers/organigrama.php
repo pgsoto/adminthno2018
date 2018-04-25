@@ -116,8 +116,8 @@ class Organigrama extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    #$data['org_estado'] = $this->input->post('estado');
-                    #$data['org_url'] = slug($this->input->post('nombre'));
+                    $data['org_estado'] = $this->input->post('estado');
+                    $data['org_url'] = slug($this->input->post('nombre'));
                     $data['org_nombre'] = $this->input->post('nombre');
                     $data['org_descripcion'] = $this->input->post('descripcion');
 
