@@ -63,7 +63,7 @@
 
                 <label>Tipo de contenido</label>
                 <select name="tipo_contenido" class="selectpicker" title="Tipo de contenido" id="tipo_contenido" >
-                    <option disabled value="">Seleccione tipo de contenido...</option>
+                    <!--<option disabled value="">Seleccione tipo de contenido...</option>-->
                     <?php foreach($tipo_contenido as $key => $tipc){ ?>
                         <option <?php if(isset($result->tipo_contenido) && $result->tipo_contenido == $tipc->codigo ) echo 'selected'; ?> value="<?php echo $tipc->codigo ?>"><?php echo $tipc->nombre ?></option>
                     <?php } ?>
@@ -74,7 +74,8 @@
                     <textarea class="form-control" rows="3"  id="descripcion_iframe" name="descripcion_iframe"><?= isset($result->descripcion_iframe) ? $result->descripcion_iframe : ''; ?></textarea>
 
                     <label>Iframe</label>
-                    <input type="text" class="form-control" name="iframe" value="<?= isset($result->iframe) ? $result->iframe : ''; ?>" />
+                    <!--<input type="text" class="form-control" name="iframe" value="" />-->
+                    <textarea class="form-control" rows="3"  id="iframe" name="iframe"><?= isset($result->iframe) ? $result->iframe : ''; ?></textarea>
                 </div>
 
                 <div id="div2">
