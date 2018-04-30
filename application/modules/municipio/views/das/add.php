@@ -134,7 +134,11 @@
         var map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: -36.82013519999999, lng: -73.0443904},
             zoom: 12,
-            mapTypeId: 'roadmap'
+            mapTypeId: 'roadmap',
+            streetViewControl: false,
+            minZoom: 13,
+            maxZoom: 16,
+            mapTypeControl: false
         });
 
         <?php if(isset($result->mapa)){ ?>
@@ -142,6 +146,17 @@
         markers2 = [
             ['<?= $result->nombre;?>', <?= $result->mapa_coor[0];?>,<?= $result->mapa_coor[1];?>]
         ];
+        var icon_target = {
+        url: '/imagenes/template/geocode-32.png',
+         // Este marcador tiene 20 pixeless de ancho por 32 pixeles de alto.
+        size: new google.maps.Size(32, 32),
+        // El origen para esta imagen es (0, 0).
+        origin: new google.maps.Point(0, 0),
+        // El ancla para esa imagen es la base del asta bandera en (0, 32).
+        anchor: new google.maps.Point(0, 32)
+        };
+
+
         //console.log(markers2);
         var bounds = new google.maps.LatLngBounds();
         // Loop through our array of markers & place each one on the map
@@ -151,7 +166,8 @@
             marker = new google.maps.Marker({
                 position: position,
                 map: map,
-                title: markers2[i][0]
+                title: markers2[i][0],
+                icon: icon_target
             });
 
             // Automatically center the map fitting all markers on the screen

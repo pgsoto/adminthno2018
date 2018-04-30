@@ -90,8 +90,13 @@ class Eventos extends CI_Controller
 
         #TIMER
         $this->layout->js('/js/jquery/datepicker/bootstrap-datepicker.js');
+        
         $this->layout->js('/js/jquery/bootstrap-timepicker/js/bootstrap-timepicker.js');
         $this->layout->css('/js/jquery/datepicker/datepicker3.css');
+        
+        $this->layout->css('/js/jquery/wickedpicker-master/dist/wickedpicker.min.css');
+        $this->layout->js('/js/jquery/wickedpicker-master/dist/wickedpicker.min.js');
+
 
         # Contenido
         $data = array();

@@ -12,15 +12,26 @@
                 <label>Fecha</label>
                 <input type="text" class="form-control datepicker" name="fecha" value="<?= isset($result->fecha) ? invierte_fecha($result->fecha) : ''; ?>" />
 
+
+
+    
+            <!--
                 <label>Hora de inicio</label>
                 <div class="input-group bootstrap-timepicker timepicker">
-                    <input id="timepicker1" type="text" class="form-control input-small" name="hora_inicio" value="<?= isset($result->hora_inicio) ? $result->hora_inicio : ''; ?>">
+                    <input id="timepicker" type="text" class="form-control input-small timepicker" name="hora_inicio" value="<?= isset($result->hora_inicio) ? $result->hora_inicio : ''; ?>">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                </div>-->
+
+
+                 <label>Hora de inicio</label>
+                <div class="input-group bootstrap-timepicker timepickerinicio">
+                    <input id="timepickerinicio" type="text" class="form-control timepickerinicio" name="hora_inicio" value="<?= isset($result->hora_inicio) ? $result->hora_inicio : ''; ?>">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
                 </div>
 
                 <label>Hora de término</label>
                 <div class="input-group bootstrap-timepicker timepicker">
-                    <input id="timepicker1" type="text" class="form-control input-small" name="hora_termino" value="<?= isset($result->hora_termino) ? $result->hora_termino : ''; ?>">
+                    <input id="timepickertermino" type="text" class="form-control input-small timepickertermino" name="hora_termino" value="<?= isset($result->hora_termino) ? $result->hora_termino : ''; ?>">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
                 </div>
 
@@ -96,7 +107,12 @@
         format:"dd-mm-yyyy"
     });
 
-    $('.timepicker').timepicker();
+  //  $('.timepicker').timepicker();
+  //$('.timepicker').wickedpicker();
+
+
+
+
 </script>
 
 <script>
@@ -134,24 +150,40 @@
         var map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: -36.82013519999999, lng: -73.0443904},
             zoom: 12,
-            mapTypeId: 'roadmap'
+            mapTypeId: 'roadmap',
+            streetViewControl: false,
+            minZoom: 13,
+            maxZoom: 16,
+            mapTypeControl: false
         });
 
         <?php if(isset($result->mapa)){ ?>
-        var markers2 = [];
-        markers2 = [
+        var markers = [];
+        markers = [
             ['<?= $result->nombre;?>', <?= $result->mapa_coor[0];?>,<?= $result->mapa_coor[1];?>]
         ];
-        //console.log(markers2);
+
+        var icon_target = {
+        url: '/imagenes/template/geocode-32.png',
+         // Este marcador tiene 20 pixeless de ancho por 32 pixeles de alto.
+        size: new google.maps.Size(32, 32),
+        // El origen para esta imagen es (0, 0).
+        origin: new google.maps.Point(0, 0),
+        // El ancla para esa imagen es la base del asta bandera en (0, 32).
+        anchor: new google.maps.Point(0, 32)
+        };
+
+        //console.log(markers);
         var bounds = new google.maps.LatLngBounds();
         // Loop through our array of markers & place each one on the map
-        for( i = 0; i < markers2.length; i++ ) {
-            var position = new google.maps.LatLng(markers2[i][1], markers2[i][2]);
+        for( i = 0; i < markers.length; i++ ) {
+            var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
             bounds.extend(position);
             marker = new google.maps.Marker({
                 position: position,
                 map: map,
-                title: markers2[i][0]
+                title: markers[i][0],
+                icon: icon_target
             });
 
             // Automatically center the map fitting all markers on the screen
@@ -223,6 +255,60 @@
 
     }
 
+
+
+//Time picker y configuracion del mismo
+
+var hora_inicio = document.getElementsByName("hora_inicio")[0].value;
+var hora_termino = document.getElementsByName("hora_termino")[0].value;
+
+if(document.getElementsByName("hora_inicio")[0].value == ''){
+    var optionsInicio = { 
+        twentyFour: true
+    };
+}else{
+    var optionsInicio = { 
+        now: hora_inicio,
+        twentyFour: true
+    };
+}
+if(document.getElementsByName("hora_termino")[0].value == ''){
+    var optionsTermino = { 
+        now: '00:00:00',
+        twentyFour: true
+    };
+}else{
+    var optionsTermino = { 
+        now: hora_termino,
+        twentyFour: true
+    };
+}
+
+   $('.timepickerinicio').wickedpicker(optionsInicio);
+   $('.timepickertermino').wickedpicker(optionsTermino);
+
+//Configuracion TimePicker
+/*
+    var options = { now: "12:35", //hh:mm 24 hour format only, defaults to current time
+    twentyFour: false, //Display 24 hour format, defaults to false
+    upArrow: 'wickedpicker__controls__control-up', //The up arrow class selector to use, for custom CSS
+    downArrow: 'wickedpicker__controls__control-down', //The down arrow class selector to use, for custom CSS
+    close: 'wickedpicker__close', //The close class selector to use, for custom CSS
+    hoverState: 'hover-state', //The hover state class to use, for custom CSS
+    title: 'Timepicker', //The Wickedpicker's title,
+    showSeconds: false, //Whether or not to show seconds,
+    secondsInterval: 1, //Change interval for seconds, defaults to 1
+    minutesInterval: 1, //Change interval for minutes, defaults to 1
+    beforeShow: null, //A function to be called before the Wickedpicker is shown
+    show: null, //A function to be called when the Wickedpicker is shown
+    clearable: false, //Make the picker's input clearable (has clickable "x")
+    }; 
+
+*/ 
+
+
+
+ timepickertermino
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdSXBzktlVz-DwJ0r1PSNCZA7TnO4BNI0&libraries=places&callback=initAutocomplete"
         async defer></script>
