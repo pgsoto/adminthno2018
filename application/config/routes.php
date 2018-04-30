@@ -102,7 +102,7 @@ $route['noticias/categorias/editar/(:num)']    = "noticias/categorias/agregar/$1
 
 #SERVICIOS
 
-#servicios
+#tramites
 $route['servicios/tramites']                  = "servicios/tramites";
 $route['servicios/tramites/(:num)']           = "servicios/tramites";
 $route['servicios/tramites/agregar']          = "servicios/tramites/agregar";
@@ -112,7 +112,7 @@ $route['servicios/tramites/cargar-imagen']    = "servicios/tramites/cargar_image
 $route['servicios/tramites/cortar-imagen']    = "servicios/tramites/cortar_imagen";
 $route['servicios/tramites/eliminar-imagen']  = "servicios/tramites/eliminar_imagen";
 
-#servicios
+#desarrollo-social
 $route['servicios/desarrollo-social']                  = "servicios/desarrollo_social";
 $route['servicios/desarrollo-social/(:num)']           = "servicios/desarrollo_social";
 $route['servicios/desarrollo-social/agregar']          = "servicios/desarrollo_social/agregar";
@@ -121,6 +121,15 @@ $route['servicios/desarrollo-social/eliminar']         = "servicios/desarrollo_s
 $route['servicios/desarrollo-social/cargar-imagen']    = "servicios/desarrollo_social/cargar_imagen";
 $route['servicios/desarrollo-social/cortar-imagen']    = "servicios/desarrollo_social/cortar_imagen";
 $route['servicios/desarrollo-social/eliminar-imagen']  = "servicios/desarrollo_social/eliminar_imagen";
+
+$route['servicios/desarrollo-social/subsecciones/(:num)']                  = "servicios/subsecciones_desarrollo_social/index/$1";
+$route['servicios/desarrollo-social/subsecciones/(:num)/(:num)']           = "servicios/subsecciones_desarrollo_social/index/$1";
+$route['servicios/desarrollo-social/subsecciones/agregar/(:num)']          = "servicios/subsecciones_desarrollo_social/agregar/$1";
+$route['servicios/desarrollo-social/subsecciones/editar/(:num)/(:num)']    = "servicios/subsecciones_desarrollo_social/agregar/$1/$2";
+$route['servicios/desarrollo-social/subsecciones/eliminar']         = "servicios/subsecciones_desarrollo_social/eliminar";
+$route['servicios/desarrollo-social/subsecciones/cargar-imagen']    = "servicios/subsecciones_desarrollo_social/cargar_imagen";
+$route['servicios/desarrollo-social/subsecciones/cortar-imagen']    = "servicios/subsecciones_desarrollo_social/cortar_imagen";
+$route['servicios/desarrollo-social/subsecciones/eliminar-imagen']  = "servicios/subsecciones_desarrollo_social/eliminar_imagen";
 
 #FIN SERVICIOS
 

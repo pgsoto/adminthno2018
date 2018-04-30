@@ -65,7 +65,7 @@ class Documentos_consejo extends CI_Controller
         $seccion = $this->ws->obtener($this->modulo_seccion, "con_codigo = " . $seccion);
 
         #Nav
-        $this->layout->nav(array('Consejo' => '/municipio/consejo/', $this->nombre.' '.$tipo_documento->nombre => '/'));
+        $this->layout->nav(array('Concejo' => '/municipio/consejo/', $this->nombre.' '.$tipo_documento->nombre => '/'));
 
         #view
         $this->layout->view('consejo/documentos/index', $data);
@@ -105,11 +105,11 @@ class Documentos_consejo extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = 'Editar ' . $tipo_documento->nombre;
             $this->layout->title('Editar ' . $tipo_documento->nombre);
-            $this->layout->nav(array("Consejo" => "/municipio/consejo/", $this->nombre => "/municipio/consejo/documentos/".$tipo_documento->codigo."/", "Editar " . $this->nombre.' '.$tipo_documento->nombre => "/"));
+            $this->layout->nav(array("Concejo" => "/municipio/consejo/", $this->nombre => "/municipio/consejo/documentos/".$tipo_documento->codigo."/", "Editar " . $this->nombre.' '.$tipo_documento->nombre => "/"));
         } else {
             $data['titulo'] = 'Agregar ' . $tipo_documento->nombre;
             $this->layout->title('Agregar ' . $tipo_documento->nombre);
-            $this->layout->nav(array("Consejo" => "/municipio/consejo/", $this->nombre => "/municipio/consejo/documentos/".$tipo_documento->codigo."/", "Agregar " . $this->nombre.' '.$tipo_documento->nombre => "/"));
+            $this->layout->nav(array("Concejo" => "/municipio/consejo/", $this->nombre => "/municipio/consejo/documentos/".$tipo_documento->codigo."/", "Agregar " . $this->nombre.' '.$tipo_documento->nombre => "/"));
         }
 
         #view
@@ -123,7 +123,7 @@ class Documentos_consejo extends CI_Controller
         if ($this->input->post()) {
 
             #validaciones
-            #$this->form_validation->set_rules('archivo', 'Archivo', 'required');
+            $this->form_validation->set_rules('nombre', 'Nombre', 'required');
             #$this->form_validation->set_rules('estado', 'Estado', 'required');
             $this->form_validation->set_rules('tipodocumento', 'Tipo Documento', 'required');
 
@@ -138,7 +138,7 @@ class Documentos_consejo extends CI_Controller
                     $codigo = $this->input->post('codigo', true);
 
                     $data['doccon_consejo'] = 1;
-                    #$data['doccon_archivo'] = $this->input->post('archivo');
+                    $data['doccon_nombre'] = $this->input->post('nombre');
                     $data['doccon_orden'] = $this->input->post('orden');
                     $data['doccon_tipodocumento'] = $this->input->post('tipodocumento');
 

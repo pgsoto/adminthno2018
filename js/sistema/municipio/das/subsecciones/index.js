@@ -39,7 +39,7 @@ $(function(){
 							});
 
                             setTimeout(function(){
-                                window.location.href = '/municipio/das/subsecciones/';
+                                window.location.reload();
                             }, 1000);
 						} 
 						else

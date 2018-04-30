@@ -39,7 +39,7 @@ $(function(){
 							});
 
                             setTimeout(function(){
-                                window.location.href = '/servicios/desarrollo-social/';
+                                window.location.reload();
                             }, 1000);
 						} 
 						else

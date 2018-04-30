@@ -62,7 +62,7 @@ foreach ($secciones_menu as $aux) {
                     <li><a href="/municipio/das/">DAS</a></li>
                     <li><a href="/municipio/daem/">DAEM</a></li>
                     <li><a href="/municipio/alcalde/">Alcalde</a></li>
-                    <li><a href="/municipio/consejo/">Consejo</a></li>
+                    <li><a href="/municipio/consejo/">Concejo</a></li>
                     <li><a href="/municipio/organigrama/">Organigrama</a></li>
                 </ul>
             </li>

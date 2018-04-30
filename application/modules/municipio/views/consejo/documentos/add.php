@@ -6,8 +6,11 @@
     <form action="#" method="post" id="form-agregar" enctype="multipart/form-data">
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
+                <label>Nombre (*) </label>
+                <input type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
+
             	<label>Archivo (*) </label>
-                <input type="file" class="form-control validate[required]" name="archivo" value="<?= isset($result->archivo) ? $result->archivo : ''; ?>" />
+                <input type="file" class="form-control" name="archivo"  />
                 <?php if(isset($result->archivo)){ ?>
                     <p><a href="<?php echo $result->archivo; ?>" target="_blank">Descargar archivo</a></p>
                 <?php } ?>

@@ -4,7 +4,6 @@ $(function(){
 		
 		e.preventDefault();
 		var codigo = $(this).attr('rel');
-        var tipo = $('#tipodocumento').attr('rel');
         
 		noty({
 		layout: 'topCenter',
@@ -29,7 +28,7 @@ $(function(){
 					type: "POST",
 					data: "codigo="+codigo,
 					dataType: "json",
-					url: '/municipio/consejo/documentos/eliminar/',
+					url: '/servicios/desarrollo-social/subsecciones/eliminar/',
 					success: function(json){
 						if(json.result){
 							noty({
@@ -40,7 +39,6 @@ $(function(){
 							});
 
                             setTimeout(function(){
-                                //window.location.href = '/municipio/consejo/documentos/'+tipo+'/';
                                 window.location.reload();
                             }, 1000);
 						} 

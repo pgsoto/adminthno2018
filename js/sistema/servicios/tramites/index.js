@@ -39,7 +39,7 @@ $(function(){
 							});
 
                             setTimeout(function(){
-                                window.location.href = '/servicios/tramites/';
+                                window.location.reload();
                             }, 1000);
 						} 
 						else

@@ -39,7 +39,7 @@ $(function(){
 							});
 
                             setTimeout(function(){
-                                window.location.href = '/municipio/direcciones/';
+                                window.location.reload();
                             }, 1000);
 						} 
 						else

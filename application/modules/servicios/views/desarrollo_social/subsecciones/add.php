@@ -2,13 +2,11 @@
   	<div class="titulo-btn">
         <h1><?= $titulo; ?></h1>
     </div>
-    <?php if( isset($result->codigo) ){ ?>
-        <a href="/servicios/desarrollo-social/subsecciones/<?= $result->codigo; ?>/" class="btn btn-primary">Subsecciones</a>
-    <?php } ?>
+
     <form action="#" method="post" id="form-agregar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
-            	<label>Nombre (*) </label>
+            	<label>Nombres (*) </label>
                 <input type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
 
                 <label>Orden (*) </label>
@@ -22,7 +20,7 @@
                     <?php if(isset($result)) {?>
                         <div id="cont-imagenes-1">
                             <?php if($result->imagenes){ ?>
-                                <?php foreach(array_reverse($result->imagenes) as $aux){ ?>
+                                <?php foreach($result->imagenes as $aux){ ?>
                                     <div class="box" >
                                         <div rel="1" class="img" style="width:<?php echo $this->img->min_ancho_1/4+2; ?>px; height:<?php echo $this->img->min_alto_1/4+2; ?>px;" >
                                             <img class="croppedImg" src="<?php echo $aux->imagen_ruta_interna; ?>" />
@@ -95,6 +93,8 @@
                 
         	</div>
 
+            <input type="hidden" id="seccion" name="seccion" value="<?= $seccion; ?>" />
+
             <input type="hidden" id="codigo" name="codigo" value="<?= isset($result->codigo) ? $result->codigo : '0'; ?>" />
 
 			<div class="col-xs-12">
@@ -107,17 +107,16 @@
     </form>
 </div>
 
-
 <script>
     CKEDITOR.replace( 'descripcion' );
 </script>
 
 <script>
     //configuracion para imagenes
-	var id = 1;
-	var urlDelete = '/servicios/desarrollo-social/eliminar-imagen/';
-    var urlCargar = '/servicios/desarrollo-social/cargar-imagen/';
-    var urlCortar = '/servicios/desarrollo-social/cortar-imagen/';
+    var id = 1;
+    var urlDelete = '/servicios/desarrollo-social/subsecciones/eliminar-imagen/';
+    var urlCargar = '/servicios/desarrollo-social/subsecciones/cargar-imagen/';
+    var urlCortar = '/servicios/desarrollo-social/subsecciones/cortar-imagen/';
     var galeria = true;
 
     var cargar=[];
@@ -129,7 +128,7 @@
     cargar_imagenes();
     cargar_imagen(cargar);
 
-</script> 
+</script>
 
 <script>
     function initAutocomplete() {

@@ -19,14 +19,12 @@ $(function(){
                     fondo: '<div id="fondo" style=" position: fixed; top:0; height: 100%; width:100%; background-color: rgba(60, 56, 56, 0.38); display:block;z-index: 9999;"></div>'
                 });
 
-                $('#resena_integrantes').html(CKEDITOR.instances.resena_integrantes.getData());
-                $('#funciones').html(CKEDITOR.instances.funciones.getData());
-                $('#sesiones').html(CKEDITOR.instances.sesiones.getData());
+                $('#descripcion').html(CKEDITOR.instances.descripcion.getData());
                 
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/municipio/consejo/process/',
+                    url: '/servicios/subsecciones_desarrollo_social/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -43,7 +41,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.href = '/municipio/consejo/';
+                                    window.location.href = '/servicios/desarrollo-social/subsecciones/'+json.seccion;
                             }, 1000);
                         }
                         else

@@ -10,7 +10,7 @@
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
                 <!--<label>Nombre (*) </label>-->
-                <input disabled type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
+                <input type="hidden" class="form-control" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
 
                 <label>Galería slider tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
@@ -68,8 +68,8 @@
                 <label>Funciones</label>
                 <textarea class="form-control" rows="3"  id="funciones" name="funciones"><?= isset($result->funciones) ? $result->funciones : ''; ?></textarea>
 
-                <label>Servicios</label>
-                <textarea class="form-control" rows="3"  id="servicios" name="servicios"><?= isset($result->servicios) ? $result->servicios : ''; ?></textarea>
+                <label>Sessiones</label>
+                <textarea class="form-control" rows="3"  id="sesiones" name="sesiones"><?= isset($result->sesiones) ? $result->sesiones : ''; ?></textarea>
 
                 <?php /*
                 <label>Estado</label>
@@ -96,7 +96,7 @@
 <script>
     CKEDITOR.replace( 'resena_integrantes' );
     CKEDITOR.replace( 'funciones' );
-    CKEDITOR.replace( 'servicios' );
+    CKEDITOR.replace( 'sesiones' );
 </script>
 
 <script>
