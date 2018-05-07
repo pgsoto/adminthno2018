@@ -10,7 +10,7 @@
                 <input type="text" class="form-control validate[required]" name="nombre" value="<?= isset($result->nombre) ? $result->nombre : ''; ?>" />
 
             	<label>Archivo (*) </label>
-                <input type="file" class="form-control" name="archivo"  />
+                <input type="file" class="form-control validate[required]" name="archivo"  />
                 <?php if(isset($result->archivo)){ ?>
                     <p><a href="<?php echo $result->archivo; ?>" target="_blank">Descargar archivo</a></p>
                 <?php } ?>
@@ -34,7 +34,7 @@
 
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
-					<a href="/municipio/consejo/documentos/<?= $tipo_documento->codigo; ?>/" class="btn btn-can">Cancelar</a>
+					<a href="/municipio/concejo/documentos/<?= $tipo_documento->codigo; ?>/" class="btn btn-can">Cancelar</a>
 					<button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
 			</div>

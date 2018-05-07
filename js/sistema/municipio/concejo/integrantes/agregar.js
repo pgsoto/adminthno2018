@@ -22,7 +22,7 @@ $(function(){
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/municipio/integrantes_consejo/process/',
+                    url: '/municipio/integrantes_concejo/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -39,7 +39,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.href = '/municipio/consejo/integrantes/';
+                                    window.location.href = '/municipio/concejo/integrantes/';
                             }, 1000);
                         }
                         else

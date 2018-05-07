@@ -1,6 +1,6 @@
 ﻿<?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
 
-class Consejo extends CI_Controller
+class Concejo extends CI_Controller
 {
 
     private $nombre = 'Concejo';
@@ -36,7 +36,7 @@ class Consejo extends CI_Controller
         $this->img->recorte_ancho_1 = 1920;
         $this->img->recorte_alto_1 = 720;
 
-        $this->img->upload_dir = '/imagenes/modulos/municipio/consejo/';
+        $this->img->upload_dir = '/imagenes/modulos/municipio/concejo/';
 
         #lib imagenes
         $this->load->model('inicio/imagen', 'objImagen');
@@ -58,7 +58,7 @@ class Consejo extends CI_Controller
         $codigo = 1; //obligatoria primer registro
 
         #js
-        $this->layout->js('/js/sistema/municipio/consejo/agregar.js');
+        $this->layout->js('/js/sistema/municipio/concejo/agregar.js');
 
         #JS - Editor
         $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
@@ -79,7 +79,7 @@ class Consejo extends CI_Controller
             }
             #print_array($result);
             if (!$result) {
-                redirect('/municipio/consejo/');
+                redirect('/municipio/concejo/');
             } else {
                 $data['result'] = $result;
             }
@@ -89,13 +89,13 @@ class Consejo extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = $this->nombre;
             $this->layout->title($this->nombre);
-            $this->layout->nav(array($this->nombre => "/municipio/consejo/", $result->nombre => "/"));
+            $this->layout->nav(array($result->nombre => "/"));
         }
 
         $data['tipos_documentos'] = $this->ws->listar($this->modulo_tiposdocumentos, 'tipdoc_visible = 1');
 
         #view
-        $this->layout->view('consejo/add', $data);
+        $this->layout->view('concejo/add', $data);
 
     }
 

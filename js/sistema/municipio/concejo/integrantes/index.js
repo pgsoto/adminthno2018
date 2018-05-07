@@ -28,7 +28,7 @@ $(function(){
 					type: "POST",
 					data: "codigo="+codigo,
 					dataType: "json",
-					url: '/municipio/consejo/integrantes/eliminar/',
+					url: '/municipio/concejo/integrantes/eliminar/',
 					success: function(json){
 						if(json.result){
 							noty({

@@ -3,9 +3,9 @@
         <h1><?= $titulo; ?></h1>
     </div>
     <?php foreach($tipos_documentos as $tipdoc){ ?>
-    <a href="/municipio/consejo/documentos/<?= $tipdoc->codigo; ?>" class="btn btn-primary"><?= $tipdoc->nombre; ?></a>
+    <a href="/municipio/concejo/documentos/<?= $tipdoc->codigo; ?>" class="btn btn-primary"><?= $tipdoc->nombre; ?></a>
     <?php } ?>
-    <a href="/municipio/consejo/integrantes/" class="btn btn-primary">Integrantes</a>
+    <a href="/municipio/concejo/integrantes/" class="btn btn-primary">Integrantes</a>
     <form action="#" method="post" id="form-agregar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
@@ -85,7 +85,7 @@
 
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
-					<!--<a href="/municipio/consejo/" class="btn btn-can">Cancelar</a>-->
+					<!--<a href="/municipio/concejo/" class="btn btn-can">Cancelar</a>-->
 					<button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
 			</div>
@@ -102,9 +102,9 @@
 <script>
     //configuracion para imagenes
 	var id = 1;
-	var urlDelete = '/municipio/consejo/eliminar-imagen/';
-    var urlCargar = '/municipio/consejo/cargar-imagen/';
-    var urlCortar = '/municipio/consejo/cortar-imagen/';
+	var urlDelete = '/municipio/concejo/eliminar-imagen/';
+    var urlCargar = '/municipio/concejo/cargar-imagen/';
+    var urlCortar = '/municipio/concejo/cortar-imagen/';
     var galeria = true;
 
     var cargar=[];

@@ -193,27 +193,27 @@ $route['municipio/alcalde/cargar-imagen']    = "municipio/alcalde/cargar_imagen"
 $route['municipio/alcalde/cortar-imagen']    = "municipio/alcalde/cortar_imagen";
 $route['municipio/alcalde/eliminar-imagen']  = "municipio/alcalde/eliminar_imagen";
 
-#consejo
-$route['municipio/consejo']                  = "municipio/consejo/agregar";
-$route['municipio/consejo/eliminar']         = "municipio/consejo/eliminar";
-$route['municipio/consejo/cargar-imagen']    = "municipio/consejo/cargar_imagen";
-$route['municipio/consejo/cortar-imagen']    = "municipio/consejo/cortar_imagen";
-$route['municipio/consejo/eliminar-imagen']  = "municipio/consejo/eliminar_imagen";
+#concejo
+$route['municipio/concejo']                  = "municipio/concejo/agregar";
+$route['municipio/concejo/eliminar']         = "municipio/concejo/eliminar";
+$route['municipio/concejo/cargar-imagen']    = "municipio/concejo/cargar_imagen";
+$route['municipio/concejo/cortar-imagen']    = "municipio/concejo/cortar_imagen";
+$route['municipio/concejo/eliminar-imagen']  = "municipio/concejo/eliminar_imagen";
 
-$route['municipio/consejo/integrantes']                  = "municipio/integrantes_consejo/index";
-$route['municipio/consejo/integrantes/(:num)']           = "municipio/integrantes_consejo/index/$1";
-$route['municipio/consejo/integrantes/agregar']          = "municipio/integrantes_consejo/agregar";
-$route['municipio/consejo/integrantes/editar/(:num)']    = "municipio/integrantes_consejo/agregar/$1";
-$route['municipio/consejo/integrantes/eliminar']         = "municipio/integrantes_consejo/eliminar";
-$route['municipio/consejo/integrantes/cargar-imagen']    = "municipio/integrantes_consejo/cargar_imagen";
-$route['municipio/consejo/integrantes/cortar-imagen']    = "municipio/integrantes_consejo/cortar_imagen";
-$route['municipio/consejo/integrantes/eliminar-imagen']  = "municipio/integrantes_consejo/eliminar_imagen";
+$route['municipio/concejo/integrantes']                  = "municipio/integrantes_concejo/index";
+$route['municipio/concejo/integrantes/(:num)']           = "municipio/integrantes_concejo/index/$1";
+$route['municipio/concejo/integrantes/agregar']          = "municipio/integrantes_concejo/agregar";
+$route['municipio/concejo/integrantes/editar/(:num)']    = "municipio/integrantes_concejo/agregar/$1";
+$route['municipio/concejo/integrantes/eliminar']         = "municipio/integrantes_concejo/eliminar";
+$route['municipio/concejo/integrantes/cargar-imagen']    = "municipio/integrantes_concejo/cargar_imagen";
+$route['municipio/concejo/integrantes/cortar-imagen']    = "municipio/integrantes_concejo/cortar_imagen";
+$route['municipio/concejo/integrantes/eliminar-imagen']  = "municipio/integrantes_concejo/eliminar_imagen";
 
-$route['municipio/consejo/documentos/(:num)']                  = "municipio/documentos_consejo/index/$1";
-$route['municipio/consejo/documentos/(:num)/(:num)']           = "municipio/documentos_consejo/index/$1";
-$route['municipio/consejo/documentos/agregar/(:num)']          = "municipio/documentos_consejo/agregar/$1";
-$route['municipio/consejo/documentos/editar/(:num)/(:num)']    = "municipio/documentos_consejo/agregar/$1/$2";
-$route['municipio/consejo/documentos/eliminar']         = "municipio/documentos_consejo/eliminar";
+$route['municipio/concejo/documentos/(:num)']                  = "municipio/documentos_concejo/index/$1";
+$route['municipio/concejo/documentos/(:num)/(:num)']           = "municipio/documentos_concejo/index/$1";
+$route['municipio/concejo/documentos/agregar/(:num)']          = "municipio/documentos_concejo/agregar/$1";
+$route['municipio/concejo/documentos/editar/(:num)/(:num)']    = "municipio/documentos_concejo/agregar/$1/$2";
+$route['municipio/concejo/documentos/eliminar']         = "municipio/documentos_concejo/eliminar";
 
 #organigrama
 $route['municipio/organigrama']                  = "municipio/organigrama/agregar";

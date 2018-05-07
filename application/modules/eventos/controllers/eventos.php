@@ -137,7 +137,7 @@ class Eventos extends CI_Controller
 
     public function process()
     {
-        #print_array($this->input->post());
+        //print_array($this->input->post());die;
         if ($this->input->post()) {
 
             #validaciones
@@ -158,12 +158,27 @@ class Eventos extends CI_Controller
                     $data['eve_url'] = slug($this->input->post('nombre'));
                     $data['eve_nombre'] = $this->input->post('nombre');
                     $data['eve_fecha'] = formatearFecha($this->input->post('fecha'));
-                    $data['eve_hora_inicio'] = $this->input->post('hora_inicio');
-                    $data['eve_hora_termino'] = $this->input->post('hora_termino');
+                    //$data['eve_hora_inicio'] = $this->input->post('hora_inicio');
+                    //$data['eve_hora_termino'] = $this->input->post('hora_termino');
                     $data['eve_ubicacion'] = $this->input->post('ubicacion');
                     $data['eve_organiza'] = $this->input->post('organiza');
                     $data['eve_link'] = $this->input->post('link');
                     $data['eve_descripcion'] = $this->input->post('descripcion');
+
+
+                    if($this->input->post('hora_inicio')){
+                        $data['eve_hora_inicio'] = str_replace(array("(", ")", " "), "", $this->input->post("hora_inicio"));
+                    }
+                    if($this->input->post('hora_termino')){
+                        $data['eve_hora_termino'] = str_replace(array("(", ")", " "), "", $this->input->post("hora_termino"));
+                    }
+                    /*
+                    if($this->input->post('hora_inicio') > $this->input->post('hora_termino')){
+                        echo json_encode(array("result" => false, "msg" => "La hora de termino debe ser mayor a la de inicio"));
+                        exit;
+                    }*/
+
+
 
                     if ($this->input->post('categoria'))
                         $data['eve_categoria'] = $this->input->post('categoria');
@@ -172,6 +187,10 @@ class Eventos extends CI_Controller
                         $data['eve_imagen_ruta_interna'] = $this->input->post('ruta_interna_1');
                         $data['eve_imagen_ruta_grande'] = $this->input->post('ruta_grande_1');
                     }
+
+
+
+                    //print_array($data);die;
 
                     if ($this->input->post("mapa"))
                         $data['eve_mapa'] = str_replace(array("(", ")", " "), "", $this->input->post("mapa"));
@@ -195,7 +214,7 @@ class Eventos extends CI_Controller
                                 }
                             }
                             */
-
+                            
                             echo json_encode(array("result" => true, "codigo" => $codigo));
                             exit;
                         } else {

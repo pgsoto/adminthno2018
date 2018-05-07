@@ -26,7 +26,7 @@ $(function(){
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/municipio/consejo/process/',
+                    url: '/municipio/concejo/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -43,7 +43,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.href = '/municipio/consejo/';
+                                    window.location.href = '/municipio/concejo/';
                             }, 1000);
                         }
                         else

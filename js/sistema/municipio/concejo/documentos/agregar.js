@@ -22,7 +22,7 @@ $(function(){
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/municipio/documentos_consejo/process/',
+                    url: '/municipio/documentos_concejo/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -39,7 +39,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.href = '/municipio/consejo/documentos/'+json.seccion+'/';
+                                    window.location.href = '/municipio/concejo/documentos/'+json.seccion+'/';
                             }, 1000);
                         }
                         else

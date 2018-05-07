@@ -13,16 +13,6 @@
                 <input type="text" class="form-control datepicker" name="fecha" value="<?= isset($result->fecha) ? invierte_fecha($result->fecha) : ''; ?>" />
 
 
-
-    
-            <!--
-                <label>Hora de inicio</label>
-                <div class="input-group bootstrap-timepicker timepicker">
-                    <input id="timepicker" type="text" class="form-control input-small timepicker" name="hora_inicio" value="<?= isset($result->hora_inicio) ? $result->hora_inicio : ''; ?>">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-                </div>-->
-
-
                  <label>Hora de inicio</label>
                 <div class="input-group bootstrap-timepicker timepickerinicio">
                     <input id="timepickerinicio" type="text" class="form-control timepickerinicio" name="hora_inicio" value="<?= isset($result->hora_inicio) ? $result->hora_inicio : ''; ?>">
@@ -30,7 +20,7 @@
                 </div>
 
                 <label>Hora de término</label>
-                <div class="input-group bootstrap-timepicker timepicker">
+                <div class="input-group bootstrap-timepicker timepickertermino">
                     <input id="timepickertermino" type="text" class="form-control input-small timepickertermino" name="hora_termino" value="<?= isset($result->hora_termino) ? $result->hora_termino : ''; ?>">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
                 </div>
@@ -257,14 +247,15 @@
 
 
 
-//Time picker y configuracion del mismo
+//Time picker
 
 var hora_inicio = document.getElementsByName("hora_inicio")[0].value;
 var hora_termino = document.getElementsByName("hora_termino")[0].value;
 
 if(document.getElementsByName("hora_inicio")[0].value == ''){
     var optionsInicio = { 
-        twentyFour: true
+        twentyFour: true,
+        showSeconds: false,
     };
 }else{
     var optionsInicio = { 
@@ -276,6 +267,7 @@ if(document.getElementsByName("hora_termino")[0].value == ''){
     var optionsTermino = { 
         now: '00:00:00',
         twentyFour: true
+      
     };
 }else{
     var optionsTermino = { 
@@ -283,32 +275,21 @@ if(document.getElementsByName("hora_termino")[0].value == ''){
         twentyFour: true
     };
 }
-
    $('.timepickerinicio').wickedpicker(optionsInicio);
    $('.timepickertermino').wickedpicker(optionsTermino);
 
 //Configuracion TimePicker
 /*
-    var options = { now: "12:35", //hh:mm 24 hour format only, defaults to current time
-    twentyFour: false, //Display 24 hour format, defaults to false
-    upArrow: 'wickedpicker__controls__control-up', //The up arrow class selector to use, for custom CSS
-    downArrow: 'wickedpicker__controls__control-down', //The down arrow class selector to use, for custom CSS
-    close: 'wickedpicker__close', //The close class selector to use, for custom CSS
-    hoverState: 'hover-state', //The hover state class to use, for custom CSS
-    title: 'Timepicker', //The Wickedpicker's title,
-    showSeconds: false, //Whether or not to show seconds,
-    secondsInterval: 1, //Change interval for seconds, defaults to 1
-    minutesInterval: 1, //Change interval for minutes, defaults to 1
-    beforeShow: null, //A function to be called before the Wickedpicker is shown
-    show: null, //A function to be called when the Wickedpicker is shown
-    clearable: false, //Make the picker's input clearable (has clickable "x")
-    }; 
+    var options = { 
+                    secondsInterval: 1, //Change interval for seconds, defaults to 1
+                    minutesInterval: 1, //Change interval for minutes, defaults to 1
+                    beforeShow: null, //A function to be called before the Wickedpicker is shown
+                    show: null, //A function to be called when the Wickedpicker is shown
+                    clearable: false, //Make the picker's input clearable (has clickable "x")
+                  }; 
 
 */ 
 
-
-
- timepickertermino
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdSXBzktlVz-DwJ0r1PSNCZA7TnO4BNI0&libraries=places&callback=initAutocomplete"
         async defer></script>

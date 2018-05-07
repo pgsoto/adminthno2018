@@ -1,6 +1,6 @@
 ﻿<?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
 
-class Documentos_consejo extends CI_Controller
+class Documentos_concejo extends CI_Controller
 {
 
     private $nombre = 'Documentos ';
@@ -31,7 +31,7 @@ class Documentos_consejo extends CI_Controller
         $this->layout->title($this->nombre.' '.$tipo_documento->nombre);
 
         #js
-        $this->layout->js('/js/sistema/municipio/consejo/documentos/index.js');
+        $this->layout->js('/js/sistema/municipio/concejo/documentos/index.js');
 
         $where = $and = "";
         $url = "";
@@ -46,7 +46,7 @@ class Documentos_consejo extends CI_Controller
             $url = '?' . http_build_query($_GET, '', "&");
 
         $config['uri_segment'] = 5;
-        $config['base_url'] = '/municipio/consejo/documentos/' . $seccion . '/';
+        $config['base_url'] = '/municipio/concejo/documentos/' . $seccion . '/';
         $config['per_page'] = 20;
         $config['total_rows'] = count($this->ws->listar($this->modulo, $where));
         $config['suffix'] = '/' . $url;
@@ -65,10 +65,10 @@ class Documentos_consejo extends CI_Controller
         $seccion = $this->ws->obtener($this->modulo_seccion, "con_codigo = " . $seccion);
 
         #Nav
-        $this->layout->nav(array('Concejo' => '/municipio/consejo/', $this->nombre.' '.$tipo_documento->nombre => '/'));
+        $this->layout->nav(array('Concejo' => '/municipio/concejo/', $this->nombre.' '.$tipo_documento->nombre => '/'));
 
         #view
-        $this->layout->view('consejo/documentos/index', $data);
+        $this->layout->view('concejo/documentos/index', $data);
     }
 
     public function agregar($tipo_documento = false, $codigo = false)
@@ -79,7 +79,7 @@ class Documentos_consejo extends CI_Controller
         $data['tipo_documento'] = $tipo_documento = $this->ws->obtener($this->modulo_tiposdocumentos, "tipdoc_codigo = " . $tipo_documento);
 
         #js
-        $this->layout->js('/js/sistema/municipio/consejo/documentos/agregar.js');
+        $this->layout->js('/js/sistema/municipio/concejo/documentos/agregar.js');
 
         #JS - Editor
         $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
@@ -95,7 +95,7 @@ class Documentos_consejo extends CI_Controller
 
             #print_array($result);
             if (!$result) {
-                redirect('/municipio/consejo/documentos/');
+                redirect('/municipio/concejo/documentos/');
             } else {
                 $data['result'] = $result;
             }
@@ -105,15 +105,15 @@ class Documentos_consejo extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = 'Editar ' . $tipo_documento->nombre;
             $this->layout->title('Editar ' . $tipo_documento->nombre);
-            $this->layout->nav(array("Concejo" => "/municipio/consejo/", $this->nombre => "/municipio/consejo/documentos/".$tipo_documento->codigo."/", "Editar " . $this->nombre.' '.$tipo_documento->nombre => "/"));
+            $this->layout->nav(array("Concejo" => "/municipio/concejo/", $this->nombre => "/municipio/concejo/documentos/".$tipo_documento->codigo."/", "Editar " . $this->nombre.' '.$tipo_documento->nombre => "/"));
         } else {
             $data['titulo'] = 'Agregar ' . $tipo_documento->nombre;
             $this->layout->title('Agregar ' . $tipo_documento->nombre);
-            $this->layout->nav(array("Concejo" => "/municipio/consejo/", $this->nombre => "/municipio/consejo/documentos/".$tipo_documento->codigo."/", "Agregar " . $this->nombre.' '.$tipo_documento->nombre => "/"));
+            $this->layout->nav(array("Concejo" => "/municipio/concejo/", $this->nombre => "/municipio/concejo/documentos/".$tipo_documento->codigo."/", "Agregar " . $this->nombre.' '.$tipo_documento->nombre => "/"));
         }
 
         #view
-        $this->layout->view('consejo/documentos/add', $data);
+        $this->layout->view('concejo/documentos/add', $data);
 
     }
 
@@ -149,7 +149,7 @@ class Documentos_consejo extends CI_Controller
                         $uploads_dir = '/archivos/';
                         if(!file_exists($_SERVER['DOCUMENT_ROOT'].$uploads_dir))
                             mkdir($_SERVER['DOCUMENT_ROOT'].$uploads_dir,0777);
-                        $uploads_dir .= "consejos/";
+                        $uploads_dir .= "concejos/";
                         if(!file_exists($_SERVER['DOCUMENT_ROOT'].$uploads_dir))
                             mkdir($_SERVER['DOCUMENT_ROOT'].$uploads_dir,0777);
                         $uploads_dir .= "documentos/";

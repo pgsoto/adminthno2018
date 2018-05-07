@@ -1,6 +1,6 @@
 ﻿<?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
 
-class Integrantes_consejo extends CI_Controller
+class Integrantes_concejo extends CI_Controller
 {
 
     private $nombre = 'Integrantes';
@@ -23,7 +23,7 @@ class Integrantes_consejo extends CI_Controller
         $this->img->recorte_ancho_1 = 110;
         $this->img->recorte_alto_1 = 140;
 
-        $this->img->upload_dir = '/imagenes/modulos/municipio/consejo/integrantes/';
+        $this->img->upload_dir = '/imagenes/modulos/municipio/concejo/integrantes/';
 
         #lib imagenes
         $this->load->model('inicio/imagen', 'objImagen');
@@ -44,7 +44,7 @@ class Integrantes_consejo extends CI_Controller
         $this->layout->title($this->nombre);
 
         #js
-        $this->layout->js('/js/sistema/municipio/consejo/integrantes/index.js');
+        $this->layout->js('/js/sistema/municipio/concejo/integrantes/index.js');
 
         $where = $and = "";
         $url = "";
@@ -56,7 +56,7 @@ class Integrantes_consejo extends CI_Controller
             $url = '?' . http_build_query($_GET, '', "&");
 
         $config['uri_segment'] = 4;
-        $config['base_url'] = '/municipio/consejo/integrantes/';
+        $config['base_url'] = '/municipio/concejo/integrantes/';
         $config['per_page'] = 20;
         $config['total_rows'] = count($this->ws->listar($this->modulo, $where));
         $config['suffix'] = '/' . $url;
@@ -75,10 +75,10 @@ class Integrantes_consejo extends CI_Controller
         $seccion = $this->ws->obtener($this->modulo_seccion, "con_codigo = " . $seccion);
 
         #Nav
-        $this->layout->nav(array('Consejo' => '/municipio/consejo/', $this->nombre => '/'));
+        $this->layout->nav(array('Consejo' => '/municipio/concejo/', $this->nombre => '/'));
 
         #view
-        $this->layout->view('consejo/integrantes/index', $data);
+        $this->layout->view('concejo/integrantes/index', $data);
     }
 
     public function agregar($codigo = false)
@@ -87,7 +87,7 @@ class Integrantes_consejo extends CI_Controller
         $data = array();
 
         #js
-        $this->layout->js('/js/sistema/municipio/consejo/integrantes/agregar.js');
+        $this->layout->js('/js/sistema/municipio/concejo/integrantes/agregar.js');
 
         #JS - Editor
         $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
@@ -103,7 +103,7 @@ class Integrantes_consejo extends CI_Controller
 
             #print_array($result);
             if (!$result) {
-                redirect('/municipio/consejo/integrantes/');
+                redirect('/municipio/concejo/integrantes/');
             } else {
                 $data['result'] = $result;
             }
@@ -113,15 +113,15 @@ class Integrantes_consejo extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = 'Editar ' . $this->nombre;
             $this->layout->title('Editar ' . $this->nombre);
-            $this->layout->nav(array("Consejo" => "/municipio/consejo/", "Integrantes" => "/municipio/consejo/integrantes/", "Editar " . $result->nombre => "/"));
+            $this->layout->nav(array("Consejo" => "/municipio/concejo/", "Integrantes" => "/municipio/concejo/integrantes/", "Editar " . $result->nombre => "/"));
         } else {
             $data['titulo'] = 'Agregar ' . $this->nombre;
             $this->layout->title('Agregar ' . $this->nombre);
-            $this->layout->nav(array("Consejo" => "/municipio/consejo/", "Integrantes" => "/municipio/consejo/integrantes/", "Agregar " . $this->nombre => "/"));
+            $this->layout->nav(array("Consejo" => "/municipio/concejo/", "Integrantes" => "/municipio/concejo/integrantes/", "Agregar " . $this->nombre => "/"));
         }
 
         #view
-        $this->layout->view('consejo/integrantes/add', $data);
+        $this->layout->view('concejo/integrantes/add', $data);
 
     }
 

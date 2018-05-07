@@ -4,7 +4,7 @@
     </div>
 
   	<div class="subtitulo-btn">
-        <a class="btn btn-default" href="/municipio/consejo/documentos/agregar/<?= $tipo_documento->codigo; ?>/">Agregar</a>
+        <a class="btn btn-default" href="/municipio/concejo/integrantes/agregar/">Agregar</a>
     </div>
 
     <table class="table table-bordered">
@@ -12,7 +12,7 @@
             <tr>
                 <th class="col-xs-5">Nombre</th>
 				<th class="col-xs-2">Orden</th>
-				<th class="col-xs-2">Descargar</th>
+				<th class="col-xs-2">Estado</th>
                 <th colspan="2" class="text-center">Opciones</th>
             </tr>
         </thead>
@@ -23,17 +23,13 @@
                     <tr>
                         <td><?php echo $aux->nombre; ?></td>
                         <td><?php echo $aux->orden; ?></td>
-                        <td class="text-center">
-                            <a href="<?php echo $aux->archivo; ?>"><span class="glyphicon glyphicon-download" aria-hidden="true"></span></a>
-                        </td>
 						<td class="text-center">
-                            <a href="/municipio/consejo/documentos/editar/<?php echo $seccion; ?>/<?php echo $aux->codigo; ?>/"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                            <a href="/municipio/concejo/integrantes/editar/<?php echo $aux->codigo; ?>/"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                         </td>
                         <td class="text-center">
 							<a rel="<?php echo $aux->codigo; ?>" class="eliminar" style="cursor:pointer;">
 								<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 							</a>
-                            <input type="hidden" id="tipodocumento" rel="<?= $tipo_documento->codigo; ?>" />
 						</td>
                     </tr>
                 <?php } ?>

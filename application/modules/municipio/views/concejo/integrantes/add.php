@@ -47,7 +47,7 @@
 
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
-					<a href="/municipio/consejo/integrantes/" class="btn btn-can">Cancelar</a>
+					<a href="/municipio/concejo/integrantes/" class="btn btn-can">Cancelar</a>
 					<button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
 			</div>
@@ -58,9 +58,9 @@
 <script>
     //configuracion para imagenes
     var id = 1;
-    var urlDelete = '/municipio/consejo/integrantes/eliminar-imagen/';
-    var urlCargar = '/municipio/consejo/integrantes/cargar-imagen/';
-    var urlCortar = '/municipio/consejo/integrantes/cortar-imagen/';
+    var urlDelete = '/municipio/concejo/integrantes/eliminar-imagen/';
+    var urlCargar = '/municipio/concejo/integrantes/cargar-imagen/';
+    var urlCortar = '/municipio/concejo/integrantes/cortar-imagen/';
     var galeria = false;
 
     var cargar=[];

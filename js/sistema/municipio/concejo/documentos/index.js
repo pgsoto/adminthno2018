@@ -29,7 +29,7 @@ $(function(){
 					type: "POST",
 					data: "codigo="+codigo,
 					dataType: "json",
-					url: '/municipio/consejo/documentos/eliminar/',
+					url: '/municipio/concejo/documentos/eliminar/',
 					success: function(json){
 						if(json.result){
 							noty({
@@ -40,7 +40,7 @@ $(function(){
 							});
 
                             setTimeout(function(){
-                                //window.location.href = '/municipio/consejo/documentos/'+tipo+'/';
+                                //window.location.href = '/municipio/concejo/documentos/'+tipo+'/';
                                 window.location.reload();
                             }, 1000);
 						} 
