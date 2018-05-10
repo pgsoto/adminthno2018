@@ -25,8 +25,8 @@ class Subsecciones_das extends CI_Controller
 
         #GALERIA SLIDER
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_1 = 1920;
-        $this->img->min_alto_1 = 720;
+        $this->img->min_ancho_1 = 1920 / 4;
+        $this->img->min_alto_1 = 720 / 4;
 
         #define el tamaño de la imagen grande
         $this->img->max_ancho_1 = 1920 * 4;
@@ -132,11 +132,11 @@ class Subsecciones_das extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = 'Editar ' . $this->nombre;
             $this->layout->title('Editar ' . $this->nombre);
-            $this->layout->nav(array("DAS" => "/municipio/das/", $this->nombre => "/municipio/das/subsecciones/".$seccion->codigo."/", "Editar " . $result->nombre => "/"));
+            $this->layout->nav(array("DAS" => "/municipio/das/", $this->nombre => "/municipio/das/subsecciones/" . $seccion->codigo . "/", "Editar " . $result->nombre => "/"));
         } else {
             $data['titulo'] = 'Agregar ' . $this->nombre;
             $this->layout->title('Agregar ' . $this->nombre);
-            $this->layout->nav(array("DAS" => "/municipio/das/", $this->nombre => "/municipio/das/subsecciones/".$seccion->codigo."/", "Agregar " . $this->nombre => "/"));
+            $this->layout->nav(array("DAS" => "/municipio/das/", $this->nombre => "/municipio/das/subsecciones/" . $seccion->codigo . "/", "Agregar " . $this->nombre => "/"));
         }
 
         #view
@@ -152,7 +152,7 @@ class Subsecciones_das extends CI_Controller
             #validaciones
             $this->form_validation->set_rules('nombre', 'Nombre', 'required');
             $this->form_validation->set_rules('orden', 'Orden', 'required');
-            $this->form_validation->set_rules('email','Email','valid_email');
+            $this->form_validation->set_rules('email', 'Email', 'valid_email');
             $this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');

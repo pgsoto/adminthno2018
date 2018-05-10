@@ -16,8 +16,8 @@ class Banners_transparencia extends CI_Controller
         $this->img->min_alto_1 = 45;
 
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_1 = 190*4;
-        $this->img->max_alto_1 = 45*4;
+        $this->img->max_ancho_1 = 190*8;
+        $this->img->max_alto_1 = 45*8;
 
         #define el tamaño del recorte
         $this->img->recorte_ancho_1 = 190;

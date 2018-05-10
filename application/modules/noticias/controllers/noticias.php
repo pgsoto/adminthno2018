@@ -16,8 +16,8 @@ class Noticias extends CI_Controller
         $this->img->min_alto_1 = 320;
 
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_1 = 510*4;
-        $this->img->max_alto_1 = 320*4;
+        $this->img->max_ancho_1 = 510 * 4;
+        $this->img->max_alto_1 = 320 * 4;
 
         #define el tamaño del recorte
         $this->img->recorte_ancho_1 = 510;
@@ -29,8 +29,8 @@ class Noticias extends CI_Controller
         $this->img->min_alto_2 = 360;
 
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_2 = 1065*4;
-        $this->img->max_alto_2 = 360*4;
+        $this->img->max_ancho_2 = 1065 * 4;
+        $this->img->max_alto_2 = 360 * 4;
 
         #define el tamaño del recorte
         $this->img->recorte_ancho_2 = 1065;
@@ -75,8 +75,8 @@ class Noticias extends CI_Controller
         $this->ws->order("not_fecha_publicacion DESC");
         $this->ws->limit($config['per_page'], ($config['per_page'] * $pagina));
         $data["result"] = $this->ws->listar($this->modulo, $where);
-        foreach ($data["result"] as $aux){
-            $aux->categoria = $this->ws->obtener($this->modulo_categoria, array("catn_codigo"=>$aux->categoria));
+        foreach ($data["result"] as $aux) {
+            $aux->categoria = $this->ws->obtener($this->modulo_categoria, array("catn_codigo" => $aux->categoria));
         }
         $data['pagination'] = $this->pagination->create_links();
         #print_array($data["result"]);

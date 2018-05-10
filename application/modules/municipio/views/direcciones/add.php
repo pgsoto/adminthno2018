@@ -17,14 +17,14 @@
                 <label>Galería slider tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
                     <div style="display:none;" id="replicar-1" class="box">
-                        <div class="img" style="width:<?php echo $this->img->min_ancho_1/4+2; ?>px; height:<?php echo $this->img->min_alto_1/4+2; ?>px;" ></div>
+                        <div class="img" style="width:<?php echo $this->img->min_ancho_1+2; ?>px; height:<?php echo $this->img->min_alto_1+2; ?>px;" ></div>
                     </div>
                     <?php if(isset($result)) {?>
                         <div id="cont-imagenes-1">
                             <?php if($result->imagenes){ ?>
                                 <?php foreach(array_reverse($result->imagenes) as $aux){ ?>
                                     <div class="box" >
-                                        <div rel="1" class="img" style="width:<?php echo $this->img->min_ancho_1/4+2; ?>px; height:<?php echo $this->img->min_alto_1/4+2; ?>px;" >
+                                        <div rel="1" class="img" style="width:<?php echo $this->img->min_ancho_1+2; ?>px; height:<?php echo $this->img->min_alto_1+2; ?>px;" >
                                             <img class="croppedImg" src="<?php echo $aux->imagen_ruta_interna; ?>" />
                                             <div class="cropControls cropControlsUpload">
                                                 <i class="cropControlRemoveCroppedImage eliminar_imagen" rel="<?php echo $aux->codigo; ?>"></i>

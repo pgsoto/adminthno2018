@@ -3,23 +3,41 @@
   <component name="ChangeListManager">
     <list default="true" id="084cd69e-672c-46bd-a32f-5a06d061b894" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/eventos/controllers/eventos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/controllers/eventos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/eventos/views/eventos/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/views/eventos/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/consejo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/concejo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/documentos_consejo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/documentos_concejo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/integrantes_consejo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/integrantes_concejo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/consejo/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/concejo/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/consejo/documentos/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/concejo/documentos/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/consejo/documentos/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/concejo/documentos/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/consejo/integrantes/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/concejo/integrantes/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/consejo/integrantes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/concejo/integrantes/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/tab.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/tab.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sistema/municipio/consejo/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/municipio/concejo/agregar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sistema/municipio/consejo/documentos/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/municipio/concejo/documentos/agregar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sistema/municipio/consejo/documentos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/municipio/concejo/documentos/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sistema/municipio/consejo/integrantes/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/municipio/concejo/integrantes/agregar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sistema/municipio/consejo/integrantes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sistema/municipio/concejo/integrantes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/eventos/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/controllers/slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/eventos/views/slider/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/eventos/views/slider/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/concejo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/concejo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/daem.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/daem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/das.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/das.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/organigrama.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/organigrama.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_daem.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_daem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_das.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_das.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/alcalde/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/alcalde/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/concejo/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/concejo/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/daem/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/daem/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/daem/subsecciones/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/daem/subsecciones/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/das/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/das/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/das/subsecciones/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/das/subsecciones/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/municipio/views/organigrama/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/municipio/views/organigrama/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/noticias/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/controllers/slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/noticias/views/slider/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/noticias/views/slider/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/controllers/slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/slider/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/views/slider/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/servicios/controllers/desarrollo_social.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/servicios/controllers/desarrollo_social.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/servicios/controllers/subsecciones_desarrollo_social.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/servicios/controllers/subsecciones_desarrollo_social.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/servicios/controllers/tramites.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/servicios/controllers/tramites.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/servicios/views/tramites/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/servicios/views/tramites/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/hoja-estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hoja-estilos.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +51,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'Direcciones'</find>
       <find>das/</find>
       <find>alcalde</find>
       <find>alcald</find>
@@ -63,6 +80,7 @@
       <find>conse</find>
       <find>?&gt;</find>
       <find>consejo</find>
+      <find>/4</find>
     </findStrings>
     <replaceStrings>
       <replace>alcalde/</replace>
@@ -103,44 +121,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php" />
-        <option value="$PROJECT_DIR$/application/modules/servicios/controllers/tramites.php" />
-        <option value="$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/index.php" />
-        <option value="$PROJECT_DIR$/js/sistema/servicios/desarrollo_social/agregar.js" />
-        <option value="$PROJECT_DIR$/js/sistema/municipio/consejo/integrantes/agregar.js" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/consejo/integrantes/index.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/integrantes_consejo.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/consejo/integrantes/add.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/das.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/daem.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/organigrama.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" />
-        <option value="$PROJECT_DIR$/application/modules/servicios/views/tramites/add.php" />
-        <option value="$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/subsecciones/index.php" />
-        <option value="$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/subsecciones/add.php" />
-        <option value="$PROJECT_DIR$/application/modules/servicios/controllers/desarrollo_social.php" />
-        <option value="$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/add.php" />
-        <option value="$PROJECT_DIR$/js/sistema/servicios/desarrollo_social/subsecciones/agregar.js" />
-        <option value="$PROJECT_DIR$/js/sistema/servicios/desarrollo_social/subsecciones/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/municipio/direcciones/subsecciones/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/municipio/daem/subsecciones/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/municipio/das/subsecciones/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/municipio/direcciones/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/municipio/consejo/integrantes/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/municipio/consejo/documentos/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/servicios/desarrollo_social/index.js" />
-        <option value="$PROJECT_DIR$/js/sistema/servicios/tramites/index.js" />
-        <option value="$PROJECT_DIR$/application/modules/servicios/controllers/subsecciones_desarrollo_social.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/consejo/documentos/index.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/consejo/documentos/add.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/consejo.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/controllers/documentos_consejo.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/views/consejo/add.php" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/consejo/agregar.js" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/controllers/integrantes_concejo.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/views/concejo/add.php" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/concejo/agregar.js" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/concejo/integrantes/index.js" />
         <option value="$PROJECT_DIR$/js/sistema/municipio/concejo/integrantes/agregar.js" />
@@ -150,10 +135,43 @@
         <option value="$PROJECT_DIR$/application/modules/municipio/views/concejo/integrantes/add.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/views/concejo/documentos/index.php" />
         <option value="$PROJECT_DIR$/application/views/tab.php" />
-        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/concejo.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/controllers/documentos_concejo.php" />
         <option value="$PROJECT_DIR$/application/modules/municipio/views/concejo/documentos/add.php" />
         <option value="$PROJECT_DIR$/application/modules/eventos/controllers/eventos.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/controllers/slider.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/slider/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/servicios/controllers/tramites.php" />
+        <option value="$PROJECT_DIR$/application/modules/servicios/controllers/subsecciones_desarrollo_social.php" />
+        <option value="$PROJECT_DIR$/application/modules/servicios/controllers/desarrollo_social.php" />
+        <option value="$PROJECT_DIR$/application/modules/servicios/views/tramites/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/views/slider/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/controllers/slider.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
+        <option value="$PROJECT_DIR$/application/modules/eventos/controllers/slider.php" />
+        <option value="$PROJECT_DIR$/application/modules/eventos/views/slider/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/concejo.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/daem.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/das.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_das.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_daem.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/controllers/organigrama.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/alcalde/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/concejo/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/organigrama/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/das/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/das/subsecciones/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/daem/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/municipio/views/daem/subsecciones/add.php" />
+        <option value="$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php" />
       </list>
     </option>
   </component>
@@ -168,8 +186,8 @@
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="1440" />
-    <option name="width" value="1080" />
-    <option name="height" value="1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -195,6 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,11 +226,50 @@
               <item name="admintalcahuano2018" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="portada" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="portada" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="portada" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admintalcahuano2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admintalcahuano2018" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="sistema" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,35 +340,38 @@
       <workItem from="1525093352885" duration="992000" />
       <workItem from="1525110040813" duration="1653000" />
       <workItem from="1525284480514" duration="24000" />
+      <workItem from="1525721322826" duration="5074000" />
+      <workItem from="1525809285635" duration="22000" />
+      <workItem from="1525814035844" duration="333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161264000" />
+    <option name="totallyTimeSpent" value="166693000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1080" height="1920" extended-state="0" />
+    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="File Transfer" order="7" visible="true" weight="0.15024875" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.21579961" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42870906" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.21565495" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17305644" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" order="7" visible="true" weight="0.15121952" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
@@ -323,17 +384,17 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.23182297" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -349,250 +410,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/sistema/servicios/tramites/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/servicios/views/tramites/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/servicios/desarrollo_social/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/das.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="125" column="34" lean-forward="true" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="118" column="20" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="115" column="9" lean-forward="true" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/organigrama.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="115" column="21" lean-forward="true" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_das.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="169" column="31" selection-start-line="169" selection-start-column="31" selection-end-line="169" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="188" column="71" selection-start-line="188" selection-start-column="71" selection-end-line="188" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_daem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="167" column="71" selection-start-line="167" selection-start-column="71" selection-end-line="167" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/servicios/views/tramites/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/servicios/controllers/tramites.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1336">
-          <caret line="109" column="23" lean-forward="true" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/daem/subsecciones/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/subsecciones/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/direcciones/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/direcciones/subsecciones/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/subsecciones/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/servicios/desarrollo_social/subsecciones/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/daem/subsecciones/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/das/subsecciones/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/servicios/desarrollo_social/subsecciones/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/servicios/tramites/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/direcciones/subsecciones/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/servicios/desarrollo_social/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/direcciones/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/servicios/controllers/desarrollo_social.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="155" column="71" selection-start-line="155" selection-start-column="71" selection-end-line="155" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/servicios/controllers/subsecciones_desarrollo_social.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/das/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2073" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/concejo/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/concejo/integrantes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/concejo/integrantes/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="41" column="78" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sistema/municipio/concejo/documentos/agregar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/sistema/municipio/concejo/documentos/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -604,13 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/concejo/integrantes/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -628,41 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/daem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="131" column="42" lean-forward="true" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/integrantes_concejo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1027">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/concejo/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/concejo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/documentos_concejo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/concejo/documentos/add.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -677,17 +452,297 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/eventos/views/eventos/add.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/slider_turismo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
+        <state relative-caret-position="255">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/somos_tv/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/slider_turismo/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/slider/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/banners_transparencia/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/views/accesos_directos/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/servicios/controllers/desarrollo_social.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/servicios/controllers/subsecciones_desarrollo_social.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/servicios/controllers/tramites.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/servicios/views/tramites/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/servicios/views/desarrollo_social/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="19" column="156" lean-forward="true" selection-start-line="19" selection-start-column="156" selection-end-line="19" selection-end-column="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/slider/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticias/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/controllers/slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/eventos/controllers/eventos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="138" column="5" lean-forward="true" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/views/slider/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="82" lean-forward="true" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/eventos/views/eventos/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/alcalde.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/daem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/das.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/direcciones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_direcciones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_das.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/subsecciones_daem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/organigrama.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/integrantes_concejo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/concejo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/controllers/documentos_concejo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/alcalde/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/concejo/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/concejo/integrantes/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/organigrama/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="69" lean-forward="true" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/direcciones/subsecciones/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/das/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="23" column="164" selection-start-line="23" selection-start-column="164" selection-end-line="23" selection-end-column="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/das/subsecciones/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="24" column="164" selection-start-line="24" selection-start-column="164" selection-end-line="24" selection-end-column="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/daem/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="23" column="164" selection-start-line="23" selection-start-column="164" selection-end-line="23" selection-end-column="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/municipio/views/daem/subsecciones/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/portada/controllers/banners_transparencia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
         </state>
       </provider>
     </entry>

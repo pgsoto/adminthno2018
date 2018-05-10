@@ -12,8 +12,8 @@ class Slider_turismo extends CI_Controller
         parent::__construct();
 
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_1 = 1920;
-        $this->img->min_alto_1 = 720;
+        $this->img->min_ancho_1 = 1920/4;
+        $this->img->min_alto_1 = 720/4;
 
         #define el tamaño de la imagen grande
         $this->img->max_ancho_1 = 1920*4;

@@ -25,8 +25,8 @@ class Subsecciones_desarrollo_social extends CI_Controller
 
         #GALERIA SLIDER
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_1 = 1920;
-        $this->img->min_alto_1 = 720;
+        $this->img->min_ancho_1 = 1920 / 4;
+        $this->img->min_alto_1 = 720 / 4;
 
         #define el tamaño de la imagen grande
         $this->img->max_ancho_1 = 1920 * 4;
@@ -62,7 +62,7 @@ class Subsecciones_desarrollo_social extends CI_Controller
         $where .= "subdes_visible = 1";
         $and = " and ";
 
-        $where .= $and."subdes_seccion = ".$seccion;
+        $where .= $and . "subdes_seccion = " . $seccion;
         $and = " and ";
 
         if (count($_GET) > 0)
@@ -88,7 +88,7 @@ class Subsecciones_desarrollo_social extends CI_Controller
         $seccion = $this->ws->obtener($this->modulo_seccion, "des_codigo = " . $seccion);
 
         #Nav
-        $this->layout->nav(array('Desarollo Social' => '/servicios/desarrollo-social/', $seccion->nombre => '/servicios/desarrollo-social/editar/'.$seccion->codigo.'/' ,$this->nombre => '/'));
+        $this->layout->nav(array('Desarollo Social' => '/servicios/desarrollo-social/', $seccion->nombre => '/servicios/desarrollo-social/editar/' . $seccion->codigo . '/', $this->nombre => '/'));
 
         #view
         $this->layout->view('desarrollo_social/subsecciones/index', $data);
@@ -133,11 +133,11 @@ class Subsecciones_desarrollo_social extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = 'Editar ' . $this->nombre;
             $this->layout->title('Editar ' . $this->nombre);
-            $this->layout->nav(array("Desarrollo Social" => "/servicios/desarrollo-social/", $seccion->nombre => '/servicios/desarrollo-social/editar/'.$seccion->codigo.'/', $this->nombre => "/servicios/desarrollo-social/subsecciones/".$seccion->codigo."/", "Editar " . $result->nombre => "/"));
+            $this->layout->nav(array("Desarrollo Social" => "/servicios/desarrollo-social/", $seccion->nombre => '/servicios/desarrollo-social/editar/' . $seccion->codigo . '/', $this->nombre => "/servicios/desarrollo-social/subsecciones/" . $seccion->codigo . "/", "Editar " . $result->nombre => "/"));
         } else {
             $data['titulo'] = 'Agregar ' . $this->nombre;
             $this->layout->title('Agregar ' . $this->nombre);
-            $this->layout->nav(array("Desarrollo Social" => "/servicios/desarrollo-social/", $seccion->nombre => '/servicios/desarrollo-social/editar/'.$seccion->codigo.'/', $this->nombre => "/servicios/desarrollo-social/subsecciones/".$seccion->codigo."/", "Agregar " . $this->nombre => "/"));
+            $this->layout->nav(array("Desarrollo Social" => "/servicios/desarrollo-social/", $seccion->nombre => '/servicios/desarrollo-social/editar/' . $seccion->codigo . '/', $this->nombre => "/servicios/desarrollo-social/subsecciones/" . $seccion->codigo . "/", "Agregar " . $this->nombre => "/"));
         }
 
         #view
@@ -153,7 +153,7 @@ class Subsecciones_desarrollo_social extends CI_Controller
             #validaciones
             $this->form_validation->set_rules('nombre', 'Nombre', 'required');
             $this->form_validation->set_rules('orden', 'Orden', 'required');
-            $this->form_validation->set_rules('email','Email','valid_email');
+            $this->form_validation->set_rules('email', 'Email', 'valid_email');
             $this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');
