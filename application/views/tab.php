@@ -66,6 +66,29 @@ foreach ($secciones_menu as $aux) {
                     <li><a href="/municipio/organigrama/">Organigrama</a></li>
                 </ul>
             </li>
+            <li>
+                <a style="cursor:pointer;">Talcahuano tu ciudad</a>
+                <ul>
+                    <li><a href="/tuciudad/desarrollo-productivo/">Desarrollo productivo</a></li>
+                    <li><a href="/tuciudad/seguridad/">Seguridad</a></li>
+                    <li><a href="/tuciudad/talcahuano-historico/">Talcahuano histórico</a></li>
+                    <li><a href="/tuciudad/talcahuano-limpio/">Talcahuano limpio</a></li>
+                    <li><a href="/tuciudad/barrios/">Barrios</a></li>
+                    <li><a href="/tuciudad/documentos-interes/">Documentos de interés</a></li>
+                    <li><a href="/tuciudad/transporte/">Transporte</a></li>
+                    <li><a href="/tuciudad/informacion-util/">Información útil</a></li>
+                </ul>
+            </li>
+            <li>
+                <a style="cursor:pointer;">Turismo</a>
+                <ul>
+                    <li><a href="/turismo/donde-queda/">Dónde queda</a></li>
+                    <li><a href="/turismo/servicios/">Servicios</a></li>
+                    <li><a href="/turismo/comercio/">Comercio</a></li>
+                    <li><a href="/turismo/bancos/">Bancos</a></li>
+                    <li><a href="/turismo/servicentros/">Servicentros</a></li>
+                </ul>
+            </li>
             <li><a style="background: #FFF;"></a></li>
 
         <!-- evento y actividades -->

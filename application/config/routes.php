@@ -224,6 +224,45 @@ $route['municipio/organigrama/eliminar-imagen']  = "municipio/organigrama/elimin
 
 #FIN MUNICIPIO
 
+
+#TU CIUDAD
+
+#desarrollo_productivo
+$route['tuciudad/desarrollo-productivo']                  = "tuciudad/desarrollo_productivo/agregar";
+$route['tuciudad/desarrollo-productivo/eliminar']         = "tuciudad/desarrollo_productivo/eliminar";
+$route['tuciudad/desarrollo-productivo/cargar-imagen']    = "tuciudad/desarrollo_productivo/cargar_imagen";
+$route['tuciudad/desarrollo-productivo/cortar-imagen']    = "tuciudad/desarrollo_productivo/cortar_imagen";
+$route['tuciudad/desarrollo-productivo/eliminar-imagen']  = "tuciudad/desarrollo_productivo/eliminar_imagen";
+
+$route['tuciudad/desarrollo-productivo/subsecciones/(:num)']                  = "tuciudad/subsecciones_desarrollo_productivo/index/$1";
+$route['tuciudad/desarrollo-productivo/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_desarrollo_productivo/index/$1";
+$route['tuciudad/desarrollo-productivo/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_desarrollo_productivo/agregar/$1";
+$route['tuciudad/desarrollo-productivo/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_desarrollo_productivo/agregar/$1/$2";
+$route['tuciudad/desarrollo-productivo/subsecciones/eliminar']                = "tuciudad/subsecciones_desarrollo_productivo/eliminar";
+$route['tuciudad/desarrollo-productivo/subsecciones/cargar-imagen']           = "tuciudad/subsecciones_desarrollo_productivo/cargar_imagen";
+$route['tuciudad/desarrollo-productivo/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_desarrollo_productivo/cortar_imagen";
+$route['tuciudad/desarrollo-productivo/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_desarrollo_productivo/eliminar_imagen";
+
+#seguridad
+$route['tuciudad/seguridad']                  = "tuciudad/seguridad/agregar";
+$route['tuciudad/seguridad/eliminar']         = "tuciudad/seguridad/eliminar";
+$route['tuciudad/seguridad/cargar-imagen']    = "tuciudad/seguridad/cargar_imagen";
+$route['tuciudad/seguridad/cortar-imagen']    = "tuciudad/seguridad/cortar_imagen";
+$route['tuciudad/seguridad/eliminar-imagen']  = "tuciudad/seguridad/eliminar_imagen";
+
+$route['tuciudad/seguridad/subsecciones/(:num)']                  = "tuciudad/subsecciones_seguridad/index/$1";
+$route['tuciudad/seguridad/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_seguridad/index/$1";
+$route['tuciudad/seguridad/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_seguridad/agregar/$1";
+$route['tuciudad/seguridad/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_seguridad/agregar/$1/$2";
+$route['tuciudad/seguridad/subsecciones/eliminar']                = "tuciudad/subsecciones_seguridad/eliminar";
+$route['tuciudad/seguridad/subsecciones/cargar-imagen']           = "tuciudad/subsecciones_seguridad/cargar_imagen";
+$route['tuciudad/seguridad/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_seguridad/cortar_imagen";
+$route['tuciudad/seguridad/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_seguridad/eliminar_imagen";
+
+#END TU CIUDAD
+
+
+
 #EVENTOS
 
 #slider
