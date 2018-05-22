@@ -116,7 +116,7 @@ class Desarrollo_productivo extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    $data['depro_estado'] = $this->input->post('estado');
+                    $data['depro_estado'] = 1;
                     $data['depro_url'] = slug($this->input->post('nombre'));
                     $data['depro_nombre'] = $this->input->post('nombre');
                     $data['depro_descripcion'] = $this->input->post('descripcion');
