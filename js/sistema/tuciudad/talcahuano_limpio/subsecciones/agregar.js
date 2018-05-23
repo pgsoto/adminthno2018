@@ -24,7 +24,7 @@ $(function(){
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/tuciudad/desarrollo_productivo/process/',
+                    url: '/tuciudad/subsecciones_talcahuano_limpio/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
@@ -41,7 +41,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    window.location.reload();
+                                    window.location.href = '/tuciudad/talcahuano-limpio/subsecciones/'+json.seccion;
                             }, 1000);
                         }
                         else

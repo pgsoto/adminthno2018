@@ -41,7 +41,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    document.location.href = '/tuciudad/seguridad/subsecciones/'+json.seccion;
+                                    window.location.href = '/tuciudad/seguridad/subsecciones/'+json.seccion;
                             }, 1000);
                         }
                         else

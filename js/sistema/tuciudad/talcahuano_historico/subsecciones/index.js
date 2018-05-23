@@ -28,7 +28,7 @@ $(function(){
 					type: "POST",
 					data: "codigo="+codigo,
 					dataType: "json",
-					url: '/tuciudad/desarrollo-productivo/subsecciones/eliminar/',
+					url: '/tuciudad/talcahuano-historico/subsecciones/eliminar/',
 					success: function(json){
 						if(json.result){
 							noty({

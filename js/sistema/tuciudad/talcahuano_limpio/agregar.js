@@ -24,7 +24,7 @@ $(function(){
                 var formData = new FormData(document.getElementById("form-agregar"));
 
                 $.ajax({
-                    url: '/tuciudad/desarrollo_productivo/process/',
+                    url: '/tuciudad/talcahuano_limpio/process/',
                     type: 'post',
                     dataType: 'json',
                     data: formData,

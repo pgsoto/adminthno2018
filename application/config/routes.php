@@ -259,8 +259,187 @@ $route['tuciudad/seguridad/subsecciones/cargar-imagen']           = "tuciudad/su
 $route['tuciudad/seguridad/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_seguridad/cortar_imagen";
 $route['tuciudad/seguridad/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_seguridad/eliminar_imagen";
 
+#talcahuano_historico
+$route['tuciudad/talcahuano-historico']                  = "tuciudad/talcahuano_historico/agregar";
+$route['tuciudad/talcahuano-historico/eliminar']         = "tuciudad/talcahuano_historico/eliminar";
+$route['tuciudad/talcahuano-historico/cargar-imagen']    = "tuciudad/talcahuano_historico/cargar_imagen";
+$route['tuciudad/talcahuano-historico/cortar-imagen']    = "tuciudad/talcahuano_historico/cortar_imagen";
+$route['tuciudad/talcahuano-historico/eliminar-imagen']  = "tuciudad/talcahuano_historico/eliminar_imagen";
+
+$route['tuciudad/talcahuano-historico/subsecciones/(:num)']                  = "tuciudad/subsecciones_talcahuano_historico/index/$1";
+$route['tuciudad/talcahuano-historico/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_talcahuano_historico/index/$1";
+$route['tuciudad/talcahuano-historico/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_talcahuano_historico/agregar/$1";
+$route['tuciudad/talcahuano-historico/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_talcahuano_historico/agregar/$1/$2";
+$route['tuciudad/talcahuano-historico/subsecciones/eliminar']                = "tuciudad/subsecciones_talcahuano_historico/eliminar";
+$route['tuciudad/talcahuano-historico/subsecciones/cargar-imagen']           = "tuciudad/subsecciones_talcahuano_historico/cargar_imagen";
+$route['tuciudad/talcahuano-historico/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_talcahuano_historico/cortar_imagen";
+$route['tuciudad/talcahuano-historico/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_talcahuano_historico/eliminar_imagen";
+
+#talcahuano_limpio
+$route['tuciudad/talcahuano-limpio']                  = "tuciudad/talcahuano_limpio/agregar";
+$route['tuciudad/talcahuano-limpio/eliminar']         = "tuciudad/talcahuano_limpio/eliminar";
+$route['tuciudad/talcahuano-limpio/cargar-imagen']    = "tuciudad/talcahuano_limpio/cargar_imagen";
+$route['tuciudad/talcahuano-limpio/cortar-imagen']    = "tuciudad/talcahuano_limpio/cortar_imagen";
+$route['tuciudad/talcahuano-limpio/eliminar-imagen']  = "tuciudad/talcahuano_limpio/eliminar_imagen";
+
+$route['tuciudad/talcahuano-limpio/subsecciones/(:num)']                  = "tuciudad/subsecciones_talcahuano_limpio/index/$1";
+$route['tuciudad/talcahuano-limpio/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_talcahuano_limpio/index/$1";
+$route['tuciudad/talcahuano-limpio/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_talcahuano_limpio/agregar/$1";
+$route['tuciudad/talcahuano-limpio/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_talcahuano_limpio/agregar/$1/$2";
+$route['tuciudad/talcahuano-limpio/subsecciones/eliminar']                = "tuciudad/subsecciones_talcahuano_limpio/eliminar";
+$route['tuciudad/talcahuano-limpio/subsecciones/cargar-imagen']           = "tuciudad/subsecciones_talcahuano_limpio/cargar_imagen";
+$route['tuciudad/talcahuano-limpio/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_talcahuano_limpio/cortar_imagen";
+$route['tuciudad/talcahuano-limpio/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_talcahuano_limpio/eliminar_imagen";
+
+#barrios
+$route['tuciudad/barrios']                  = "tuciudad/barrios/agregar";
+$route['tuciudad/barrios/eliminar']         = "tuciudad/barrios/eliminar";
+$route['tuciudad/barrios/cargar-imagen']    = "tuciudad/barrios/cargar_imagen";
+$route['tuciudad/barrios/cortar-imagen']    = "tuciudad/barrios/cortar_imagen";
+$route['tuciudad/barrios/eliminar-imagen']  = "tuciudad/barrios/eliminar_imagen";
+
+$route['tuciudad/barrios/subsecciones/(:num)']                  = "tuciudad/subsecciones_barrios/index/$1";
+$route['tuciudad/barrios/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_barrios/index/$1";
+$route['tuciudad/barrios/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_barrios/agregar/$1";
+$route['tuciudad/barrios/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_barrios/agregar/$1/$2";
+$route['tuciudad/barrios/subsecciones/eliminar']                = "tuciudad/subsecciones_barrios/eliminar";
+$route['tuciudad/barrios/subsecciones/cargar-imagen']           = "tuciudad/subsecciones_barrios/cargar_imagen";
+$route['tuciudad/barrios/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_barrios/cortar_imagen";
+$route['tuciudad/barrios/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_barrios/eliminar_imagen";
+
+#documentos_interes
+$route['tuciudad/documentos-interes']                  = "tuciudad/documentos_interes/agregar";
+$route['tuciudad/documentos-interes/eliminar']         = "tuciudad/documentos_interes/eliminar";
+$route['tuciudad/documentos-interes/cargar-imagen']    = "tuciudad/documentos_interes/cargar_imagen";
+$route['tuciudad/documentos-interes/cortar-imagen']    = "tuciudad/documentos_interes/cortar_imagen";
+$route['tuciudad/documentos-interes/eliminar-imagen']  = "tuciudad/documentos_interes/eliminar_imagen";
+
+$route['tuciudad/documentos-interes/subsecciones/(:num)']                  = "tuciudad/subsecciones_documentos_interes/index/$1";
+$route['tuciudad/documentos-interes/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_documentos_interes/index/$1";
+$route['tuciudad/documentos-interes/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_documentos_interes/agregar/$1";
+$route['tuciudad/documentos-interes/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_documentos_interes/agregar/$1/$2";
+$route['tuciudad/documentos-interes/subsecciones/eliminar']                = "tuciudad/subsecciones_documentos_interes/eliminar";
+$route['tuciudad/documentos-interes/subsecciones/cargar-imagen']           = "tuciudad/subsecciones_documentos_interes/cargar_imagen";
+$route['tuciudad/documentos-interes/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_documentos_interes/cortar_imagen";
+$route['tuciudad/documentos-interes/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_documentos_interes/eliminar_imagen";
+
+#transporte
+$route['tuciudad/transporte']                  = "tuciudad/transporte/agregar";
+$route['tuciudad/transporte/eliminar']         = "tuciudad/transporte/eliminar";
+$route['tuciudad/transporte/cargar-imagen']    = "tuciudad/transporte/cargar_imagen";
+$route['tuciudad/transporte/cortar-imagen']    = "tuciudad/transporte/cortar_imagen";
+$route['tuciudad/transporte/eliminar-imagen']  = "tuciudad/transporte/eliminar_imagen";
+
+$route['tuciudad/transporte/subsecciones/(:num)']                  = "tuciudad/subsecciones_transporte/index/$1";
+$route['tuciudad/transporte/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_transporte/index/$1";
+$route['tuciudad/transporte/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_transporte/agregar/$1";
+$route['tuciudad/transporte/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_transporte/agregar/$1/$2";
+$route['tuciudad/transporte/subsecciones/eliminar']                = "tuciudad/subsecciones_transporte/eliminar";
+$route['tuciudad/transporte/subsecciones/cargar-imagen']           = "tuciudad/subsecciones_transporte/cargar_imagen";
+$route['tuciudad/transporte/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_transporte/cortar_imagen";
+$route['tuciudad/transporte/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_transporte/eliminar_imagen";
+
+#informacion_util
+$route['tuciudad/informacion-util']                  = "tuciudad/informacion_util/agregar";
+$route['tuciudad/informacion-util/eliminar']         = "tuciudad/informacion_util/eliminar";
+$route['tuciudad/informacion-util/cargar-imagen']    = "tuciudad/informacion_util/cargar_imagen";
+$route['tuciudad/informacion-util/cortar-imagen']    = "tuciudad/informacion_util/cortar_imagen";
+$route['tuciudad/informacion-util/eliminar-imagen']  = "tuciudad/informacion_util/eliminar_imagen";
+
+$route['tuciudad/informacion-util/subsecciones/(:num)']                  = "tuciudad/subsecciones_informacion_util/index/$1";
+$route['tuciudad/informacion-util/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_informacion_util/index/$1";
+$route['tuciudad/informacion-util/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_informacion_util/agregar/$1";
+$route['tuciudad/informacion-util/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_informacion_util/agregar/$1/$2";
+$route['tuciudad/informacion-util/subsecciones/eliminar']                = "tuciudad/subsecciones_informacion_util/eliminar";
+$route['tuciudad/informacion-util/subsecciones/cargar-imagen']           = "tuciudad/subsecciones_informacion_util/cargar_imagen";
+$route['tuciudad/informacion-util/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_informacion_util/cortar_imagen";
+$route['tuciudad/informacion-util/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_informacion_util/eliminar_imagen";
+
 #END TU CIUDAD
 
+#TURISMO
+
+#donde_queda
+$route['turismo/donde-queda']                  = "turismo/donde_queda/agregar";
+$route['turismo/donde-queda/eliminar']         = "turismo/donde_queda/eliminar";
+$route['turismo/donde-queda/cargar-imagen']    = "turismo/donde_queda/cargar_imagen";
+$route['turismo/donde-queda/cortar-imagen']    = "turismo/donde_queda/cortar_imagen";
+$route['turismo/donde-queda/eliminar-imagen']  = "turismo/donde_queda/eliminar_imagen";
+
+$route['turismo/donde-queda/subsecciones/(:num)']                  = "turismo/subsecciones_donde_queda/index/$1";
+$route['turismo/donde-queda/subsecciones/(:num)/(:num)']           = "turismo/subsecciones_donde_queda/index/$1";
+$route['turismo/donde-queda/subsecciones/agregar/(:num)']          = "turismo/subsecciones_donde_queda/agregar/$1";
+$route['turismo/donde-queda/subsecciones/editar/(:num)/(:num)']    = "turismo/subsecciones_donde_queda/agregar/$1/$2";
+$route['turismo/donde-queda/subsecciones/eliminar']                = "turismo/subsecciones_donde_queda/eliminar";
+$route['turismo/donde-queda/subsecciones/cargar-imagen']           = "turismo/subsecciones_donde_queda/cargar_imagen";
+$route['turismo/donde-queda/subsecciones/cortar-imagen']           = "turismo/subsecciones_donde_queda/cortar_imagen";
+$route['turismo/donde-queda/subsecciones/eliminar-imagen']         = "turismo/subsecciones_donde_queda/eliminar_imagen";
+
+#servicios
+$route['turismo/servicios']                  = "turismo/servicios/agregar";
+$route['turismo/servicios/eliminar']         = "turismo/servicios/eliminar";
+$route['turismo/servicios/cargar-imagen']    = "turismo/servicios/cargar_imagen";
+$route['turismo/servicios/cortar-imagen']    = "turismo/servicios/cortar_imagen";
+$route['turismo/servicios/eliminar-imagen']  = "turismo/servicios/eliminar_imagen";
+
+$route['turismo/servicios/subsecciones/(:num)']                  = "turismo/subsecciones_servicios/index/$1";
+$route['turismo/servicios/subsecciones/(:num)/(:num)']           = "turismo/subsecciones_servicios/index/$1";
+$route['turismo/servicios/subsecciones/agregar/(:num)']          = "turismo/subsecciones_servicios/agregar/$1";
+$route['turismo/servicios/subsecciones/editar/(:num)/(:num)']    = "turismo/subsecciones_servicios/agregar/$1/$2";
+$route['turismo/servicios/subsecciones/eliminar']                = "turismo/subsecciones_servicios/eliminar";
+$route['turismo/servicios/subsecciones/cargar-imagen']           = "turismo/subsecciones_servicios/cargar_imagen";
+$route['turismo/servicios/subsecciones/cortar-imagen']           = "turismo/subsecciones_servicios/cortar_imagen";
+$route['turismo/servicios/subsecciones/eliminar-imagen']         = "turismo/subsecciones_servicios/eliminar_imagen";
+
+#comercio
+$route['turismo/comercio']                  = "turismo/comercio/agregar";
+$route['turismo/comercio/eliminar']         = "turismo/comercio/eliminar";
+$route['turismo/comercio/cargar-imagen']    = "turismo/comercio/cargar_imagen";
+$route['turismo/comercio/cortar-imagen']    = "turismo/comercio/cortar_imagen";
+$route['turismo/comercio/eliminar-imagen']  = "turismo/comercio/eliminar_imagen";
+
+$route['turismo/comercio/subsecciones/(:num)']                  = "turismo/subsecciones_comercio/index/$1";
+$route['turismo/comercio/subsecciones/(:num)/(:num)']           = "turismo/subsecciones_comercio/index/$1";
+$route['turismo/comercio/subsecciones/agregar/(:num)']          = "turismo/subsecciones_comercio/agregar/$1";
+$route['turismo/comercio/subsecciones/editar/(:num)/(:num)']    = "turismo/subsecciones_comercio/agregar/$1/$2";
+$route['turismo/comercio/subsecciones/eliminar']                = "turismo/subsecciones_comercio/eliminar";
+$route['turismo/comercio/subsecciones/cargar-imagen']           = "turismo/subsecciones_comercio/cargar_imagen";
+$route['turismo/comercio/subsecciones/cortar-imagen']           = "turismo/subsecciones_comercio/cortar_imagen";
+$route['turismo/comercio/subsecciones/eliminar-imagen']         = "turismo/subsecciones_comercio/eliminar_imagen";
+
+#bancos
+$route['turismo/bancos']                  = "turismo/bancos/agregar";
+$route['turismo/bancos/eliminar']         = "turismo/bancos/eliminar";
+$route['turismo/bancos/cargar-imagen']    = "turismo/bancos/cargar_imagen";
+$route['turismo/bancos/cortar-imagen']    = "turismo/bancos/cortar_imagen";
+$route['turismo/bancos/eliminar-imagen']  = "turismo/bancos/eliminar_imagen";
+
+$route['turismo/bancos/subsecciones/(:num)']                  = "turismo/subsecciones_bancos/index/$1";
+$route['turismo/bancos/subsecciones/(:num)/(:num)']           = "turismo/subsecciones_bancos/index/$1";
+$route['turismo/bancos/subsecciones/agregar/(:num)']          = "turismo/subsecciones_bancos/agregar/$1";
+$route['turismo/bancos/subsecciones/editar/(:num)/(:num)']    = "turismo/subsecciones_bancos/agregar/$1/$2";
+$route['turismo/bancos/subsecciones/eliminar']                = "turismo/subsecciones_bancos/eliminar";
+$route['turismo/bancos/subsecciones/cargar-imagen']           = "turismo/subsecciones_bancos/cargar_imagen";
+$route['turismo/bancos/subsecciones/cortar-imagen']           = "turismo/subsecciones_bancos/cortar_imagen";
+$route['turismo/bancos/subsecciones/eliminar-imagen']         = "turismo/subsecciones_bancos/eliminar_imagen";
+
+#servicentros
+$route['turismo/servicentros']                  = "turismo/servicentros/agregar";
+$route['turismo/servicentros/eliminar']         = "turismo/servicentros/eliminar";
+$route['turismo/servicentros/cargar-imagen']    = "turismo/servicentros/cargar_imagen";
+$route['turismo/servicentros/cortar-imagen']    = "turismo/servicentros/cortar_imagen";
+$route['turismo/servicentros/eliminar-imagen']  = "turismo/servicentros/eliminar_imagen";
+
+$route['turismo/servicentros/subsecciones/(:num)']                  = "turismo/subsecciones_servicentros/index/$1";
+$route['turismo/servicentros/subsecciones/(:num)/(:num)']           = "turismo/subsecciones_servicentros/index/$1";
+$route['turismo/servicentros/subsecciones/agregar/(:num)']          = "turismo/subsecciones_servicentros/agregar/$1";
+$route['turismo/servicentros/subsecciones/editar/(:num)/(:num)']    = "turismo/subsecciones_servicentros/agregar/$1/$2";
+$route['turismo/servicentros/subsecciones/eliminar']                = "turismo/subsecciones_servicentros/eliminar";
+$route['turismo/servicentros/subsecciones/cargar-imagen']           = "turismo/subsecciones_servicentros/cargar_imagen";
+$route['turismo/servicentros/subsecciones/cortar-imagen']           = "turismo/subsecciones_servicentros/cortar_imagen";
+$route['turismo/servicentros/subsecciones/eliminar-imagen']         = "turismo/subsecciones_servicentros/eliminar_imagen";
+
+#END TURISMO
 
 
 #EVENTOS

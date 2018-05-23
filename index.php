@@ -4,7 +4,7 @@
 	date_default_timezone_set('America/Santiago');
     
     #url sitio
-	define('SITIO_URL', 'http://nevados.aeurus.cl');
+	define('SITIO_URL', 'http://talcahuano2018.aeurus.cl');
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT

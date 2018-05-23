@@ -41,7 +41,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    document.location.href = '/tuciudad/desarrollo-productivo/subsecciones/'+json.seccion;
+                                    window.location.href = '/tuciudad/desarrollo-productivo/subsecciones/'+json.seccion;
                             }, 1000);
                         }
                         else

@@ -41,7 +41,7 @@ $(function(){
                             });
                             setTimeout(function(){
                                 if(json.codigo)
-                                    document.location.reload();
+                                    window.location.reload();
                             }, 1000);
                         }
                         else
