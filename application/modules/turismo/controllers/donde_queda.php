@@ -1,10 +1,10 @@
 ﻿<?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
 
-class Subsecciones_talcahuano_historico extends CI_Controller
+class Donde_queda extends CI_Controller
 {
 
-    private $nombre = 'Subsecciones Talcahuano Histórico';
-    private $modulo = 66, $modulo_imagenes = 67, $modulo_seccion = 64;
+    private $nombre = 'Dónde queda';
+    private $modulo = 88, $modulo_imagenes = 89;
     public $img;
 
     function __construct()
@@ -36,72 +36,29 @@ class Subsecciones_talcahuano_historico extends CI_Controller
         $this->img->recorte_ancho_1 = 1920;
         $this->img->recorte_alto_1 = 720;
 
-        $this->img->upload_dir = '/imagenes/modulos/tuciudad/talcahuano_historico/subsecciones/';
+        $this->img->upload_dir = '/imagenes/modulos/turismo/donde_queda/';
 
         #lib imagenes
         $this->load->model('inicio/imagen', 'objImagen');
+
+        #Si la tabla está vacía, se inserta el primer registro
+        if (count($this->ws->listar($this->modulo)) == 0) {
+            $data = array();
+            $data['donque_estado'] = 1;
+            $data['donque_url'] = slug($this->nombre);
+            $data['donque_nombre'] = $this->nombre;
+            $this->ws->insertar($this->modulo, $data);
+            unset($data);
+        }
+
     }
 
-    public function index()
+    public function agregar()
     {
-        $seccion = 1;
-
-        # Contenido
-        $data = array();
-
-        $data['seccion'] = $seccion;
-
-        #Title
-        $data['titulo'] = $this->nombre;
-        $this->layout->title($this->nombre);
+        $codigo = 1; //obligatoria primer registro
 
         #js
-        $this->layout->js('/js/sistema/tuciudad/talcahuano_historico/subsecciones/index.js');
-
-        $where = $and = "";
-        $url = "";
-
-        $where .= "subtalhis_visible = 1";
-        $and = " and ";
-
-        if (count($_GET) > 0)
-            $url = '?' . http_build_query($_GET, '', "&");
-
-        $config['uri_segment'] = 5;
-        $config['base_url'] = '/tuciudad/talcahuano-historico/subsecciones/' . $seccion . '/';
-        $config['per_page'] = 20;
-        $config['total_rows'] = count($this->ws->listar($this->modulo, $where));
-        $config['suffix'] = '/' . $url;
-        $config['first_url'] = $config['base_url'] . $url;
-        $this->pagination->initialize($config);
-
-        #obtiene el numero de pagina
-        $pagina = ($this->uri->segment($config['uri_segment'])) ? $this->uri->segment($config['uri_segment']) - 1 : 0;
-
-        #contenido
-        $this->ws->order("subtalhis_orden ASC");
-        $this->ws->limit($config['per_page'], ($config['per_page'] * $pagina));
-        $data["result"] = $this->ws->listar($this->modulo, $where);
-        $data['pagination'] = $this->pagination->create_links();
-
-        $seccion = $this->ws->obtener($this->modulo_seccion, "talhis_codigo = " . $seccion);
-
-        #Nav
-        $this->layout->nav(array('Talcahuano Histórico' => '/tuciudad/talcahuano-historico/', $this->nombre => '/'));
-
-        #view
-        $this->layout->view('talcahuano_historico/subsecciones/index', $data);
-    }
-
-    public function agregar($seccion = false, $codigo = false)
-    {
-        # Contenido
-        $data = array();
-
-        $data['seccion'] = $seccion;
-
-        #js
-        $this->layout->js('/js/sistema/tuciudad/talcahuano_historico/subsecciones/agregar.js');
+        $this->layout->js('/js/sistema/turismo/donde_queda/agregar.js');
 
         #JS - Editor
         $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
@@ -112,49 +69,45 @@ class Subsecciones_talcahuano_historico extends CI_Controller
         $this->layout->css('/js/jquery/croppic/croppic.css');
         $this->layout->js('/js/sistema/imagenes/simple.js');
 
+        # Contenido
+        $data = array();
+
         if ($codigo && is_numeric($codigo)) {
-            $result = $this->ws->obtener($this->modulo, "subtalhis_codigo = " . $codigo);
+            $result = $this->ws->obtener($this->modulo, "donque_codigo = " . $codigo);
             if ($result) {
                 $result->mapa_coor = explode(",", $result->mapa);
-                $result->imagenes = $this->ws->listar($this->modulo_imagenes, "galsubtalhis_subseccion = " . $codigo);
+                $result->imagenes = $this->ws->listar($this->modulo_imagenes, "galdonque_seccion = " . $codigo);
             }
             #print_array($result);
             if (!$result) {
-                redirect('/tuciudad/talcahuano-historico/subsecciones/');
+                redirect('/turismo/donde-queda/');
             } else {
                 $data['result'] = $result;
             }
         }
 
-        $seccion = $this->ws->obtener($this->modulo_seccion, "talhis_codigo = " . $seccion);
-
         #nav
         if (isset($result)) {
-            $data['titulo'] = 'Editar ' . $this->nombre;
-            $this->layout->title('Editar ' . $this->nombre);
-            $this->layout->nav(array("Talcahuano Histórico" => "/tuciudad/talcahuano-historico/", $this->nombre => "/tuciudad/talcahuano-historico/subsecciones/" . $seccion->codigo . "/", "Editar " . $result->nombre => "/"));
-        } else {
-            $data['titulo'] = 'Agregar ' . $this->nombre;
-            $this->layout->title('Agregar ' . $this->nombre);
-            $this->layout->nav(array("Talcahuano Histórico" => "/tuciudad/talcahuano-historico/", $this->nombre => "/tuciudad/talcahuano-historico/subsecciones/" . $seccion->codigo . "/", "Agregar " . $this->nombre => "/"));
+            $data['titulo'] = $this->nombre;
+            $this->layout->title($this->nombre);
+            $this->layout->nav(array($this->nombre => "/turismo/donde-queda/", $result->nombre => "/"));
         }
 
         #view
-        $this->layout->view('talcahuano_historico/subsecciones/add', $data);
+        $this->layout->view('donde_queda/add', $data);
 
     }
 
     public function process()
     {
-        #print_array($this->input->post());#die;
+        #print_array($this->input->post());die;
         if ($this->input->post()) {
 
             #validaciones
             $this->form_validation->set_rules('nombre', 'Nombre', 'required');
-            $this->form_validation->set_rules('orden', 'Orden', 'required');
-            $this->form_validation->set_rules('estado', 'Estado', 'required');
 
             $this->form_validation->set_message('required', '* %s es obligatorio');
+            $this->form_validation->set_message('valid_email', '* %s no es válido');
             $this->form_validation->set_error_delimiters('<div>', '</div>');
 
             if (!$this->form_validation->run()) {
@@ -164,30 +117,27 @@ class Subsecciones_talcahuano_historico extends CI_Controller
                 try {
                     $codigo = $this->input->post('codigo', true);
 
-                    $data['subtalhis_estado'] = $this->input->post('estado');
-                    $data['subtalhis_url'] = slug($this->input->post('nombre'));
-                    $data['subtalhis_nombre'] = $this->input->post('nombre');
-                    $data['subtalhis_orden'] = $this->input->post('orden');
-                    $data['subtalhis_descripcion'] = $this->input->post('descripcion');
-                    $data['subtalhis_encargado'] = $this->input->post('encargado');
-                    $data['subtalhis_secretaria'] = $this->input->post('secretaria');
-                    $data['subtalhis_telefono'] = $this->input->post('telefono');
-                    $data['subtalhis_email'] = $this->input->post('email');
-                    $data['subtalhis_direccion'] = $this->input->post('direccion');
+                    $data['donque_estado'] = 1;
+                    $data['donque_url'] = slug($this->input->post('nombre'));
+                    $data['donque_nombre'] = $this->input->post('nombre');
+                    $data['donque_descripcion'] = $this->input->post('descripcion');
+                    $data['donque_como_llegar_en_automovil'] = $this->input->post('como_llegar_en_automovil');
+                    $data['donque_como_llegar_en_tren'] = $this->input->post('como_llegar_en_tren');
+                    $data['donque_como_llegar_en_bus'] = $this->input->post('como_llegar_en_bus');
+                    $data['donque_como_llegar_en_avion'] = $this->input->post('como_llegar_en_avion');
+                    $data['donque_direccion'] = $this->input->post('direccion');
 
                     if ($this->input->post('ruta_interna_2')) {
-                        $data['subtalhis_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');
-                        $data['subtalhis_imagen_ruta_grande'] = $this->input->post('ruta_grande_2');
+                        $data['donque_imagen_ruta_interna'] = $this->input->post('ruta_interna_2');
+                        $data['donque_imagen_ruta_grande'] = $this->input->post('ruta_grande_2');
                     }
 
                     if ($this->input->post("mapa"))
-                        $data['subtalhis_mapa'] = str_replace(array("(", ")", " "), "", $this->input->post("mapa"));
-
-                    $data['subtalhis_seccion'] = $this->input->post('seccion');
+                        $data['donque_mapa'] = str_replace(array("(", ")", " "), "", $this->input->post("mapa"));
 
                     # Si es una actualización el código es mayor a 0 ya que 0 es el valor predeterminado
                     if ($codigo > 0) {
-                        if ($this->ws->actualizar($this->modulo, $data, 'subtalhis_codigo = ' . $codigo)) {
+                        if ($this->ws->actualizar($this->modulo, $data, 'donque_codigo = ' . $codigo)) {
 
                             #GALERIA
                             $internas = $this->input->post('ruta_interna_1');
@@ -195,16 +145,16 @@ class Subsecciones_talcahuano_historico extends CI_Controller
                             if ($grandes) {
                                 foreach ($grandes as $k => $aux) {
                                     if ($aux) {
-                                        $data2['galsubtalhis_imagen_ruta_interna'] = $internas[$k];
-                                        $data2['galsubtalhis_imagen_ruta_grande'] = $aux;
-                                        $data2['galsubtalhis_subseccion'] = $codigo;
+                                        $data2['galdonque_imagen_ruta_interna'] = $internas[$k];
+                                        $data2['galdonque_imagen_ruta_grande'] = $aux;
+                                        $data2['galdonque_seccion'] = $codigo;
 
                                         $this->ws->insertar($this->modulo_imagenes, $data2);
                                     }
                                 }
                             }
 
-                            echo json_encode(array("result" => true, "codigo" => $codigo, "seccion" => $this->input->post('seccion')));
+                            echo json_encode(array("result" => true, "codigo" => $codigo));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
@@ -219,16 +169,16 @@ class Subsecciones_talcahuano_historico extends CI_Controller
                             if ($grandes) {
                                 foreach ($grandes as $k => $aux) {
                                     if ($aux) {
-                                        $data2['galsubtalhis_imagen_ruta_interna'] = $internas[$k];
-                                        $data2['galsubtalhis_imagen_ruta_grande'] = $aux;
-                                        $data2['galsubtalhis_subseccion'] = $codigo->subtalhis_codigo;
+                                        $data2['galdonque_imagen_ruta_interna'] = $internas[$k];
+                                        $data2['galdonque_imagen_ruta_grande'] = $aux;
+                                        $data2['galdonque_seccion'] = $codigo->donque_codigo;
 
                                         $this->ws->insertar($this->modulo_imagenes, $data2);
                                     }
                                 }
                             }
 
-                            echo json_encode(array("result" => true, "codigo" => $codigo->subtalhis_codigo, "seccion" => $this->input->post('seccion')));
+                            echo json_encode(array("result" => true, "codigo" => $codigo->donque_codigo));
                             exit;
                         } else {
                             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
@@ -247,7 +197,7 @@ class Subsecciones_talcahuano_historico extends CI_Controller
     public function eliminar()
     {
         try {
-            $this->ws->eliminar($this->modulo, "subtalhis_codigo = {$this->input->post('codigo')}");
+            $this->ws->eliminar($this->modulo, "donque_codigo = {$this->input->post('codigo')}");
             echo json_encode(array("result" => true));
         } catch (Exception $e) {
             echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, int�ntelo nuevamente."));
@@ -288,24 +238,24 @@ class Subsecciones_talcahuano_historico extends CI_Controller
         if ($codigo = $this->input->post('codigo')) {
 
             if ($this->input->post('tipo') == 1) {
-                if ($modelo = $this->ws->obtener($this->modulo_imagenes, "galsubtalhis_codigo = $codigo")) {
+                if ($modelo = $this->ws->obtener($this->modulo_imagenes, "galdonque_codigo = $codigo")) {
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
 
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
 
-                    $this->ws->eliminar($this->modulo_imagenes, "galsubtalhis_codigo = $codigo");
+                    $this->ws->eliminar($this->modulo_imagenes, "galdonque_codigo = $codigo");
                 }
             } elseif ($this->input->post('tipo') == 2) {
-                if ($modelo = $this->ws->obtener($this->modulo, "subtalhis_codigo = $codigo")) {
+                if ($modelo = $this->ws->obtener($this->modulo, "donque_codigo = $codigo")) {
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
                     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
                         unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
-                    $data['subtalhis_imagen_ruta_interna'] = '';
-                    $data['subtalhis_imagen_ruta_grande'] = '';
-                    $this->ws->actualizar($this->modulo, $data, "subtalhis_codigo = $codigo");
+                    $data['donque_imagen_ruta_interna'] = '';
+                    $data['donque_imagen_ruta_grande'] = '';
+                    $this->ws->actualizar($this->modulo, $data, "donque_codigo = $codigo");
                 }
             }
         }

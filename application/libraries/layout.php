@@ -40,6 +40,8 @@ class Layout {
 		
 		#notificaciones
 		$this->js('/js/jquery/noty/packaged/jquery.noty.packaged.js');
+
+		#editor
 		$this->js('/js/jquery/ckfinder/ckfinder.js');
         
         #JS - Multiple select boxes

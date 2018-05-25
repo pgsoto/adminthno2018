@@ -79,7 +79,7 @@ class Seguridad extends CI_Controller
             }
             #print_array($result);
             if (!$result) {
-                redirect('/tuciudad/desarrollo-productivo/');
+                redirect('/tuciudad/seguridad/');
             } else {
                 $data['result'] = $result;
             }
@@ -89,7 +89,7 @@ class Seguridad extends CI_Controller
         if (isset($result)) {
             $data['titulo'] = $this->nombre;
             $this->layout->title($this->nombre);
-            $this->layout->nav(array($this->nombre => "/tuciudad/desarrollo-productivo/", $result->nombre => "/"));
+            $this->layout->nav(array($this->nombre => "/tuciudad/seguridad/", $result->nombre => "/"));
         }
 
         #view

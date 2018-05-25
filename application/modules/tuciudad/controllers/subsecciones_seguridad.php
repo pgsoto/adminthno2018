@@ -84,7 +84,7 @@ class Subsecciones_seguridad extends CI_Controller
         $data["result"] = $this->ws->listar($this->modulo, $where);
         $data['pagination'] = $this->pagination->create_links();
 
-        $seccion = $this->ws->obtener($this->modulo_seccion, "depro_codigo = " . $seccion);
+        $seccion = $this->ws->obtener($this->modulo_seccion, "seg_codigo = " . $seccion);
 
         #Nav
         $this->layout->nav(array('Seguridad' => '/tuciudad/seguridad/', $this->nombre => '/'));
