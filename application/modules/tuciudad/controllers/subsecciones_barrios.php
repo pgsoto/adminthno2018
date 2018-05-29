@@ -118,7 +118,6 @@ class Subsecciones_barrios extends CI_Controller
                 $result->mapa_coor = explode(",", $result->mapa);
                 $result->imagenes = $this->ws->listar($this->modulo_imagenes, "galsubbar_subseccion = " . $codigo);
             }
-            #print_array($result);
             if (!$result) {
                 redirect('/tuciudad/barrios/subsecciones/');
             } else {
@@ -146,7 +145,6 @@ class Subsecciones_barrios extends CI_Controller
 
     public function process()
     {
-        #print_array($this->input->post());#die;
         if ($this->input->post()) {
 
             #validaciones
@@ -254,7 +252,6 @@ class Subsecciones_barrios extends CI_Controller
         }
     }
 
-
     ###IMAGENES
     public function cargar_imagen()
     {
@@ -311,5 +308,232 @@ class Subsecciones_barrios extends CI_Controller
         }
         echo json_encode(array("result" => true));
     }
+
+
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ *  ** ** ** ** ** ** **  chancho ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ *  ** ** ** ** ** ** ** ** ** ** ** ** ** **  OBRAS OBRAS REALIZADAS ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ *  ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ */
+
+  ###IMAGENES
+  public function cargar_imagen_obras()
+  {
+
+      #se realiza la configuracion para cada imagen
+      $this->img->id = $this->input->post('id');
+      $this->objImagen->config($this->img);
+
+      $response = $this->objImagen->cargar_imagen($_FILES);
+      echo json_encode($response);
+  }
+
+  public function cortar_imagen_obras()
+  {
+
+      $this->img->id = $this->input->post('id');
+      $this->objImagen->config($this->img);
+
+      $response = $this->objImagen->cortar_imagen($_POST);
+      echo json_encode($response);
+  }
+
+
+  public function eliminar_imagen_obras()
+  {
+      if ($ruta = $this->input->post('ruta_imagen')) {
+          if (file_exists($_SERVER['DOCUMENT_ROOT'] . $ruta))
+              unlink($_SERVER['DOCUMENT_ROOT'] . $ruta);
+      }
+
+      if ($codigo = $this->input->post('codigo')) {
+
+              if ($modelo = $this->ws->obtener($this->modulo_imagenes_obras_realizadas, "galobrrea_codigo = $codigo")) {
+                  if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
+                      unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
+
+                  if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
+                      unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
+
+                  $this->ws->eliminar($this->modulo_imagenes_obras_realizadas, "galobrrea_codigo = $codigo");
+          } 
+      }
+      echo json_encode(array("result" => true));
+  }
+
+    public function obras_realizadas($seccion, $subseccion ){
+  
+         # Contenido
+        $data = array();
+        $seccion_barrio = $this->ws->obtener($this->modulo_seccion, "bar_codigo = " . $seccion);
+
+        $where = 'galobrrea_subseccion = '.$subseccion;
+        
+        $data['result'] = $this->ws->listar($this->modulo_imagenes_obras_realizadas, $where);
+     
+        $data['seccion'] = $seccion;
+        $data['subseccion'] = $subseccion;
+        $data['seccion_barrio'] = $seccion_barrio;
+
+        #Title
+        $data['titulo'] = 'Obras realizadas';
+        $this->layout->title($this->nombre);
+
+        #js
+        $this->layout->js('/js/sistema/tuciudad/barrios/subsecciones/agregar_gal_obras.js');
+
+        $this->layout->js('/js/jquery/croppic/croppic.js');
+        $this->layout->css('/js/jquery/croppic/croppic.css');
+        $this->layout->js('/js/sistema/imagenes/simple.js');
+
+        #Nav
+        $this->layout->nav(array("Barrios" => "/tuciudad/barrios/", $this->nombre => "/tuciudad/barrios/subsecciones/" . $seccion_barrio->codigo . "/", "Editar " . $seccion_barrio->nombre => "/"));
+
+        #view
+        $this->layout->view('barrios/subsecciones/obras_realizadas', $data);
+
+    }
+
+    public function process_obras_realizadas(){
+
+            if ($this->input->post()) {
+                    $sub = $this->input->post("codigo_subseccion");
+                                #GALERIA
+                                $internas = $this->input->post('ruta_interna_1');
+                                $grandes = $this->input->post('ruta_grande_1');
+                                if ($grandes) {
+                                    foreach ($grandes as $k => $aux) {
+                                        if ($aux) {
+                                            $data2['galobrrea_imagen_ruta_interna'] = $internas[$k];
+                                            $data2['galobrrea_imagen_ruta_grande'] = $aux;
+                                            $data2['galobrrea_subseccion'] = $sub;
+    
+                                            $this->ws->insertar($this->modulo_imagenes_obras_realizadas, $data2);
+                                        }
+                                    }
+                                }
+                                echo json_encode(array("result" => true, "codigo" => $this->input->post("codigo_seccion"), "seccion" => $this->input->post('codigo_seccion')));
+                                exit;
+            }else{
+                echo json_encode(array("result" => false, "msg" => "Debe ingresar al menos una fotografía"));
+                exit;
+            }
+    }
+            
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ *  ** ** ** ** ** ** ** chanchito * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ *  ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** OBRAS SOCIALES ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ *  ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ */
+  public function cargar_imagen_sociales(){
+
+      $this->img->id = $this->input->post('id');
+      $this->objImagen->config($this->img);
+
+      $response = $this->objImagen->cargar_imagen($_FILES);
+      echo json_encode($response);
+  }
+
+  public function cortar_imagen_sociales(){
+
+      $this->img->id = $this->input->post('id');
+      $this->objImagen->config($this->img);
+
+      $response = $this->objImagen->cortar_imagen($_POST);
+      echo json_encode($response);
+  }
+
+
+  public function eliminar_imagen_sociales(){
+      if ($ruta = $this->input->post('ruta_imagen')) {
+          if (file_exists($_SERVER['DOCUMENT_ROOT'] . $ruta))
+              unlink($_SERVER['DOCUMENT_ROOT'] . $ruta);
+      }
+
+      if ($codigo = $this->input->post('codigo')) {
+
+              if ($modelo = $this->ws->obtener($this->modulo_imagenes_obras_sociales, "galobrsoc_codigo = $codigo")) {
+                  if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna))
+                      unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_interna);
+
+                  if (file_exists($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande))
+                      unlink($_SERVER['DOCUMENT_ROOT'] . $modelo->imagen_ruta_grande);
+
+                  $this->ws->eliminar($this->modulo_imagenes_obras_sociales, "galobrsoc_codigo = $codigo");
+          } 
+      }
+      echo json_encode(array("result" => true));
+  }
+
+
+  public function obras_sociales($seccion, $subseccion){
+  
+        $seccion = 1;
+        # Contenido
+        $data = array();
+
+        $data['seccion'] = $seccion;
+
+        $data = array();
+        $seccion_barrio = $this->ws->obtener($this->modulo_seccion, "bar_codigo = " . $seccion);
+
+        $where = 'galobrsoc_subseccion = '.$subseccion;
+        
+        $data['result'] = $this->ws->listar($this->modulo_imagenes_obras_sociales, $where);
+
+        $data['seccion'] = $seccion;
+        $data['subseccion'] = $subseccion;
+        $data['seccion_barrio'] = $seccion_barrio;
+
+        #Title
+        $data['titulo'] = 'Obras Sociales';
+        $this->layout->title($this->nombre);
+
+        #js
+        $this->layout->js('/js/sistema/tuciudad/barrios/subsecciones/agregar_gal_sociales.js');
+
+         #js Imagen Cropic
+         $this->layout->js('/js/jquery/croppic/croppic.js');
+         $this->layout->css('/js/jquery/croppic/croppic.css');
+         $this->layout->js('/js/sistema/imagenes/simple.js');
+ 
+        #Nav
+        $this->layout->nav(array("Barrios" => "/tuciudad/barrios/", $this->nombre => "/tuciudad/barrios/subsecciones/" . $seccion_barrio->codigo . "/", "Editar " . $seccion_barrio->nombre => "/"));
+
+        #view
+        $this->layout->view('barrios/subsecciones/obras_sociales', $data);
+
+  }
+
+
+  public function process_obras_sociales(){
+
+        if ($this->input->post()) {
+            $sub = $this->input->post("codigo_subseccion");
+
+                        #GALERIA
+                        $internas = $this->input->post('ruta_interna_1');
+                        $grandes = $this->input->post('ruta_grande_1');
+                        if ($grandes) {
+                            foreach ($grandes as $k => $aux) {
+                                if ($aux) {
+                                    $data2['galobrsoc_imagen_ruta_interna'] = $internas[$k];
+                                    $data2['galobrsoc_imagen_ruta_grande'] = $aux;
+                                    $data2['galobrsoc_subseccion'] = $sub;
+
+                                    $this->ws->insertar($this->modulo_imagenes_obras_sociales, $data2);
+                                }
+                            }
+                        }
+
+                        echo json_encode(array("result" => true,"codigo" => $this->input->post("codigo_seccion"), "seccion" => $this->input->post('codigo_seccion')));
+                        exit;
+        }else{
+            echo json_encode(array("result" => false, "msg" => "Debe ingresar al menos una fotografía"));
+            exit;
+        }
+        
+  }
 
 }

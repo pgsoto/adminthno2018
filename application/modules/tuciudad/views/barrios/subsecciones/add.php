@@ -4,6 +4,11 @@
     </div>
 
     <form action="#" method="post" id="form-agregar">
+
+        <?php if(isset($result)) {?>
+            <a href="/tuciudad/barrios/subsecciones/editar/<?= $seccion; ?>/<?= $result->codigo; ?>/obras-realizadas/" class="btn btn-can">Galeria Obras realizadas</a>
+            <a href="/tuciudad/barrios/subsecciones/editar/<?= $seccion; ?>/<?= $result->codigo; ?>/obras-sociales/" class="btn btn-can">Galeria Obras sociales</a>
+        <?php } ?>
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
             <div class="col-md-5">
                 <label>Nombres (*) </label>

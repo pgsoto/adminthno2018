@@ -298,14 +298,42 @@ $route['tuciudad/barrios/cargar-imagen']    = "tuciudad/barrios/cargar_imagen";
 $route['tuciudad/barrios/cortar-imagen']    = "tuciudad/barrios/cortar_imagen";
 $route['tuciudad/barrios/eliminar-imagen']  = "tuciudad/barrios/eliminar_imagen";
 
+
 $route['tuciudad/barrios/subsecciones/(:num)']                  = "tuciudad/subsecciones_barrios/index/$1";
 $route['tuciudad/barrios/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_barrios/index/$1";
 $route['tuciudad/barrios/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_barrios/agregar/$1";
 $route['tuciudad/barrios/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_barrios/agregar/$1/$2";
+$route['tuciudad/barrios/subsecciones/cargar-imagen-obras']    = "tuciudad/subsecciones_barrios/cargar_imagen_obras";
+$route['tuciudad/barrios/subsecciones/cortar-imagen-obras']    = "tuciudad/subsecciones_barrios/cortar_imagen_obras";
+$route['tuciudad/barrios/subsecciones/eliminar-imagen-obras']  = "tuciudad/subsecciones_barrios/eliminar_imagen_obras";
+$route['tuciudad/barrios/subsecciones/editar/(:num)/(:num)/obras-realizadas']    = "tuciudad/subsecciones_barrios/obras_realizadas/$1/$2";
+
+
 $route['tuciudad/barrios/subsecciones/eliminar']                = "tuciudad/subsecciones_barrios/eliminar";
 $route['tuciudad/barrios/subsecciones/cargar-imagen']           = "tuciudad/subsecciones_barrios/cargar_imagen";
 $route['tuciudad/barrios/subsecciones/cortar-imagen']           = "tuciudad/subsecciones_barrios/cortar_imagen";
 $route['tuciudad/barrios/subsecciones/eliminar-imagen']         = "tuciudad/subsecciones_barrios/eliminar_imagen";
+$route['tuciudad/barrios/subsecciones/(:num)']                  = "tuciudad/subsecciones_barrios/index/$1";
+$route['tuciudad/barrios/subsecciones/(:num)/(:num)']           = "tuciudad/subsecciones_barrios/index/$1";
+$route['tuciudad/barrios/subsecciones/agregar/(:num)']          = "tuciudad/subsecciones_barrios/agregar/$1";
+$route['tuciudad/barrios/subsecciones/editar/(:num)/(:num)']    = "tuciudad/subsecciones_barrios/agregar/$1/$2";
+$route['tuciudad/barrios/subsecciones/cargar-imagen-sociales']    = "tuciudad/subsecciones_barrios/cargar_imagen_sociales";
+$route['tuciudad/barrios/subsecciones/cortar-imagen-sociales']    = "tuciudad/subsecciones_barrios/cortar_imagen_sociales";
+$route['tuciudad/barrios/subsecciones/eliminar-imagen-sociales']  = "tuciudad/subsecciones_barrios/eliminar_imagen_sociales";
+#$route['tuciudad/barrios/subsecciones/editar/(:num)/(:num)/obras-sociales']    = "tuciudad/subsecciones_barrios/$1/$2/obras_sociales";
+$route['tuciudad/barrios/subsecciones/editar/(:num)/(:num)/obras-sociales']    = "tuciudad/subsecciones_barrios/obras_sociales/$1/$2";
+
+
+
+
+
+
+
+
+
+
+
+
 
 #documentos_interes
 $route['tuciudad/documentos-interes']                  = "tuciudad/documentos_interes/agregar";
