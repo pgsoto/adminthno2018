@@ -387,6 +387,13 @@ $route['tuciudad/informacion-util/subsecciones/eliminar-imagen']         = "tuci
 
 #TURISMO
 
+#bancos
+$route['turismo/introduccion']                  = "turismo/introduccion/agregar";
+$route['turismo/introduccion/eliminar']         = "turismo/introduccion/eliminar";
+$route['turismo/introduccion/cargar-imagen']    = "turismo/introduccion/cargar_imagen";
+$route['turismo/introduccion/cortar-imagen']    = "turismo/introduccion/cortar_imagen";
+$route['turismo/introduccion/eliminar-imagen']  = "turismo/introduccion/eliminar_imagen";
+
 #donde_queda
 $route['turismo/donde-queda']                  = "turismo/donde_queda/agregar";
 $route['turismo/donde-queda/eliminar']         = "turismo/donde_queda/eliminar";

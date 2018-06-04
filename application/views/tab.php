@@ -47,11 +47,11 @@ foreach ($secciones_menu as $aux) {
             </li>
 
         <!-- servicios y tramites -->
-            <li><a style="background: #FFF; color: #969696; font-style: italic;">Servicios y trámites</a></li>
+            <!--<li><a style="background: #FFF; color: #969696; font-style: italic;">Servicios y trámites</a></li>-->
             <li>
-                <a style="cursor:pointer;">Centro de atención al vecino</a>
+                <a style="cursor:pointer;">Servicios y trámites</a>
                 <ul>
-                    <li><a href="/servicios/tramites/">Trámites</a></li>
+                    <li><a href="/servicios/tramites/">Centro de atención al vecino</a></li>
                     <li><a href="/servicios/desarrollo-social/">Desarrollo social</a></li>
                 </ul>
             </li>
@@ -82,6 +82,7 @@ foreach ($secciones_menu as $aux) {
             <li>
                 <a style="cursor:pointer;">Turismo</a>
                 <ul>
+                    <li><a href="/turismo/introduccion/">Introducción</a></li>
                     <li><a href="/turismo/donde-queda/">Dónde queda</a></li>
                     <li><a href="/turismo/servicios/">Servicios</a></li>
                     <li><a href="/turismo/comercio/">Comercio</a></li>
